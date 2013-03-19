@@ -1,0 +1,47 @@
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+
+# for screenshots - commented out to do this in xmonad instead
+#xbindkeys &
+
+# set background
+feh --bg-fill /tmp/wallpaper.jpg
+
+#get rid of beeping
+xset b off
+
+# touchpad stuff (I think)
+synclient HorizEdgeScroll=1
+synclient VertEdgeScroll=1
+synclient TapButton1=1
+
+# cursor for xmonad
+xsetroot -cursor_name left_ptr
+
+#merge resources file (for things like terminal colors)
+[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
+
+# compositor for transparency (urxvt)
+xcompmgr &
+
+/usr/bin/xscreensaver -no-splash &
+
+trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --width 6 --height 18 --transparent true --alpha 0 --tint 0x000000 &
+
+SpiderOak &
+
+firefox &
+
+skype &
+
+pidgin &
+
+checkgmail -no_cookies &
+
+dunst &
+
+#launch wm
+exec xmonad

@@ -1,0 +1,11 @@
+set hintchars=asdfghjkl
+
+map <S-j> <C-PageDown>
+map <S-k> <C-PageUp>
+map d <C-w>
+
+noremap <C-Tab> <C-6>
+cnoremap <C-Tab> <C-6>
+inoremap <C-Tab> <C-6>
+
+ignorekeys add -except=<S-j>,<S-k> /mail\.google\.com/

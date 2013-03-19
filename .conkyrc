@@ -1,0 +1,180 @@
+# Use Xft?
+use_xft yes
+xftfont DejaVu Sans:size=10
+xftalpha 0.8
+#text_buffer_size 2048
+
+# Update interval in seconds
+update_interval 4
+
+# This is the number of times Conky will update before quitting.
+# Set to zero to run forever.
+total_run_times 0
+
+# Console settings
+out_to_console yes
+out_to_ncurses no
+out_to_x no
+
+# Create own window instead of using desktop (required in nautilus)
+own_window yes
+own_window_transparent yes
+#own_window_type desktop
+#own_window_type override
+own_window_type normal
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+
+# Use double buffering (reduces flicker, may not work for everyone)
+double_buffer yes
+
+# Minimum size of text area
+#minimum_size 200 1080
+#maximum_width 200
+
+# Draw shades?
+draw_shades no
+
+# Draw outlines?
+draw_outline no
+
+# Draw borders around text
+draw_borders no
+
+# Stippled borders?
+stippled_borders 0
+
+# Border width
+border_width 1
+
+# Default bar size
+default_bar_size 8 40
+
+# Default colors and also border colors
+default_color white
+#default_shade_color black
+#default_outline_color grey
+#own_window_colour grey
+
+# Text alignment, other possible values are commented
+#alignment top_left
+alignment top_right
+#alignment bottom_left
+#alignment bottom_right
+
+# Gap between borders of screen and text
+# same thing as passing -x at command line
+gap_x 15
+gap_y 15
+
+# Subtract file system buffers from used memory?
+no_buffers yes
+
+# set to yes if you want all text to be in uppercase
+uppercase no
+
+# number of cpu samples to average
+# set to 1 to disable averaging
+cpu_avg_samples 2
+
+# number of net samples to average
+# set to 1 to disable averaging
+net_avg_samples 2
+
+# Force UTF8? note that UTF8 support required XFT
+override_utf8_locale yes
+
+# Add spaces to keep things from moving about?  This only affects certain objects.
+use_spacer none
+
+#TEXT
+#DATE ${hr 2}
+
+#${alignc 17}${font Arial Black:size=16}${time %I:%M %P}${font}
+#${alignc}${time %A %d %B %Y}
+
+TEXT
+_______________________________ SYSTEM#${hr 2}
+
+${voffset 4}Kernel:  ${alignr}${kernel}
+${voffset 4}CPU1: ${alignc}${cpu cpu1}% #${alignr}${cpubar cpu1 8,60}
+
+${voffset 4}CPU2: ${alignc}${cpu cpu2}% #${alignr}${cpubar cpu2 8,60}
+
+${voffset 4}CPU3: ${alignc}${cpu cpu3}% #${alignr}${cpubar cpu3 8,60}
+
+${voffset 4}CPU4: ${alignc}${cpu cpu4}% #${alignr}${cpubar cpu4 8,60}
+
+${voffset 4}CPU5: ${alignc}${cpu cpu5}% #${alignr}${cpubar cpu5 8,60}
+
+${voffset 4}CPU6: ${alignc}${cpu cpu6}% #${alignr}${cpubar cpu6 8,60}
+
+${voffset 4}CPU7: ${alignc}${cpu cpu7}% #${alignr}${cpubar cpu7 8,60}
+
+${voffset 4}CPU8: ${alignc}${cpu cpu8}% #${alignr}${cpubar cpu8 8,60}
+
+${voffset 4}RAM: ${alignc}$memperc% #${alignr}${membar 8,60}
+
+${voffset 4}SWAP: ${alignc}$swapperc% #${alignr}${swapbar 8,60}
+#${voffset 4}Battery: ${alignc}${battery_percent BAT0}% #${alignr}${battery_bar 8,60 BAT0}
+
+${voffset 4}Battery:   ${battery_percent BAT0}% #${alignr}${battery_time BAT0}
+
+${voffset 4}Uptime: ${alignr}${uptime}
+
+______________________________________
+___________________________________ HD#${hr 2}
+
+${voffset 4}Root: ${alignr}${fs_used /} / ${fs_size /}
+#${voffset 4}${alignr}${fs_bar 8,60 /}
+${voffset 4}Home: ${alignr}${fs_used /home} / ${fs_size /home}
+#${voffset 4}${alignr}${fs_bar 8,60 /home}
+
+______________________________________
+______________________________ NETWORK#${hr 2}
+${if_existing /proc/net/route wlan0}
+${voffset -2}Up: ${upspeed wlan0} kb/s ${alignr}${upspeedgraph wlan0 8,60 BEBEBE BEBEBE}
+${voffset 4}Down: ${downspeed wlan0} kb/s ${alignr}${downspeedgraph wlan0 8,60 BEBEBE BEBEBE}
+${voffset 4}Upload: ${alignr}${totalup wlan0}
+${voffset 4}Download: ${alignr}${totaldown wlan0}
+${voffset 4}Signal: ${wireless_link_qual wlan0}% #${alignr}${wireless_link_bar 8,60 wlan0}
+
+${voffset 4}Local IP: ${alignr}${addr wlan0}
+${else}${if_existing /proc/net/route eth0}
+${voffset -2}Up: ${upspeed eth0} kb/s ${alignr}${upspeedgraph eth0 8,60 789E2D A7CC5C}
+${voffset 4}Down: ${downspeed eth0} kb/s ${alignr}${downspeedgraph eth0 8,60 789E2D A7CC5C}
+${voffset 4}Upload: ${alignr}${totalup eth0}
+${voffset 4}Download: ${alignr}${totaldown eth0}
+${voffset 4}Local Ip: ${alignr}${addr eth0}
+${endif}${else}${if_existing /proc/net/route eth1}
+${voffset -2}Up: ${upspeed eth1} kb/s ${alignr}${upspeedgraph eth1 8,60 789E2D A7CC5C}
+${voffset 4}Down: ${downspeed eth1} kb/s ${alignr}${downspeedgraph eth1 8,60 789E2D A7CC5C}
+${voffset 4}Upload: ${alignr}${totalup eth1}
+${voffset 4}Download: ${alignr}${totaldown eth1}
+${voffset 4}Local Ip: ${alignr}${addr eth1}
+${endif}${else}
+${voffset 4}Network Unavailable
+${endif}
+${endif}
+______________________________________
+____________________________ PROCESSES#${hr 2}
+
+${voffset 4}NAME $alignr              PID    MEM    CPU
+${top_mem name 1} $alignr ${top_mem pid 1} ${top_mem mem 1} ${top_mem cpu 1}
+${top_mem name 2} $alignr ${top_mem pid 2} ${top_mem mem 2} ${top_mem cpu 2}
+${top_mem name 3} $alignr ${top_mem pid 3} ${top_mem mem 3} ${top_mem cpu 3}
+${top_mem name 4} $alignr ${top_mem pid 4} ${top_mem mem 4} ${top_mem cpu 4}
+${top_mem name 5} $alignr ${top_mem pid 5} ${top_mem mem 5} ${top_mem cpu 5}
+${top_mem name 6} $alignr ${top_mem pid 6} ${top_mem mem 6} ${top_mem cpu 6}
+${top_mem name 7} $alignr ${top_mem pid 7} ${top_mem mem 7} ${top_mem cpu 7}
+${top_mem name 8} $alignr ${top_mem pid 8} ${top_mem mem 8} ${top_mem cpu 8}
+
+______________________________________
+______________________ SENSOR READOUTS#${hr 2} 
+
+${voffset 4}CPU Temp: ${alignr}${hwmon 0 temp 1}°C
+GPU Temp: ${alignr}${hwmon 1 temp 1}°C
+HD  Temp: ${alignr}${hddtemp /dev/sda}°C
+#${adt746xcpu}
+#${adt746xfan}
+##${hwmon 2 fan 1}°C
+#platform
