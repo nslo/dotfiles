@@ -82,11 +82,11 @@ class empty(Command):
     """
     :empty
 
-    Empties the trash directory ~/.local/share/Trash
+    Empties the trash directory $HOME/.local/share/Trash
     """
 
     def execute(self):
-        self.fm.run("rm -rf ~/.local/share/Trash/{*,.[^.]*}")
+        self.fm.run("rm -rf $HOME/.local/share/Trash/{*,.[^.]*}")
 
 
 class alias(Command):

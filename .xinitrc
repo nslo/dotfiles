@@ -13,7 +13,7 @@ feh --bg-fill /tmp/wallpaper.jpg
 #get rid of beeping
 xset b off
 
-# touchpad stuff (I think)
+# touchpad stuff 
 synclient HorizEdgeScroll=1
 synclient VertEdgeScroll=1
 synclient TapButton1=1
