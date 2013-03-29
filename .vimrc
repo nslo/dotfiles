@@ -15,3 +15,6 @@ set expandtab
 filetype on
 filetype indent on
 syntax enable
+
+hi CursorLine cterm=None ctermbg=darkblue ctermfg=white guibg=darkreg guifg=white
+set cursorline

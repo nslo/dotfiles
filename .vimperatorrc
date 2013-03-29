@@ -3,6 +3,9 @@ set hintchars=asdfghjkl
 map <S-j> <C-PageDown>
 map <S-k> <C-PageUp>
 map d <C-w>
+map <C-q> <Nop>
+imap <C-q> <Nop>
+cmap <C-q> <Nop>
 
 noremap <C-Tab> <C-6>
 cnoremap <C-Tab> <C-6>
