@@ -12,9 +12,18 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
-hi CursorLine term=bold cterm=bold gui=bold ctermbg=black guibg=black
-set cursorline
-
 filetype on
 filetype indent on
 syntax enable
+
+"colorscheme oceandeep
+
+hi CursorLine term=bold cterm=bold gui=bold ctermbg=black guibg=black
+set cursorline
+
+set ignorecase
+set smartcase
+set incsearch
+set showcmd
+
+set t_Co=256
