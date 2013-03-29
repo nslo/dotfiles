@@ -16,5 +16,5 @@ filetype on
 filetype indent on
 syntax enable
 
-hi CursorLine cterm=None ctermbg=darkblue ctermfg=white guibg=darkreg guifg=white
+hi CursorLine cterm=None ctermbg=darkblue ctermfg=white guibg=darkblue guifg=white
 set cursorline
