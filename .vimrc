@@ -12,9 +12,9 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+hi CursorLine term=bold cterm=bold gui=bold ctermbg=black guibg=black
+set cursorline
+
 filetype on
 filetype indent on
 syntax enable
-
-hi CursorLine cterm=None ctermbg=darkblue ctermfg=white guibg=darkblue guifg=white
-set cursorline
