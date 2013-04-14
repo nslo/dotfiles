@@ -1,8 +1,8 @@
 set hintchars=asdfghjkl
 
-map <S-j> <C-PageDown>
-map <S-k> <C-PageUp>
-map d <C-w>
+nmap <S-j> <C-PageDown>
+nmap <S-k> <C-PageUp>
+nmap d <C-w>
 map <C-q> <Nop>
 imap <C-q> <Nop>
 cmap <C-q> <Nop>

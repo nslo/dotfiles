@@ -34,7 +34,7 @@ key_end = 360 'G'
 #
 #key_space = 32
 #
-#key_enter = 10
+key_enter = 10 'l'
 #
 #key_delete = 330 'd'
 #
@@ -136,7 +136,7 @@ key_prev_found_position = ',' 'N'
 #
 #key_artist_info = 'I'
 #
-#key_lyrics = 'l'
+#key_lyrics = 'l' #undefined
 #
 #key_reverse_selection = 'v'
 #

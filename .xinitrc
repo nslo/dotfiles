@@ -4,8 +4,8 @@
 #
 # Executed by startx (run your window manager from here)
 
-# for screenshots - commented out to do this in xmonad instead
-#xbindkeys &
+# keybindings
+xbindkeys &
 
 # set background
 feh --bg-fill /tmp/wallpaper.jpg

@@ -46,7 +46,9 @@ myWorkspaces    = ["1","2","3","4","5","6","7","8","9","0","A","B"]
 -- Border colors for unfocused and focused windows, respectively.
 myNormalBorderColor  = "#000000"
 --myFocusedBorderColor = "#AAB2E3"
-myFocusedBorderColor = "#3732C7"
+myFocusedBorderColor = "#3732C7" --blue
+--myFocusedBorderColor = "#D90024" --red
+--myFocusedBorderColor = "#F0E800" --yellow
 --myFocusedBorderColor = "#D44819"
 --myFocusedBorderColor = "#186B0A"
 
@@ -247,12 +249,12 @@ myLogHook = return ()
 -- Perform an arbitrary action each time xmonad starts or is restarted
 myStartupHook = do
     setWMName "LG3D"
-    raiseMaybe (runInTerm "" "turses") (stringProperty "WM_NAME" =? "turses")
-    --raiseMaybe (runInTerm "" "ncmpcpp") (stringProperty "WM_NAME" =? "ncmpcpp ver. 0.5.10")
-    --raiseMaybe (runInTerm "-name ncmpcpp" "ncmpcpp") (stringProperty "WM_COMMAND" =? "ncmpcpp")
-    raiseMaybe (runInTerm "-name ncmpcpp" "ncmpcpp") (className =? "ncmpcpp")
-    raiseMaybe (runInTerm "" "ranger ~/Desktop") (stringProperty "WM_NAME" =? "ranger:~/Desktop")
-    raiseMaybe (runInTerm "" "vim ~/Desktop/todo") (stringProperty "WM_ICON_NAME" =? "todo (~/Desktop) - VIM")
+    --raiseMaybe (runInTerm "" "turses") (stringProperty "WM_NAME" =? "turses")
+    ----raiseMaybe (runInTerm "" "ncmpcpp") (stringProperty "WM_NAME" =? "ncmpcpp ver. 0.5.10")
+    ----raiseMaybe (runInTerm "-name ncmpcpp" "ncmpcpp") (stringProperty "WM_COMMAND" =? "ncmpcpp")
+    --raiseMaybe (runInTerm "-name ncmpcpp" "ncmpcpp") (className =? "ncmpcpp")
+    --raiseMaybe (runInTerm "" "ranger ~/Desktop") (stringProperty "WM_NAME" =? "ranger:~/Desktop")
+    --raiseMaybe (runInTerm "" "vim ~/Desktop/todo") (stringProperty "WM_ICON_NAME" =? "todo (~/Desktop) - VIM")
 
 ------------------------------------------------------------------------
 -- Pretty print to the status bar
