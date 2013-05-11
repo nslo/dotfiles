@@ -10,6 +10,7 @@ import XMonad.Layout.BoringWindows (boringWindows, focusUp, focusDown)
 import XMonad.Layout.ThreeColumns
 import XMonad.Layout.Renamed
 import XMonad.Layout.Spacing
+import XMonad.Layout.SimplestFloat
 import XMonad.Actions.CycleWS
 import XMonad.Actions.WindowGo
 import XMonad.Util.Scratchpad
@@ -179,13 +180,14 @@ myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
 -- If you change layout bindings be sure to use 'mod-shift-space' after
 -- restarting (with 'mod-q') to reset your layout state to the new
 -- defaults, as xmonad preserves your old layout settings by default.
-myLayout = boringWindows $ smartBorders $ tall ||| mtall ||| threecol ||| full
+myLayout = boringWindows $ smartBorders $ tall ||| mtall ||| threecol ||| full ||| float
   where
      -- default tiling algorithm partitions the screen into two panes
      tall       = renamed [Replace "|="]    $ spacing s $ minimize (Tall nmaster delta ratio)
      mtall      = renamed [Replace "П"]     $ spacing s $ minimize (Mirror tall)
      threecol   = renamed [Replace "|||"]   $ spacing s $ minimize (ThreeCol 1 (3/100) (2/5))
      full       = renamed [Replace "■"]     $ spacing s $ minimize Full
+     float      = renamed [Replace ":"]     $ spacing s $ minimize simplestFloat
      -- The default number of windows in the master pane
      nmaster    = 1
      -- Default proportion of screen occupied by master pane
@@ -209,6 +211,7 @@ myManageHook = (composeAll
     , stringProperty "WM_NAME" =? "turses"                      --> doShift "3" 
     --, stringProperty "WM_NAME" =? "ncmpcpp ver. 0.5.10"         --> doShift "2"
     --, className                =? "ncmpcpp"                     --> doShift "2"
+    , title                    =? "Float"                     --> doFloat
     , title                    =? "ncmpcpp"                     --> doShift "2"
     , stringProperty "WM_NAME" =? "ranger:~/Desktop"       --> doShift "2"
     , stringProperty "WM_ICON_NAME" =? "todo (~/Desktop) - VIM" --> doShift "1"

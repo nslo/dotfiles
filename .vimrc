@@ -16,7 +16,10 @@ filetype on
 filetype indent on
 syntax enable
 
-"colorscheme oceandeep
+"colorscheme twilight
+"colorscheme grb256
+"colorscheme jellybeans_trans
+colorscheme gummybears_trans
 
 hi CursorLine term=bold cterm=bold gui=bold ctermbg=black guibg=black
 set cursorline
@@ -28,12 +31,13 @@ set showcmd
 
 set t_Co=256
 
-nmap <F1> <nop>
+nnoremap <F1> <nop>
+inoremap <F1> <nop>
+nnoremap <C-t> <nop>
+inoremap <C-t> <nop>
 
 " tab navigation like firefox
 nnoremap <C-S-tab> :tabprevious<CR>
 nnoremap <C-tab>   :tabnext<CR>
-nnoremap <C-t>     :tabnew<CR>
 inoremap <C-S-tab> <Esc>:tabprevious<CR>i
 inoremap <C-tab>   <Esc>:tabnext<CR>i
-inoremap <C-t>     <Esc>:tabnew<CR>
