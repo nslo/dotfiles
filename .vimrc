@@ -16,10 +16,14 @@ filetype on
 filetype indent on
 syntax enable
 
-"colorscheme twilight
+set t_Co=256
+
+"colorscheme twilight256
 "colorscheme grb256
 "colorscheme jellybeans_trans
 colorscheme gummybears_trans
+autocmd Filetype python colorscheme railscasts256_trans
+autocmd Filetype haskell colorscheme railscasts256_trans
 
 hi CursorLine term=bold cterm=bold gui=bold ctermbg=black guibg=black
 set cursorline
@@ -28,8 +32,7 @@ set ignorecase
 set smartcase
 set incsearch
 set showcmd
-
-set t_Co=256
+set autoread
 
 nnoremap <F1> <nop>
 inoremap <F1> <nop>
