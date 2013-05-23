@@ -1,0 +1,2139 @@
+2013-03-13 02:31:51	-->	fibonacci (fibonacci@localhost.localdomain) has joined &bitlbee
+2013-03-13 02:31:51	--	Mode &bitlbee [+Ct] by localhost.localdomain
+2013-03-13 02:31:51	--	Nicks &bitlbee: [@fibonacci @root]
+2013-03-13 02:31:51	--	Channel &bitlbee: 2 nicks (2 ops, 0 halfops, 0 voices, 0 normals)
+2013-03-13 02:31:51	--	Topic for &bitlbee is "Welcome to the control channel. Type help for help information."
+2013-03-13 02:31:51	--	Topic set by root (root@localhost.localdomain) on Wed, 13 Mar 2013 02:31:51
+2013-03-13 02:31:51	@root	Welcome to the BitlBee gateway!
+2013-03-13 02:31:51	@root	 
+2013-03-13 02:31:51	@root	If you've never used BitlBee before, please do read the help information using the help command. Lots of FAQs are answered there.
+2013-03-13 02:31:51	@root	If you already have an account on this server, just use the identify command to identify yourself.
+2013-03-13 02:31:51	--	Mode &bitlbee [+Ct]
+2013-03-13 02:34:09	@fibonacci	<@user> account add jabber whatevers@gmail.com gvjjudexnavcrtby talk.google.com:5223:ssl
+2013-03-13 02:34:09	@root	Unknown command: <@user>. Please use help commands to get a list of available commands.
+2013-03-13 02:34:23	@fibonacci	account add jabber whatevers@gmail.com gvjjudexnavcrtby talk.google.com:5223:ssl
+2013-03-13 02:34:23	@root	Warning: Passing a servername/other flags to `account add' is now deprecated. Use `account set' instead.
+2013-03-13 02:34:23	@root	Account successfully added with tag gtalk
+2013-03-13 02:34:38	@fibonacci	account list
+2013-03-13 02:34:38	@root	 0 (gtalk): jabber, whatevers@gmail.com
+2013-03-13 02:34:38	@root	End of account list
+2013-03-13 02:35:02	@fibonacci	account 0 on
+2013-03-13 02:35:02	@root	jabber - Logging in: Connecting
+2013-03-13 02:35:02	@root	jabber - Login error: Could not connect to server
+2013-03-13 02:35:02	@root	jabber - Logging in: Signing off..
+2013-03-13 02:35:02	@root	jabber - Logging in: Reconnecting in 5 seconds..
+2013-03-13 02:35:07	@root	jabber - Logging in: Connecting
+2013-03-13 02:35:07	@root	jabber - Login error: Could not connect to server
+2013-03-13 02:35:07	@root	jabber - Logging in: Signing off..
+2013-03-13 02:35:07	@root	jabber - Logging in: Reconnecting in 15 seconds..
+2013-03-13 02:35:22	@root	jabber - Logging in: Connecting
+2013-03-13 02:35:22	@root	jabber - Login error: Could not connect to server
+2013-03-13 02:35:22	@root	jabber - Logging in: Signing off..
+2013-03-13 02:35:22	@root	jabber - Logging in: Reconnecting in 45 seconds..
+2013-03-13 02:36:07	@root	jabber - Logging in: Connecting
+2013-03-13 02:36:07	@root	jabber - Login error: Could not connect to server
+2013-03-13 02:36:07	@root	jabber - Logging in: Signing off..
+2013-03-13 02:36:07	@root	jabber - Logging in: Reconnecting in 135 seconds..
+2013-03-13 02:38:21	@fibonacci	account 0 set jabber whatevers@gmail.com gvjjudexnavcrtby talk.google.com:5223:ssl
+2013-03-13 02:38:21	@root	Setting `jabber' does not exist.
+2013-03-13 02:38:22	@root	jabber - Logging in: Connecting
+2013-03-13 02:38:22	@root	jabber - Login error: Could not connect to server
+2013-03-13 02:38:22	@root	jabber - Logging in: Signing off..
+2013-03-13 02:38:22	@root	jabber - Logging in: Reconnecting in 405 seconds..
+2013-03-13 02:38:40	@fibonacci	account 0 set whatevers@gmail.com gvjjudexnavcrtby talk.google.com:5223:ssl
+2013-03-13 02:38:40	@root	Setting `whatevers@gmail.com' does not exist.
+2013-03-13 02:40:46	@fibonacci	acc remove 0
+2013-03-13 02:40:46	@root	Could not find account `remove'.
+2013-03-13 02:40:51	@fibonacci	acc 0 remove
+2013-03-13 02:40:51	@root	Unknown command: account [...] remove. Please use help commands to get a list of available commands.
+2013-03-13 02:40:56	@fibonacci	help commands
+2013-03-13 02:40:56	@root	These are all root commands. See help <command name> for more details on each command.
+2013-03-13 02:40:56	@root	 
+2013-03-13 02:40:56	@root	 * account - IM-account list maintenance
+2013-03-13 02:40:56	@root	 * channel - Channel list maintenance
+2013-03-13 02:40:56	@root	 * chat - Chatroom list maintenance
+2013-03-13 02:40:56	@root	 * add - Add a buddy to your contact list
+2013-03-13 02:40:56	@root	 * info - Request user information
+2013-03-13 02:40:56	@root	 * remove - Remove a buddy from your contact list
+2013-03-13 02:40:56	@root	 * block - Block someone
+2013-03-13 02:40:56	@root	 * allow - Unblock someone
+2013-03-13 02:40:56	@root	 * otr - Off-the-Record encryption control
+2013-03-13 02:40:56	@root	 * set - Miscellaneous settings
+2013-03-13 02:40:56	@root	 * help - BitlBee help system
+2013-03-13 02:40:56	@root	 * save - Save your account data
+2013-03-13 02:40:56	@root	 * rename - Rename (renick) a buddy
+2013-03-13 02:40:56	@root	 * yes - Accept a request
+2013-03-13 02:40:56	@root	 * no - Deny a request
+2013-03-13 02:40:56	@root	 * qlist - List all the unanswered questions root asked
+2013-03-13 02:40:56	@root	 * register - Register yourself
+2013-03-13 02:40:56	@root	 * identify - Identify yourself with your password
+2013-03-13 02:40:56	@root	 * drop - Drop your account
+2013-03-13 02:40:56	@root	 * blist - List all the buddies in the current channel
+2013-03-13 02:40:56	@root	 * group - Contact group management
+2013-03-13 02:40:56	@root	 * transfer - Monitor, cancel, or reject file transfers
+2013-03-13 02:40:56	@root	 
+2013-03-13 02:40:56	@root	Most commands can be shortened. For example instead of account list, try ac l.
+2013-03-13 02:41:21	@fibonacci	acc 0 del
+2013-03-13 02:41:21	@root	Account deleted
+2013-03-13 02:41:31	@fibonacci	acc add jabber whatevers@gmail.com
+2013-03-13 02:41:31	@root	Account successfully added with tag gtalk
+2013-03-13 02:41:31	@root	You can now use the /OPER command to enter the password
+2013-03-13 02:41:31	@root	Alternatively, enable OAuth if the account supports it: account gtalk set oauth on
+2013-03-13 02:41:59	@fibonacci	acc gtalk set oauth true
+2013-03-13 02:41:59	@root	oauth = `true'
+2013-03-13 02:42:03	@fibonacci	acc gtalk on
+2013-03-13 02:42:03	@root	jabber - Logging in: Starting OAuth authentication
+2013-03-13 02:46:05	@root	jabber - Logging in: Requesting OAuth access token
+2013-03-13 02:46:05	@root	jabber - Logging in: Connecting
+2013-03-13 02:46:05	@root	jabber - Logging in: Connected to server, logging in
+2013-03-13 02:46:05	@root	jabber - Logging in: Converting stream to TLS
+2013-03-13 02:46:05	@root	jabber - Logging in: Connected to server, logging in
+2013-03-13 02:46:05	@root	jabber - Logging in: Authentication finished
+2013-03-13 02:46:05	@root	jabber - Logging in: Server changed session resource string to `BitlBeeE126BAB0'
+2013-03-13 02:46:05	@root	jabber - Logging in: Authenticated, requesting buddy list
+2013-03-13 02:46:05	@root	jabber - Logging in: Logged in
+2013-03-13 02:46:06	-->	dgame84 (dgame84@gmail.com) has joined &bitlbee
+2013-03-13 02:46:06	-->	cmurball (cmu.rball@gmail.com) has joined &bitlbee
+2013-03-13 02:46:06	-->	janehu (jane.hu@gmail.com) has joined &bitlbee
+2013-03-13 02:46:06	-->	lunageorge (luna.george@gmail.com) has joined &bitlbee
+2013-03-13 02:46:06	-->	kwraiks (kwraiks@gmail.com) has joined &bitlbee
+2013-03-13 02:46:06	-->	schulman9 (schulman9@gmail.com) has joined &bitlbee
+2013-03-13 02:46:06	-->	swapnas8 (swapnas8@gmail.com) has joined &bitlbee
+2013-03-13 02:46:06	-->	alexdegtiar (alexdegtiar@gmail.com) has joined &bitlbee
+2013-03-13 02:46:06	-->	rmeuse (rmeuse@gmail.com) has joined &bitlbee
+2013-03-13 02:46:06	-->	kjacobs11 (kjacobs11@gmail.com) has joined &bitlbee
+2013-03-13 02:46:06	-->	bryantto (bryantto@gmail.com) has joined &bitlbee
+2013-03-13 02:46:06	-->	nfeltman (nfeltman@gmail.com) has joined &bitlbee
+2013-03-13 02:46:06	--	Mode &bitlbee [+v nfeltman] by localhost.localdomain
+2013-03-13 02:46:06	-->	cjb272 (cjb272@gmail.com) has joined &bitlbee
+2013-03-13 02:46:06	--	Mode &bitlbee [+v cjb272] by localhost.localdomain
+2013-03-13 02:46:06	-->	jstandring (jstandring@gmail.com) has joined &bitlbee
+2013-03-13 02:46:06	-->	deniseeeee (deniseeeee@gmail.com) has joined &bitlbee
+2013-03-13 02:46:06	--	Mode &bitlbee [+v deniseeeee] by localhost.localdomain
+2013-03-13 02:46:06	-->	asohanamarasingham (asohan.amarasingham@gmail.com) has joined &bitlbee
+2013-03-13 02:46:06	-->	henrygrins (henrygrins@gmail.com) has joined &bitlbee
+2013-03-13 02:46:06	-->	dtorchiano (dtorchiano@gmail.com) has joined &bitlbee
+2013-03-13 02:46:06	-->	jshottan (jshottan@gmail.com) has joined &bitlbee
+2013-03-13 02:46:06	-->	brianb (brianb@gmail.com) has joined &bitlbee
+2013-03-13 02:46:06	-->	timchu100 (timchu100@gmail.com) has joined &bitlbee
+2013-03-13 02:46:06	-->	afoung (afoung@gmail.com) has joined &bitlbee
+2013-03-13 02:46:06	-->	paulknag (paulknag@gmail.com) has joined &bitlbee
+2013-03-13 02:46:06	-->	jma0506 (jma0506@gmail.com) has joined &bitlbee
+2013-03-13 02:46:06	-->	patrickwynn (patrickwynn@gmail.com) has joined &bitlbee
+2013-03-13 02:46:06	-->	bdoyle (bdoyle@gmail.com) has joined &bitlbee
+2013-03-13 02:46:06	--	Mode &bitlbee [+v bdoyle] by localhost.localdomain
+2013-03-13 02:46:06	-->	jamesjohndrow (james.johndrow@gmail.com) has joined &bitlbee
+2013-03-13 02:46:06	-->	markwachen (mark.wachen@gmail.com) has joined &bitlbee
+2013-03-13 02:47:25	<--	cmurball (cmu.rball@gmail.com) has quit (Leaving...)
+2013-03-13 02:48:04	<--	afoung (afoung@gmail.com) has quit (Leaving...)
+2013-03-13 03:09:27	-->	danieldho (daniel.dho@gmail.com) has joined &bitlbee
+2013-03-13 03:09:27	--	Mode &bitlbee [+v danieldho] by localhost.localdomain
+2013-03-13 03:12:44	<--	jamesjohndrow (james.johndrow@gmail.com) has quit (Leaving...)
+2013-03-13 03:16:21	-->	cmurball (cmu.rball@gmail.com) has joined &bitlbee
+2013-03-13 03:26:56	<--	danieldho (daniel.dho@gmail.com) has quit (Leaving...)
+2013-03-13 03:27:07	-->	danieldho (daniel.dho@gmail.com) has joined &bitlbee
+2013-03-13 03:27:07	--	Mode &bitlbee [+v danieldho] by localhost.localdomain
+2013-03-13 11:27:20	@root	jabber - Error: Error while reading from server
+2013-03-13 11:27:20	@root	jabber - Signing off..
+2013-03-13 11:27:20	<--	timchu100 (timchu100@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-13 11:27:20	<--	markwachen (mark.wachen@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-13 11:27:20	<--	kwraiks (kwraiks@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-13 11:27:20	<--	jma0506 (jma0506@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-13 11:27:20	<--	bryantto (bryantto@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-13 11:27:20	<--	asohanamarasingham (asohan.amarasingham@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-13 11:27:20	<--	paulknag (paulknag@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-13 11:27:20	<--	lunageorge (luna.george@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-13 11:27:20	<--	kjacobs11 (kjacobs11@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-13 11:27:20	<--	jstandring (jstandring@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-13 11:27:20	<--	jshottan (jshottan@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-13 11:27:20	<--	dtorchiano (dtorchiano@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-13 11:27:20	<--	dgame84 (dgame84@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-13 11:27:20	<--	deniseeeee (deniseeeee@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-13 11:27:20	<--	danieldho (daniel.dho@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-13 11:27:20	<--	cjb272 (cjb272@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-13 11:27:20	<--	bdoyle (bdoyle@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-13 11:27:20	<--	patrickwynn (patrickwynn@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-13 11:27:20	<--	brianb (brianb@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-13 11:27:20	<--	schulman9 (schulman9@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-13 11:27:20	<--	janehu (jane.hu@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-13 11:27:20	<--	cmurball (cmu.rball@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-13 11:27:20	<--	alexdegtiar (alexdegtiar@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-13 11:27:20	<--	swapnas8 (swapnas8@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-13 11:27:20	<--	rmeuse (rmeuse@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-13 11:27:20	<--	henrygrins (henrygrins@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-13 11:27:20	<--	nfeltman (nfeltman@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-13 11:27:20	@root	jabber - Reconnecting in 5 seconds..
+2013-03-13 11:27:25	@root	jabber - Logging in: Connecting
+2013-03-13 11:27:25	@root	jabber - Logging in: Connected to server, logging in
+2013-03-13 11:27:25	@root	jabber - Logging in: Converting stream to TLS
+2013-03-13 11:27:25	@root	jabber - Logging in: Connected to server, logging in
+2013-03-13 11:27:26	@root	jabber - Logging in: Authentication finished
+2013-03-13 11:27:26	@root	jabber - Logging in: Server changed session resource string to `BitlBeeECED4C91'
+2013-03-13 11:27:26	@root	jabber - Logging in: Authenticated, requesting buddy list
+2013-03-13 11:27:26	@root	jabber - Logging in: Logged in
+2013-03-13 11:27:26	-->	dgame84 (dgame84@gmail.com) has joined &bitlbee
+2013-03-13 11:27:26	--	Mode &bitlbee [+v dgame84] by localhost.localdomain
+2013-03-13 11:27:26	-->	cmurball (cmu.rball@gmail.com) has joined &bitlbee
+2013-03-13 11:27:26	--	Mode &bitlbee [+v cmurball] by localhost.localdomain
+2013-03-13 11:27:26	-->	janehu (jane.hu@gmail.com) has joined &bitlbee
+2013-03-13 11:27:26	-->	lunageorge (luna.george@gmail.com) has joined &bitlbee
+2013-03-13 11:27:26	--	Mode &bitlbee [+v lunageorge] by localhost.localdomain
+2013-03-13 11:27:26	-->	kwraiks (kwraiks@gmail.com) has joined &bitlbee
+2013-03-13 11:27:26	-->	swapnas8 (swapnas8@gmail.com) has joined &bitlbee
+2013-03-13 11:27:26	-->	schulman9 (schulman9@gmail.com) has joined &bitlbee
+2013-03-13 11:27:26	-->	alexdegtiar (alexdegtiar@gmail.com) has joined &bitlbee
+2013-03-13 11:27:26	-->	jstandring (jstandring@gmail.com) has joined &bitlbee
+2013-03-13 11:27:26	--	Mode &bitlbee [+v jstandring] by localhost.localdomain
+2013-03-13 11:27:26	-->	bryantto (bryantto@gmail.com) has joined &bitlbee
+2013-03-13 11:27:26	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 11:27:26	-->	cjb272 (cjb272@gmail.com) has joined &bitlbee
+2013-03-13 11:27:26	--	Mode &bitlbee [+v cjb272] by localhost.localdomain
+2013-03-13 11:27:26	-->	deniseeeee (deniseeeee@gmail.com) has joined &bitlbee
+2013-03-13 11:27:26	--	Mode &bitlbee [+v deniseeeee] by localhost.localdomain
+2013-03-13 11:27:26	-->	nfeltman (nfeltman@gmail.com) has joined &bitlbee
+2013-03-13 11:27:26	-->	rmeuse (rmeuse@gmail.com) has joined &bitlbee
+2013-03-13 11:27:26	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 11:27:26	-->	mintzmichael (mintzmichael@gmail.com) has joined &bitlbee
+2013-03-13 11:27:26	--	Mode &bitlbee [+v mintzmichael] by localhost.localdomain
+2013-03-13 11:27:26	-->	pnoguerol (pnoguerol@gmail.com) has joined &bitlbee
+2013-03-13 11:27:26	--	Mode &bitlbee [+v pnoguerol] by localhost.localdomain
+2013-03-13 11:27:26	-->	henrygrins (henrygrins@gmail.com) has joined &bitlbee
+2013-03-13 11:27:26	--	Mode &bitlbee [+v henrygrins] by localhost.localdomain
+2013-03-13 11:27:26	-->	maneeshgoel (maneeshgoel@gmail.com) has joined &bitlbee
+2013-03-13 11:27:26	--	Mode &bitlbee [+v maneeshgoel] by localhost.localdomain
+2013-03-13 11:27:26	-->	markwachen (mark.wachen@gmail.com) has joined &bitlbee
+2013-03-13 11:27:26	--	Mode &bitlbee [+v markwachen] by localhost.localdomain
+2013-03-13 11:27:26	-->	ddberk (ddberk@gmail.com) has joined &bitlbee
+2013-03-13 11:27:26	-->	jamesjohndrow (james.johndrow@gmail.com) has joined &bitlbee
+2013-03-13 11:27:26	--	Mode &bitlbee [+v jamesjohndrow] by localhost.localdomain
+2013-03-13 11:27:26	-->	jma0506 (jma0506@gmail.com) has joined &bitlbee
+2013-03-13 11:27:26	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 11:27:26	-->	scopazzi (scopazzi@gmail.com) has joined &bitlbee
+2013-03-13 11:27:26	-->	patrickwynn (patrickwynn@gmail.com) has joined &bitlbee
+2013-03-13 11:27:26	-->	paulknag (paulknag@gmail.com) has joined &bitlbee
+2013-03-13 11:27:26	--	Mode &bitlbee [+v paulknag] by localhost.localdomain
+2013-03-13 11:27:26	-->	timchu100 (timchu100@gmail.com) has joined &bitlbee
+2013-03-13 11:27:26	-->	brianb (brianb@gmail.com) has joined &bitlbee
+2013-03-13 11:27:26	-->	dtorchiano (dtorchiano@gmail.com) has joined &bitlbee
+2013-03-13 11:27:26	--	Mode &bitlbee [+v dtorchiano] by localhost.localdomain
+2013-03-13 11:27:26	-->	christianvillamor (christian.villamor@gmail.com) has joined &bitlbee
+2013-03-13 11:27:26	--	Mode &bitlbee [+v christianvillamor] by localhost.localdomain
+2013-03-13 11:27:26	-->	jennmkelly (jenn.m.kelly@gmail.com) has joined &bitlbee
+2013-03-13 11:27:26	--	Mode &bitlbee [+v jennmkelly] by localhost.localdomain
+2013-03-13 11:27:27	-->	kjacobs11 (kjacobs11@gmail.com) has joined &bitlbee
+2013-03-13 11:27:27	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 11:27:27	-->	jshottan (jshottan@gmail.com) has joined &bitlbee
+2013-03-13 11:27:30	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 11:28:05	--	irc: disconnected from server
+2013-03-13 11:28:15	-->	fibonacci (fibonacci@localhost.localdomain) has joined &bitlbee
+2013-03-13 11:28:15	--	Mode &bitlbee [+Ct] by localhost.localdomain
+2013-03-13 11:28:15	--	Nicks &bitlbee: [@fibonacci @root]
+2013-03-13 11:28:15	--	Channel &bitlbee: 2 nicks (2 ops, 0 halfops, 0 voices, 0 normals)
+2013-03-13 11:28:15	--	Topic for &bitlbee is "Welcome to the control channel. Type help for help information."
+2013-03-13 11:28:15	--	Topic set by root (root@localhost.localdomain) on Wed, 13 Mar 2013 11:28:15
+2013-03-13 11:28:15	@root	Welcome to the BitlBee gateway!
+2013-03-13 11:28:15	@root	 
+2013-03-13 11:28:15	@root	If you've never used BitlBee before, please do read the help information using the help command. Lots of FAQs are answered there.
+2013-03-13 11:28:15	@root	If you already have an account on this server, just use the identify command to identify yourself.
+2013-03-13 11:28:17	--	Mode &bitlbee [+Ct]
+2013-03-13 11:40:54	@fibonacci	acc gtalk on
+2013-03-13 11:40:54	@root	Could not find account `gtalk'.
+2013-03-13 11:41:18	@fibonacci	acc list
+2013-03-13 11:41:18	@root	End of account list
+2013-03-13 11:47:57	@fibonacci	acc add jabber whatevers@gmail.com
+2013-03-13 11:47:57	@root	Account successfully added with tag gtalk
+2013-03-13 11:47:57	@root	You can now use the /OPER command to enter the password
+2013-03-13 11:47:57	@root	Alternatively, enable OAuth if the account supports it: account gtalk set oauth on
+2013-03-13 11:50:07	@fibonacci	acc gtalk set oauth on
+2013-03-13 11:50:07	@root	oauth = `on'
+2013-03-13 11:50:18	@fibonacci	acc gtalk on
+2013-03-13 11:50:18	@root	jabber - Logging in: Starting OAuth authentication
+2013-03-13 11:52:23	@root	jabber - Logging in: Requesting OAuth access token
+2013-03-13 11:52:23	@root	jabber - Logging in: Connecting
+2013-03-13 11:52:23	@root	jabber - Logging in: Connected to server, logging in
+2013-03-13 11:52:23	@root	jabber - Logging in: Converting stream to TLS
+2013-03-13 11:52:23	@root	jabber - Logging in: Connected to server, logging in
+2013-03-13 11:52:23	@root	jabber - Logging in: Authentication finished
+2013-03-13 11:52:23	@root	jabber - Logging in: Server changed session resource string to `BitlBee3DB2CE04'
+2013-03-13 11:52:23	@root	jabber - Logging in: Authenticated, requesting buddy list
+2013-03-13 11:52:23	@root	jabber - Logging in: Logged in
+2013-03-13 11:52:24	-->	dgame84 (dgame84@gmail.com) has joined &bitlbee
+2013-03-13 11:52:24	--	Mode &bitlbee [+v dgame84] by localhost.localdomain
+2013-03-13 11:52:24	-->	cmurball (cmu.rball@gmail.com) has joined &bitlbee
+2013-03-13 11:52:24	-->	janehu (jane.hu@gmail.com) has joined &bitlbee
+2013-03-13 11:52:24	-->	lunageorge (luna.george@gmail.com) has joined &bitlbee
+2013-03-13 11:52:24	--	Mode &bitlbee [+v lunageorge] by localhost.localdomain
+2013-03-13 11:52:24	-->	kwraiks (kwraiks@gmail.com) has joined &bitlbee
+2013-03-13 11:52:24	-->	swapnas8 (swapnas8@gmail.com) has joined &bitlbee
+2013-03-13 11:52:24	-->	alexdegtiar (alexdegtiar@gmail.com) has joined &bitlbee
+2013-03-13 11:52:24	--	Mode &bitlbee [+v alexdegtiar] by localhost.localdomain
+2013-03-13 11:52:24	-->	schulman9 (schulman9@gmail.com) has joined &bitlbee
+2013-03-13 11:52:24	-->	jennmkelly (jenn.m.kelly@gmail.com) has joined &bitlbee
+2013-03-13 11:52:24	--	Mode &bitlbee [+v jennmkelly] by localhost.localdomain
+2013-03-13 11:52:24	-->	kjacobs11 (kjacobs11@gmail.com) has joined &bitlbee
+2013-03-13 11:52:24	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 11:52:24	-->	jstandring (jstandring@gmail.com) has joined &bitlbee
+2013-03-13 11:52:24	--	Mode &bitlbee [+v jstandring] by localhost.localdomain
+2013-03-13 11:52:24	-->	deniseeeee (deniseeeee@gmail.com) has joined &bitlbee
+2013-03-13 11:52:24	--	Mode &bitlbee [+v deniseeeee] by localhost.localdomain
+2013-03-13 11:52:24	-->	rmeuse (rmeuse@gmail.com) has joined &bitlbee
+2013-03-13 11:52:24	-->	cjb272 (cjb272@gmail.com) has joined &bitlbee
+2013-03-13 11:52:24	--	Mode &bitlbee [+v cjb272] by localhost.localdomain
+2013-03-13 11:52:24	-->	pnoguerol (pnoguerol@gmail.com) has joined &bitlbee
+2013-03-13 11:52:24	--	Mode &bitlbee [+v pnoguerol] by localhost.localdomain
+2013-03-13 11:52:24	-->	henrygrins (henrygrins@gmail.com) has joined &bitlbee
+2013-03-13 11:52:24	--	Mode &bitlbee [+v henrygrins] by localhost.localdomain
+2013-03-13 11:52:24	-->	bryantto (bryantto@gmail.com) has joined &bitlbee
+2013-03-13 11:52:24	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 11:52:24	-->	dtorchiano (dtorchiano@gmail.com) has joined &bitlbee
+2013-03-13 11:52:24	-->	nfeltman (nfeltman@gmail.com) has joined &bitlbee
+2013-03-13 11:52:24	-->	mintzmichael (mintzmichael@gmail.com) has joined &bitlbee
+2013-03-13 11:52:24	--	Mode &bitlbee [+v mintzmichael] by localhost.localdomain
+2013-03-13 11:52:24	-->	brianb (brianb@gmail.com) has joined &bitlbee
+2013-03-13 11:52:24	-->	timchu100 (timchu100@gmail.com) has joined &bitlbee
+2013-03-13 11:52:24	-->	maneeshgoel (maneeshgoel@gmail.com) has joined &bitlbee
+2013-03-13 11:52:24	--	Mode &bitlbee [+v maneeshgoel] by localhost.localdomain
+2013-03-13 11:52:24	-->	christianvillamor (christian.villamor@gmail.com) has joined &bitlbee
+2013-03-13 11:52:24	--	Mode &bitlbee [+v christianvillamor] by localhost.localdomain
+2013-03-13 11:52:24	-->	jma0506 (jma0506@gmail.com) has joined &bitlbee
+2013-03-13 11:52:24	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 11:52:24	-->	paulknag (paulknag@gmail.com) has joined &bitlbee
+2013-03-13 11:52:24	--	Mode &bitlbee [+v paulknag] by localhost.localdomain
+2013-03-13 11:52:24	-->	ddberk (ddberk@gmail.com) has joined &bitlbee
+2013-03-13 11:52:24	-->	markwachen (mark.wachen@gmail.com) has joined &bitlbee
+2013-03-13 11:52:24	--	Mode &bitlbee [+v markwachen] by localhost.localdomain
+2013-03-13 11:52:24	-->	patrickwynn (patrickwynn@gmail.com) has joined &bitlbee
+2013-03-13 11:52:24	-->	scopazzi (scopazzi@gmail.com) has joined &bitlbee
+2013-03-13 11:52:24	-->	jamesjohndrow (james.johndrow@gmail.com) has joined &bitlbee
+2013-03-13 11:52:24	--	Mode &bitlbee [+v jamesjohndrow] by localhost.localdomain
+2013-03-13 11:52:24	-->	maximebury (maxime.bury@gmail.com) has joined &bitlbee
+2013-03-13 11:52:25	-->	jshottan (jshottan@gmail.com) has joined &bitlbee
+2013-03-13 11:52:48	-->	yccovin (yccovin@gmail.com) has joined &bitlbee
+2013-03-13 11:52:48	--	Mode &bitlbee [+v yccovin] by localhost.localdomain
+2013-03-13 11:52:57	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-13 11:53:28	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 11:53:41	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 11:54:39	-->	scottme (scottme@gmail.com) has joined &bitlbee
+2013-03-13 11:54:39	--	Mode &bitlbee [+v scottme] by localhost.localdomain
+2013-03-13 11:54:51	-->	asohanamarasingham (asohan.amarasingham@gmail.com) has joined &bitlbee
+2013-03-13 11:54:51	--	Mode &bitlbee [+v asohanamarasingham] by localhost.localdomain
+2013-03-13 11:55:11	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 11:55:59	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 11:56:00	<--	yccovin (yccovin@gmail.com) has quit (Leaving...)
+2013-03-13 11:57:18	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 11:57:47	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 11:58:10	--	Mode &bitlbee [+v dtorchiano] by localhost.localdomain
+2013-03-13 11:59:09	--	Mode &bitlbee [-v lunageorge] by localhost.localdomain
+2013-03-13 11:59:36	--	Mode &bitlbee [-v pnoguerol] by localhost.localdomain
+2013-03-13 12:00:11	--	Mode &bitlbee [+v pnoguerol] by localhost.localdomain
+2013-03-13 12:00:33	--	Mode &bitlbee [-v jstandring] by localhost.localdomain
+2013-03-13 12:01:09	--	Mode &bitlbee [-v dtorchiano] by localhost.localdomain
+2013-03-13 12:01:51	<--	kwraiks (kwraiks@gmail.com) has quit (Leaving...)
+2013-03-13 12:01:56	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 12:02:44	--	Mode &bitlbee [+v cmurball] by localhost.localdomain
+2013-03-13 12:02:46	-->	schew56 (schew56@gmail.com) has joined &bitlbee
+2013-03-13 12:04:54	--	Mode &bitlbee [-v mintzmichael] by localhost.localdomain
+2013-03-13 12:05:32	--	Mode &bitlbee [+v dtorchiano] by localhost.localdomain
+2013-03-13 12:05:53	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 12:07:14	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 12:07:32	--	Mode &bitlbee [-v dtorchiano] by localhost.localdomain
+2013-03-13 12:07:32	--	Mode &bitlbee [+v dtorchiano] by localhost.localdomain
+2013-03-13 12:07:42	-->	aranade (aranade@gmail.com) has joined &bitlbee
+2013-03-13 12:08:18	-->	vincebyrd (vincebyrd@gmail.com) has joined &bitlbee
+2013-03-13 12:10:14	--	Mode &bitlbee [-v asohanamarasingham] by localhost.localdomain
+2013-03-13 12:10:48	--	Mode &bitlbee [-v cmurball] by localhost.localdomain
+2013-03-13 12:11:57	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 12:12:06	--	Mode &bitlbee [+v mintzmichael] by localhost.localdomain
+2013-03-13 12:12:17	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 12:12:44	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 12:15:23	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 12:15:48	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 12:18:12	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 12:19:01	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 12:19:20	<--	christianvillamor (christian.villamor@gmail.com) has quit (Leaving...)
+2013-03-13 12:20:27	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 12:21:28	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 12:22:28	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 12:23:49	<--	lunageorge (luna.george@gmail.com) has quit (Leaving...)
+2013-03-13 12:23:50	-->	lunageorge (luna.george@gmail.com) has joined &bitlbee
+2013-03-13 12:25:34	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 12:25:39	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 12:25:54	<--	lunageorge (luna.george@gmail.com) has quit (Leaving...)
+2013-03-13 12:25:54	-->	lunageorge (luna.george@gmail.com) has joined &bitlbee
+2013-03-13 12:26:35	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 12:26:39	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 12:26:44	--	Mode &bitlbee [+v lunageorge] by localhost.localdomain
+2013-03-13 12:27:14	--	Mode &bitlbee [-v mintzmichael] by localhost.localdomain
+2013-03-13 12:28:07	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 12:30:15	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 12:30:20	--	Mode &bitlbee [-v scottme] by localhost.localdomain
+2013-03-13 12:30:57	--	Mode &bitlbee [-v lunageorge] by localhost.localdomain
+2013-03-13 12:31:33	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 12:32:10	-->	joanneliu (joanneliu@gmail.com) has joined &bitlbee
+2013-03-13 12:32:10	--	Mode &bitlbee [+v joanneliu] by localhost.localdomain
+2013-03-13 12:32:53	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 12:36:47	--	Mode &bitlbee [+v timchu100] by localhost.localdomain
+2013-03-13 12:37:09	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 12:37:26	-->	danieldho (daniel.dho@gmail.com) has joined &bitlbee
+2013-03-13 12:37:26	--	Mode &bitlbee [+v danieldho] by localhost.localdomain
+2013-03-13 12:37:32	--	Mode &bitlbee [-v timchu100] by localhost.localdomain
+2013-03-13 12:37:33	-->	rachelb (rachelb@gmail.com) has joined &bitlbee
+2013-03-13 12:37:33	--	Mode &bitlbee [+v rachelb] by localhost.localdomain
+2013-03-13 12:37:39	<--	danieldho (daniel.dho@gmail.com) has quit (Leaving...)
+2013-03-13 12:38:28	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 12:38:37	--	Mode &bitlbee [+v lunageorge] by localhost.localdomain
+2013-03-13 12:38:49	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 12:38:50	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 12:39:33	-->	sumnerhollingsworth (sumner.hollingsworth@gmail.com) has joined &bitlbee
+2013-03-13 12:39:33	--	Mode &bitlbee [+v sumnerhollingsworth] by localhost.localdomain
+2013-03-13 12:39:44	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 12:39:53	<--	rachelb (rachelb@gmail.com) has quit (Leaving...)
+2013-03-13 12:40:10	--	Mode &bitlbee [-v jamesjohndrow] by localhost.localdomain
+2013-03-13 12:40:31	--	Mode &bitlbee [+v scottme] by localhost.localdomain
+2013-03-13 12:41:12	--	Mode &bitlbee [+v jshottan] by localhost.localdomain
+2013-03-13 12:42:15	<--	sumnerhollingsworth (sumner.hollingsworth@gmail.com) has quit (Leaving...)
+2013-03-13 12:42:22	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 12:42:27	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 12:42:32	-->	bdoyle (bdoyle@gmail.com) has joined &bitlbee
+2013-03-13 12:42:32	--	Mode &bitlbee [+v bdoyle] by localhost.localdomain
+2013-03-13 12:43:22	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 12:43:52	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 12:43:54	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 12:44:01	--	Mode &bitlbee [-v alexdegtiar] by localhost.localdomain
+2013-03-13 12:44:59	--	Mode &bitlbee [+v jstandring] by localhost.localdomain
+2013-03-13 12:45:17	--	Mode &bitlbee [+v jamesjohndrow] by localhost.localdomain
+2013-03-13 12:47:05	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 12:47:13	--	Mode &bitlbee [-v jstandring] by localhost.localdomain
+2013-03-13 12:47:48	--	Mode &bitlbee [+v aranade] by localhost.localdomain
+2013-03-13 12:48:11	--	Mode &bitlbee [-v jennmkelly] by localhost.localdomain
+2013-03-13 12:48:31	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 12:49:08	--	Mode &bitlbee [-v jamesjohndrow] by localhost.localdomain
+2013-03-13 12:50:34	--	Mode &bitlbee [+v jennmkelly] by localhost.localdomain
+2013-03-13 12:50:42	-->	afoung (afoung@gmail.com) has joined &bitlbee
+2013-03-13 12:51:01	--	Mode &bitlbee [+v afoung] by localhost.localdomain
+2013-03-13 12:51:34	--	Mode &bitlbee [-v lunageorge] by localhost.localdomain
+2013-03-13 12:51:57	<--	joanneliu (joanneliu@gmail.com) has quit (Leaving...)
+2013-03-13 12:52:36	--	Mode &bitlbee [-v henrygrins] by localhost.localdomain
+2013-03-13 12:52:41	--	Mode &bitlbee [+v henrygrins] by localhost.localdomain
+2013-03-13 12:52:58	-->	joanneliu (joanneliu@gmail.com) has joined &bitlbee
+2013-03-13 12:52:58	--	Mode &bitlbee [+v joanneliu] by localhost.localdomain
+2013-03-13 12:53:33	--	Mode &bitlbee [+v cmurball] by localhost.localdomain
+2013-03-13 12:53:49	<--	maximebury (maxime.bury@gmail.com) has quit (Leaving...)
+2013-03-13 12:54:56	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 12:55:22	--	Mode &bitlbee [-v cmurball] by localhost.localdomain
+2013-03-13 12:55:47	-->	pascaldavisg (pascal.davisg@gmail.com) has joined &bitlbee
+2013-03-13 12:55:47	--	Mode &bitlbee [+v pascaldavisg] by localhost.localdomain
+2013-03-13 12:56:27	--	Mode &bitlbee [+v timchu100] by localhost.localdomain
+2013-03-13 12:56:30	--	Mode &bitlbee [-v jshottan] by localhost.localdomain
+2013-03-13 12:56:38	--	Mode &bitlbee [-v timchu100] by localhost.localdomain
+2013-03-13 12:57:22	--	Mode &bitlbee [+v schew56] by localhost.localdomain
+2013-03-13 12:57:36	--	Mode &bitlbee [-v pnoguerol] by localhost.localdomain
+2013-03-13 12:57:38	<--	bryantto (bryantto@gmail.com) has quit (Leaving...)
+2013-03-13 12:59:03	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 12:59:50	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 13:00:27	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 13:01:03	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 13:02:17	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 13:03:35	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 13:05:06	--	Mode &bitlbee [+v alexdegtiar] by localhost.localdomain
+2013-03-13 13:05:35	--	Mode &bitlbee [-v jennmkelly] by localhost.localdomain
+2013-03-13 13:07:23	--	Mode &bitlbee [+v swapnas8] by localhost.localdomain
+2013-03-13 13:07:26	--	Mode &bitlbee [-v alexdegtiar] by localhost.localdomain
+2013-03-13 13:07:41	<--	pascaldavisg (pascal.davisg@gmail.com) has quit (Leaving...)
+2013-03-13 13:08:20	--	Mode &bitlbee [+v alexdegtiar] by localhost.localdomain
+2013-03-13 13:08:31	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 13:09:07	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 13:11:29	--	Mode &bitlbee [-v swapnas8] by localhost.localdomain
+2013-03-13 13:11:39	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 13:11:50	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 13:12:24	--	Mode &bitlbee [-v schew56] by localhost.localdomain
+2013-03-13 13:12:49	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 13:13:55	--	Mode &bitlbee [+v swapnas8] by localhost.localdomain
+2013-03-13 13:14:03	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 13:15:49	--	Mode &bitlbee [+v pnoguerol] by localhost.localdomain
+2013-03-13 13:16:29	--	Mode &bitlbee [-v swapnas8] by localhost.localdomain
+2013-03-13 13:17:06	--	Mode &bitlbee [-v aranade] by localhost.localdomain
+2013-03-13 13:20:00	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 13:20:01	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 13:20:17	--	Mode &bitlbee [-v markwachen] by localhost.localdomain
+2013-03-13 13:20:35	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 13:22:07	--	Mode &bitlbee [-v scottme] by localhost.localdomain
+2013-03-13 13:22:16	--	Mode &bitlbee [-v alexdegtiar] by localhost.localdomain
+2013-03-13 13:22:35	<--	schew56 (schew56@gmail.com) has quit (Leaving...)
+2013-03-13 13:28:13	--	Mode &bitlbee [+v jennmkelly] by localhost.localdomain
+2013-03-13 13:29:38	--	Mode &bitlbee [+v mintzmichael] by localhost.localdomain
+2013-03-13 13:30:02	--	Mode &bitlbee [-v dtorchiano] by localhost.localdomain
+2013-03-13 13:31:11	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 13:31:11	-->	pascaldavisg (pascal.davisg@gmail.com) has joined &bitlbee
+2013-03-13 13:31:11	--	Mode &bitlbee [+v pascaldavisg] by localhost.localdomain
+2013-03-13 13:32:24	--	Mode &bitlbee [+v dtorchiano] by localhost.localdomain
+2013-03-13 13:33:04	--	Mode &bitlbee [-v pnoguerol] by localhost.localdomain
+2013-03-13 13:33:33	--	Mode &bitlbee [-v paulknag] by localhost.localdomain
+2013-03-13 13:34:00	--	Mode &bitlbee [-v dtorchiano] by localhost.localdomain
+2013-03-13 13:35:03	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 13:35:12	--	Mode &bitlbee [+v pnoguerol] by localhost.localdomain
+2013-03-13 13:35:50	--	Mode &bitlbee [+v paulknag] by localhost.localdomain
+2013-03-13 13:37:11	--	Mode &bitlbee [-v paulknag] by localhost.localdomain
+2013-03-13 13:37:34	-->	schew56 (schew56@gmail.com) has joined &bitlbee
+2013-03-13 13:37:34	--	Mode &bitlbee [+v schew56] by localhost.localdomain
+2013-03-13 13:37:34	--	Mode &bitlbee [-v schew56] by localhost.localdomain
+2013-03-13 13:38:18	<--	aranade (aranade@gmail.com) has quit (Leaving...)
+2013-03-13 13:38:20	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 13:38:30	--	Mode &bitlbee [+v jstandring] by localhost.localdomain
+2013-03-13 13:38:42	--	Mode &bitlbee [+v alexdegtiar] by localhost.localdomain
+2013-03-13 13:38:56	--	Mode &bitlbee [+v cmurball] by localhost.localdomain
+2013-03-13 13:39:04	-->	yccovin (yccovin@gmail.com) has joined &bitlbee
+2013-03-13 13:39:04	--	Mode &bitlbee [+v yccovin] by localhost.localdomain
+2013-03-13 13:39:23	<--	yccovin (yccovin@gmail.com) has quit (Leaving...)
+2013-03-13 13:39:57	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 13:39:58	--	Mode &bitlbee [-v cmurball] by localhost.localdomain
+2013-03-13 13:40:13	--	Mode &bitlbee [-v pnoguerol] by localhost.localdomain
+2013-03-13 13:40:28	--	Mode &bitlbee [-v alexdegtiar] by localhost.localdomain
+2013-03-13 13:41:09	--	Mode &bitlbee [-v bdoyle] by localhost.localdomain
+2013-03-13 13:41:26	--	Mode &bitlbee [-v jstandring] by localhost.localdomain
+2013-03-13 13:42:14	--	Mode &bitlbee [+v pnoguerol] by localhost.localdomain
+2013-03-13 13:43:08	--	Mode &bitlbee [+v cmurball] by localhost.localdomain
+2013-03-13 13:43:41	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 13:43:51	--	Mode &bitlbee [-v cmurball] by localhost.localdomain
+2013-03-13 13:43:53	--	Mode &bitlbee [+v scottme] by localhost.localdomain
+2013-03-13 13:44:21	--	Mode &bitlbee [+v cmurball] by localhost.localdomain
+2013-03-13 13:44:49	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 13:44:57	--	Mode &bitlbee [-v cmurball] by localhost.localdomain
+2013-03-13 13:45:17	-->	bryantto (bryantto@gmail.com) has joined &bitlbee
+2013-03-13 13:45:17	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 13:45:44	--	Mode &bitlbee [-v jennmkelly] by localhost.localdomain
+2013-03-13 13:46:00	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 13:46:00	--	Mode &bitlbee [-v mintzmichael] by localhost.localdomain
+2013-03-13 13:47:55	--	Mode &bitlbee [+v asohanamarasingham] by localhost.localdomain
+2013-03-13 13:48:35	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 13:48:45	--	Mode &bitlbee [+v bdoyle] by localhost.localdomain
+2013-03-13 13:48:54	--	Mode &bitlbee [+v alexdegtiar] by localhost.localdomain
+2013-03-13 13:49:35	--	Mode &bitlbee [+v paulknag] by localhost.localdomain
+2013-03-13 13:49:56	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 13:50:27	<--	markwachen (mark.wachen@gmail.com) has quit (Leaving...)
+2013-03-13 13:50:56	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 13:51:04	--	Mode &bitlbee [-v paulknag] by localhost.localdomain
+2013-03-13 13:51:43	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 13:52:13	<--	vincebyrd (vincebyrd@gmail.com) has quit (Leaving...)
+2013-03-13 13:54:53	<--	asohanamarasingham (asohan.amarasingham@gmail.com) has quit (Leaving...)
+2013-03-13 13:54:54	-->	kwraiks (kwraiks@gmail.com) has joined &bitlbee
+2013-03-13 13:54:54	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-13 13:55:27	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 13:55:49	--	Mode &bitlbee [-v alexdegtiar] by localhost.localdomain
+2013-03-13 13:56:07	--	Mode &bitlbee [+v alexdegtiar] by localhost.localdomain
+2013-03-13 13:56:16	-->	asohanamarasingham (asohan.amarasingham@gmail.com) has joined &bitlbee
+2013-03-13 13:56:16	--	Mode &bitlbee [+v asohanamarasingham] by localhost.localdomain
+2013-03-13 13:56:17	<--	asohanamarasingham (asohan.amarasingham@gmail.com) has quit (Leaving...)
+2013-03-13 13:57:33	-->	christianvillamor (christian.villamor@gmail.com) has joined &bitlbee
+2013-03-13 13:57:33	--	Mode &bitlbee [+v christianvillamor] by localhost.localdomain
+2013-03-13 13:57:41	--	Mode &bitlbee [+v lunageorge] by localhost.localdomain
+2013-03-13 13:58:47	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 13:58:58	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 13:58:59	--	Mode &bitlbee [+v cmurball] by localhost.localdomain
+2013-03-13 13:59:36	--	Mode &bitlbee [-v alexdegtiar] by localhost.localdomain
+2013-03-13 13:59:40	--	Mode &bitlbee [-v bdoyle] by localhost.localdomain
+2013-03-13 13:59:49	--	Mode &bitlbee [-v cmurball] by localhost.localdomain
+2013-03-13 14:00:41	--	Mode &bitlbee [-v kwraiks] by localhost.localdomain
+2013-03-13 14:01:26	--	Mode &bitlbee [+v bdoyle] by localhost.localdomain
+2013-03-13 14:02:20	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-13 14:02:29	--	Mode &bitlbee [+v alexdegtiar] by localhost.localdomain
+2013-03-13 14:03:38	--	Mode &bitlbee [-v afoung] by localhost.localdomain
+2013-03-13 14:04:05	--	Mode &bitlbee [-v lunageorge] by localhost.localdomain
+2013-03-13 14:04:17	--	Mode &bitlbee [-v kwraiks] by localhost.localdomain
+2013-03-13 14:05:21	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-13 14:05:41	--	Mode &bitlbee [-v alexdegtiar] by localhost.localdomain
+2013-03-13 14:06:43	-->	vincebyrd (vincebyrd@gmail.com) has joined &bitlbee
+2013-03-13 14:06:50	--	Mode &bitlbee [-v kwraiks] by localhost.localdomain
+2013-03-13 14:06:56	--	Mode &bitlbee [+v jshottan] by localhost.localdomain
+2013-03-13 14:08:11	<--	maneeshgoel (maneeshgoel@gmail.com) has quit (Leaving...)
+2013-03-13 14:10:10	--	Mode &bitlbee [+v schew56] by localhost.localdomain
+2013-03-13 14:11:01	--	Mode &bitlbee [+v cmurball] by localhost.localdomain
+2013-03-13 14:12:00	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-13 14:12:16	--	Mode &bitlbee [-v henrygrins] by localhost.localdomain
+2013-03-13 14:12:51	--	Mode &bitlbee [-v cmurball] by localhost.localdomain
+2013-03-13 14:13:23	--	Mode &bitlbee [+v cmurball] by localhost.localdomain
+2013-03-13 14:13:50	--	Mode &bitlbee [-v kwraiks] by localhost.localdomain
+2013-03-13 14:14:19	-->	shaladdle (shaladdle@gmail.com) has joined &bitlbee
+2013-03-13 14:14:19	--	Mode &bitlbee [+v shaladdle] by localhost.localdomain
+2013-03-13 14:15:09	--	Mode &bitlbee [-v cmurball] by localhost.localdomain
+2013-03-13 14:15:46	--	Mode &bitlbee [+v alexdegtiar] by localhost.localdomain
+2013-03-13 14:16:26	--	Mode &bitlbee [-v alexdegtiar] by localhost.localdomain
+2013-03-13 14:16:33	--	Mode &bitlbee [+v cmurball] by localhost.localdomain
+2013-03-13 14:16:47	-->	guillermodcockrum (guillermo.d.cockrum@gmail.com) has joined &bitlbee
+2013-03-13 14:16:47	--	Mode &bitlbee [+v guillermodcockrum] by localhost.localdomain
+2013-03-13 14:17:15	--	Mode &bitlbee [-v cmurball] by localhost.localdomain
+2013-03-13 14:17:43	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-13 14:18:58	--	Mode &bitlbee [+v alexdegtiar] by localhost.localdomain
+2013-03-13 14:19:24	<--	ddberk (ddberk@gmail.com) has quit (Leaving...)
+2013-03-13 14:19:29	-->	ddberk (ddberk@gmail.com) has joined &bitlbee
+2013-03-13 14:19:29	--	Mode &bitlbee [-v kwraiks] by localhost.localdomain
+2013-03-13 14:19:45	--	Mode &bitlbee [-v jshottan] by localhost.localdomain
+2013-03-13 14:20:04	--	Mode &bitlbee [-v alexdegtiar] by localhost.localdomain
+2013-03-13 14:20:46	--	Mode &bitlbee [+v henrygrins] by localhost.localdomain
+2013-03-13 14:20:55	<--	jennmkelly (jenn.m.kelly@gmail.com) has quit (Leaving...)
+2013-03-13 14:21:33	--	Mode &bitlbee [-v scottme] by localhost.localdomain
+2013-03-13 14:23:49	-->	jennmkelly (jenn.m.kelly@gmail.com) has joined &bitlbee
+2013-03-13 14:23:49	--	Mode &bitlbee [+v jennmkelly] by localhost.localdomain
+2013-03-13 14:23:50	--	Mode &bitlbee [-v jennmkelly] by localhost.localdomain
+2013-03-13 14:24:41	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 14:25:12	--	Mode &bitlbee [-v schew56] by localhost.localdomain
+2013-03-13 14:25:19	--	Mode &bitlbee [+v alexdegtiar] by localhost.localdomain
+2013-03-13 14:25:52	--	Mode &bitlbee [+v scottme] by localhost.localdomain
+2013-03-13 14:25:59	-->	markwachen (mark.wachen@gmail.com) has joined &bitlbee
+2013-03-13 14:26:05	--	Mode &bitlbee [-v alexdegtiar] by localhost.localdomain
+2013-03-13 14:26:06	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 14:27:23	-->	asohanamarasingham (asohan.amarasingham@gmail.com) has joined &bitlbee
+2013-03-13 14:27:23	--	Mode &bitlbee [+v asohanamarasingham] by localhost.localdomain
+2013-03-13 14:27:34	--	Mode &bitlbee [+v cmurball] by localhost.localdomain
+2013-03-13 14:27:42	--	Mode &bitlbee [+v afoung] by localhost.localdomain
+2013-03-13 14:28:24	--	Mode &bitlbee [+v dtorchiano] by localhost.localdomain
+2013-03-13 14:29:00	--	Mode &bitlbee [-v cmurball] by localhost.localdomain
+2013-03-13 14:29:08	--	Mode &bitlbee [+v mintzmichael] by localhost.localdomain
+2013-03-13 14:29:10	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-13 14:29:34	--	Mode &bitlbee [-v dtorchiano] by localhost.localdomain
+2013-03-13 14:30:24	-->	bvaidya124 (bvaidya124@gmail.com) has joined &bitlbee
+2013-03-13 14:30:24	--	Mode &bitlbee [+v bvaidya124] by localhost.localdomain
+2013-03-13 14:31:45	--	Mode &bitlbee [+v lunageorge] by localhost.localdomain
+2013-03-13 14:32:20	<--	asohanamarasingham (asohan.amarasingham@gmail.com) has quit (Leaving...)
+2013-03-13 14:33:13	--	Mode &bitlbee [+v jstandring] by localhost.localdomain
+2013-03-13 14:33:43	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 14:34:23	--	Mode &bitlbee [-v jstandring] by localhost.localdomain
+2013-03-13 14:35:29	--	Mode &bitlbee [+v jshottan] by localhost.localdomain
+2013-03-13 14:36:14	--	Mode &bitlbee [-v henrygrins] by localhost.localdomain
+2013-03-13 14:36:24	--	Mode &bitlbee [-v guillermodcockrum] by localhost.localdomain
+2013-03-13 14:36:35	--	Mode &bitlbee [+v jstandring] by localhost.localdomain
+2013-03-13 14:37:10	--	Mode &bitlbee [-v jstandring] by localhost.localdomain
+2013-03-13 14:37:28	--	Mode &bitlbee [+v dtorchiano] by localhost.localdomain
+2013-03-13 14:38:05	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 14:38:13	--	Mode &bitlbee [+v henrygrins] by localhost.localdomain
+2013-03-13 14:38:39	--	Mode &bitlbee [-v lunageorge] by localhost.localdomain
+2013-03-13 14:38:57	<--	kwraiks (kwraiks@gmail.com) has quit (Leaving...)
+2013-03-13 14:39:27	--	Mode &bitlbee [-v dtorchiano] by localhost.localdomain
+2013-03-13 14:41:02	--	Mode &bitlbee [+v jennmkelly] by localhost.localdomain
+2013-03-13 14:41:15	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 14:41:38	--	Mode &bitlbee [-v bdoyle] by localhost.localdomain
+2013-03-13 14:42:00	--	Mode &bitlbee [+v alexdegtiar] by localhost.localdomain
+2013-03-13 14:42:18	<--	lunageorge (luna.george@gmail.com) has quit (Leaving...)
+2013-03-13 14:42:19	-->	lunageorge (luna.george@gmail.com) has joined &bitlbee
+2013-03-13 14:42:31	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 14:42:36	--	Mode &bitlbee [+v bdoyle] by localhost.localdomain
+2013-03-13 14:42:48	--	Mode &bitlbee [+v cmurball] by localhost.localdomain
+2013-03-13 14:43:58	--	Mode &bitlbee [-v cmurball] by localhost.localdomain
+2013-03-13 14:44:10	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 14:44:11	--	Mode &bitlbee [-v mintzmichael] by localhost.localdomain
+2013-03-13 14:44:44	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 14:44:47	--	Mode &bitlbee [-v afoung] by localhost.localdomain
+2013-03-13 14:45:04	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 14:45:35	-->	kwraiks (kwraiks@gmail.com) has joined &bitlbee
+2013-03-13 14:45:35	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-13 14:45:35	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 14:45:44	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 14:46:15	<--	lunageorge (luna.george@gmail.com) has quit (Leaving...)
+2013-03-13 14:46:16	-->	lunageorge (luna.george@gmail.com) has joined &bitlbee
+2013-03-13 14:46:40	--	Mode &bitlbee [+v cmurball] by localhost.localdomain
+2013-03-13 14:47:01	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 14:47:13	<--	jennmkelly (jenn.m.kelly@gmail.com) has quit (Leaving...)
+2013-03-13 14:49:02	--	Mode &bitlbee [-v cmurball] by localhost.localdomain
+2013-03-13 14:49:13	--	Mode &bitlbee [-v jshottan] by localhost.localdomain
+2013-03-13 14:49:16	--	Mode &bitlbee [-v bdoyle] by localhost.localdomain
+2013-03-13 14:49:57	--	Mode &bitlbee [+v bdoyle] by localhost.localdomain
+2013-03-13 14:50:14	<--	bvaidya124 (bvaidya124@gmail.com) has quit (Leaving...)
+2013-03-13 14:50:26	--	Mode &bitlbee [+v jstandring] by localhost.localdomain
+2013-03-13 14:51:05	--	Mode &bitlbee [-v christianvillamor] by localhost.localdomain
+2013-03-13 14:51:11	--	Mode &bitlbee [-v pnoguerol] by localhost.localdomain
+2013-03-13 14:52:07	--	Mode &bitlbee [+v pnoguerol] by localhost.localdomain
+2013-03-13 14:53:09	--	Mode &bitlbee [-v jstandring] by localhost.localdomain
+2013-03-13 14:54:28	<--	markwachen (mark.wachen@gmail.com) has quit (Leaving...)
+2013-03-13 14:54:57	-->	asohanamarasingham (asohan.amarasingham@gmail.com) has joined &bitlbee
+2013-03-13 14:54:57	--	Mode &bitlbee [+v asohanamarasingham] by localhost.localdomain
+2013-03-13 14:55:13	--	Mode &bitlbee [+v dtorchiano] by localhost.localdomain
+2013-03-13 14:55:20	--	Mode &bitlbee [-v kwraiks] by localhost.localdomain
+2013-03-13 14:55:20	<--	asohanamarasingham (asohan.amarasingham@gmail.com) has quit (Leaving...)
+2013-03-13 14:57:12	--	Mode &bitlbee [-v dtorchiano] by localhost.localdomain
+2013-03-13 14:57:18	--	Mode &bitlbee [+v lunageorge] by localhost.localdomain
+2013-03-13 14:57:28	-->	jennmkelly (jenn.m.kelly@gmail.com) has joined &bitlbee
+2013-03-13 14:57:28	--	Mode &bitlbee [+v jennmkelly] by localhost.localdomain
+2013-03-13 14:58:16	--	Mode &bitlbee [+v swapnas8] by localhost.localdomain
+2013-03-13 14:59:25	--	Mode &bitlbee [-v lunageorge] by localhost.localdomain
+2013-03-13 14:59:54	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 15:00:01	<--	kwraiks (kwraiks@gmail.com) has quit (Leaving...)
+2013-03-13 15:00:02	-->	kwraiks (kwraiks@gmail.com) has joined &bitlbee
+2013-03-13 15:00:09	-->	maneeshgoel (maneeshgoel@gmail.com) has joined &bitlbee
+2013-03-13 15:00:09	--	Mode &bitlbee [+v maneeshgoel] by localhost.localdomain
+2013-03-13 15:00:10	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 15:00:29	--	Mode &bitlbee [-v swapnas8] by localhost.localdomain
+2013-03-13 15:00:31	<--	guillermodcockrum (guillermo.d.cockrum@gmail.com) has quit (Leaving...)
+2013-03-13 15:00:54	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-13 15:01:07	--	Mode &bitlbee [+v christianvillamor] by localhost.localdomain
+2013-03-13 15:02:32	-->	sumnerhollingsworth (sumner.hollingsworth@gmail.com) has joined &bitlbee
+2013-03-13 15:02:32	--	Mode &bitlbee [+v sumnerhollingsworth] by localhost.localdomain
+2013-03-13 15:02:32	--	Mode &bitlbee [-v henrygrins] by localhost.localdomain
+2013-03-13 15:02:32	<--	shaladdle (shaladdle@gmail.com) has quit (Leaving...)
+2013-03-13 15:02:44	-->	shaladdle (shaladdle@gmail.com) has joined &bitlbee
+2013-03-13 15:02:44	--	Mode &bitlbee [+v shaladdle] by localhost.localdomain
+2013-03-13 15:04:13	<--	kwraiks (kwraiks@gmail.com) has quit (Leaving...)
+2013-03-13 15:04:13	-->	kwraiks (kwraiks@gmail.com) has joined &bitlbee
+2013-03-13 15:04:13	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-13 15:04:18	<--	sumnerhollingsworth (sumner.hollingsworth@gmail.com) has quit (Leaving...)
+2013-03-13 15:04:19	--	Mode &bitlbee [-v kwraiks] by localhost.localdomain
+2013-03-13 15:04:22	<--	kwraiks (kwraiks@gmail.com) has quit (Leaving...)
+2013-03-13 15:04:49	-->	guillermodcockrum (guillermo.d.cockrum@gmail.com) has joined &bitlbee
+2013-03-13 15:04:49	--	Mode &bitlbee [+v guillermodcockrum] by localhost.localdomain
+2013-03-13 15:04:55	-->	kwraiks (kwraiks@gmail.com) has joined &bitlbee
+2013-03-13 15:04:55	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-13 15:05:32	--	Mode &bitlbee [+v jstandring] by localhost.localdomain
+2013-03-13 15:05:38	--	Mode &bitlbee [+v jamesjohndrow] by localhost.localdomain
+2013-03-13 15:05:58	--	Mode &bitlbee [-v pascaldavisg] by localhost.localdomain
+2013-03-13 15:06:46	--	Mode &bitlbee [-v jstandring] by localhost.localdomain
+2013-03-13 15:08:16	--	Mode &bitlbee [+v afoung] by localhost.localdomain
+2013-03-13 15:12:36	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 15:12:56	<--	guillermodcockrum (guillermo.d.cockrum@gmail.com) has quit (Leaving...)
+2013-03-13 15:13:16	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 15:13:33	--	Mode &bitlbee [-v kwraiks] by localhost.localdomain
+2013-03-13 15:13:57	-->	guillermodcockrum (guillermo.d.cockrum@gmail.com) has joined &bitlbee
+2013-03-13 15:13:57	--	Mode &bitlbee [+v guillermodcockrum] by localhost.localdomain
+2013-03-13 15:14:39	<--	joanneliu (joanneliu@gmail.com) has quit (Leaving...)
+2013-03-13 15:15:18	<--	christianvillamor (christian.villamor@gmail.com) has quit (Leaving...)
+2013-03-13 15:15:48	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 15:16:05	-->	joanneliu (joanneliu@gmail.com) has joined &bitlbee
+2013-03-13 15:16:05	--	Mode &bitlbee [+v joanneliu] by localhost.localdomain
+2013-03-13 15:16:28	--	Mode &bitlbee [+v timchu100] by localhost.localdomain
+2013-03-13 15:17:26	--	Mode &bitlbee [-v timchu100] by localhost.localdomain
+2013-03-13 15:17:59	-->	danieldho (daniel.dho@gmail.com) has joined &bitlbee
+2013-03-13 15:17:59	--	Mode &bitlbee [+v danieldho] by localhost.localdomain
+2013-03-13 15:18:42	--	Mode &bitlbee [+v paulknag] by localhost.localdomain
+2013-03-13 15:19:06	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-13 15:19:49	--	Mode &bitlbee [-v guillermodcockrum] by localhost.localdomain
+2013-03-13 15:20:14	--	Mode &bitlbee [+v lunageorge] by localhost.localdomain
+2013-03-13 15:20:23	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 15:20:45	<--	guillermodcockrum (guillermo.d.cockrum@gmail.com) has quit (Leaving...)
+2013-03-13 15:21:07	--	Mode &bitlbee [-v paulknag] by localhost.localdomain
+2013-03-13 15:21:32	--	Mode &bitlbee [-v lunageorge] by localhost.localdomain
+2013-03-13 15:22:37	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 15:22:39	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 15:23:14	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 15:24:27	-->	guillermodcockrum (guillermo.d.cockrum@gmail.com) has joined &bitlbee
+2013-03-13 15:24:27	--	Mode &bitlbee [+v guillermodcockrum] by localhost.localdomain
+2013-03-13 15:25:15	-->	annacfarina (annacfarina@gmail.com) has joined &bitlbee
+2013-03-13 15:25:35	<--	joanneliu (joanneliu@gmail.com) has quit (Leaving...)
+2013-03-13 15:27:53	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 15:28:36	--	Mode &bitlbee [+v pascaldavisg] by localhost.localdomain
+2013-03-13 15:29:29	<--	ddberk (ddberk@gmail.com) has quit (Leaving...)
+2013-03-13 15:29:29	<--	vincebyrd (vincebyrd@gmail.com) has quit (Leaving...)
+2013-03-13 15:29:31	-->	ddberk (ddberk@gmail.com) has joined &bitlbee
+2013-03-13 15:31:20	--	Mode &bitlbee [+v jstandring] by localhost.localdomain
+2013-03-13 15:31:20	--	Mode &bitlbee [+v dtorchiano] by localhost.localdomain
+2013-03-13 15:31:24	--	Mode &bitlbee [-v kwraiks] by localhost.localdomain
+2013-03-13 15:31:53	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 15:32:19	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 15:32:41	--	Mode &bitlbee [-v jstandring] by localhost.localdomain
+2013-03-13 15:32:46	--	Mode &bitlbee [+v paulknag] by localhost.localdomain
+2013-03-13 15:33:21	-->	joanneliu (joanneliu@gmail.com) has joined &bitlbee
+2013-03-13 15:33:21	--	Mode &bitlbee [+v joanneliu] by localhost.localdomain
+2013-03-13 15:34:28	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 15:34:55	--	Mode &bitlbee [-v dtorchiano] by localhost.localdomain
+2013-03-13 15:35:27	--	Mode &bitlbee [-v pnoguerol] by localhost.localdomain
+2013-03-13 15:35:44	--	Mode &bitlbee [-v paulknag] by localhost.localdomain
+2013-03-13 15:35:53	--	Mode &bitlbee [+v paulknag] by localhost.localdomain
+2013-03-13 15:37:22	<--	kwraiks (kwraiks@gmail.com) has quit (Leaving...)
+2013-03-13 15:37:22	-->	kwraiks (kwraiks@gmail.com) has joined &bitlbee
+2013-03-13 15:38:56	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-13 15:39:17	-->	yccovin (yccovin@gmail.com) has joined &bitlbee
+2013-03-13 15:39:17	--	Mode &bitlbee [+v yccovin] by localhost.localdomain
+2013-03-13 15:39:23	--	Mode &bitlbee [-v paulknag] by localhost.localdomain
+2013-03-13 15:39:24	<--	kwraiks (kwraiks@gmail.com) has quit (Leaving...)
+2013-03-13 15:39:25	-->	kwraiks (kwraiks@gmail.com) has joined &bitlbee
+2013-03-13 15:39:25	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-13 15:39:25	--	Mode &bitlbee [-v guillermodcockrum] by localhost.localdomain
+2013-03-13 15:39:38	--	Mode &bitlbee [+v jshottan] by localhost.localdomain
+2013-03-13 15:40:24	--	Mode &bitlbee [-v afoung] by localhost.localdomain
+2013-03-13 15:40:35	--	Mode &bitlbee [+v paulknag] by localhost.localdomain
+2013-03-13 15:40:52	--	Mode &bitlbee [-v jshottan] by localhost.localdomain
+2013-03-13 15:41:07	--	Mode &bitlbee [-v paulknag] by localhost.localdomain
+2013-03-13 15:41:51	--	Mode &bitlbee [+v paulknag] by localhost.localdomain
+2013-03-13 15:42:53	--	Mode &bitlbee [-v paulknag] by localhost.localdomain
+2013-03-13 15:43:44	--	Mode &bitlbee [+v pnoguerol] by localhost.localdomain
+2013-03-13 15:44:46	--	Mode &bitlbee [+v mintzmichael] by localhost.localdomain
+2013-03-13 15:45:11	<--	yccovin (yccovin@gmail.com) has quit (Leaving...)
+2013-03-13 15:45:24	--	Mode &bitlbee [-v kwraiks] by localhost.localdomain
+2013-03-13 15:45:29	-->	bvaidya124 (bvaidya124@gmail.com) has joined &bitlbee
+2013-03-13 15:45:29	--	Mode &bitlbee [+v bvaidya124] by localhost.localdomain
+2013-03-13 15:45:34	--	Mode &bitlbee [+v afoung] by localhost.localdomain
+2013-03-13 15:46:20	--	Mode &bitlbee [+v paulknag] by localhost.localdomain
+2013-03-13 15:46:52	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-13 15:47:05	--	Mode &bitlbee [-v jennmkelly] by localhost.localdomain
+2013-03-13 15:47:28	<--	danieldho (daniel.dho@gmail.com) has quit (Leaving...)
+2013-03-13 15:47:52	--	Mode &bitlbee [+v dtorchiano] by localhost.localdomain
+2013-03-13 15:47:54	<--	bvaidya124 (bvaidya124@gmail.com) has quit (Leaving...)
+2013-03-13 15:48:12	<--	pascaldavisg (pascal.davisg@gmail.com) has quit (Leaving...)
+2013-03-13 15:48:28	--	Mode &bitlbee [-v kwraiks] by localhost.localdomain
+2013-03-13 15:49:33	--	Mode &bitlbee [-v pnoguerol] by localhost.localdomain
+2013-03-13 15:50:03	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 15:50:11	--	Mode &bitlbee [-v scottme] by localhost.localdomain
+2013-03-13 15:50:32	--	Mode &bitlbee [-v dtorchiano] by localhost.localdomain
+2013-03-13 15:51:21	--	Mode &bitlbee [+v jstandring] by localhost.localdomain
+2013-03-13 15:51:45	--	Mode &bitlbee [+v pnoguerol] by localhost.localdomain
+2013-03-13 15:52:04	--	Mode &bitlbee [+v dtorchiano] by localhost.localdomain
+2013-03-13 15:52:28	--	Mode &bitlbee [-v jstandring] by localhost.localdomain
+2013-03-13 15:52:34	-->	pascaldavisg (pascal.davisg@gmail.com) has joined &bitlbee
+2013-03-13 15:52:34	--	Mode &bitlbee [+v pascaldavisg] by localhost.localdomain
+2013-03-13 15:52:35	--	Mode &bitlbee [+v jstandring] by localhost.localdomain
+2013-03-13 15:53:02	--	Mode &bitlbee [-v joanneliu] by localhost.localdomain
+2013-03-13 15:53:04	<--	joanneliu (joanneliu@gmail.com) has quit (Leaving...)
+2013-03-13 15:53:23	--	Mode &bitlbee [-v bdoyle] by localhost.localdomain
+2013-03-13 15:53:31	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 15:53:43	--	Mode &bitlbee [-v dtorchiano] by localhost.localdomain
+2013-03-13 15:53:58	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 15:54:35	--	Mode &bitlbee [+v bdoyle] by localhost.localdomain
+2013-03-13 15:54:40	--	Mode &bitlbee [+v guillermodcockrum] by localhost.localdomain
+2013-03-13 15:55:54	--	Mode &bitlbee [+v jshottan] by localhost.localdomain
+2013-03-13 15:56:21	<--	pascaldavisg (pascal.davisg@gmail.com) has quit (Leaving...)
+2013-03-13 15:57:19	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-13 15:57:39	-->	rajpatel80 (rajpatel80@gmail.com) has joined &bitlbee
+2013-03-13 15:57:39	--	Mode &bitlbee [+v rajpatel80] by localhost.localdomain
+2013-03-13 15:58:01	--	Mode &bitlbee [+v henrygrins] by localhost.localdomain
+2013-03-13 15:59:06	--	Mode &bitlbee [-v henrygrins] by localhost.localdomain
+2013-03-13 15:59:17	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 15:59:31	-->	yccovin (yccovin@gmail.com) has joined &bitlbee
+2013-03-13 15:59:31	--	Mode &bitlbee [+v yccovin] by localhost.localdomain
+2013-03-13 15:59:50	--	Mode &bitlbee [-v mintzmichael] by localhost.localdomain
+2013-03-13 15:59:53	<--	yccovin (yccovin@gmail.com) has quit (Leaving...)
+2013-03-13 16:00:12	<--	schew56 (schew56@gmail.com) has quit (Leaving...)
+2013-03-13 16:00:37	--	Mode &bitlbee [-v afoung] by localhost.localdomain
+2013-03-13 16:00:51	<--	guillermodcockrum (guillermo.d.cockrum@gmail.com) has quit (Leaving...)
+2013-03-13 16:01:18	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 16:01:27	--	Mode &bitlbee [-v kwraiks] by localhost.localdomain
+2013-03-13 16:02:07	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 16:02:47	--	Mode &bitlbee [+v jennmkelly] by localhost.localdomain
+2013-03-13 16:03:07	--	Mode &bitlbee [+v timchu100] by localhost.localdomain
+2013-03-13 16:03:09	--	Mode &bitlbee [+v cmurball] by localhost.localdomain
+2013-03-13 16:03:42	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 16:03:53	--	Mode &bitlbee [+v scottme] by localhost.localdomain
+2013-03-13 16:03:58	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 16:04:24	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 16:04:37	--	Mode &bitlbee [-v timchu100] by localhost.localdomain
+2013-03-13 16:04:46	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 16:04:49	--	Mode &bitlbee [-v cmurball] by localhost.localdomain
+2013-03-13 16:05:27	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 16:05:30	-->	danieldho (daniel.dho@gmail.com) has joined &bitlbee
+2013-03-13 16:05:30	--	Mode &bitlbee [+v danieldho] by localhost.localdomain
+2013-03-13 16:05:36	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 16:06:25	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-13 16:06:38	--	Mode &bitlbee [+v lunageorge] by localhost.localdomain
+2013-03-13 16:08:11	--	Mode &bitlbee [-v kwraiks] by localhost.localdomain
+2013-03-13 16:08:25	-->	schew56 (schew56@gmail.com) has joined &bitlbee
+2013-03-13 16:08:56	--	Mode &bitlbee [-v shaladdle] by localhost.localdomain
+2013-03-13 16:08:59	--	Mode &bitlbee [+v afoung] by localhost.localdomain
+2013-03-13 16:11:02	--	Mode &bitlbee [-v jshottan] by localhost.localdomain
+2013-03-13 16:12:08	-->	joanneliu (joanneliu@gmail.com) has joined &bitlbee
+2013-03-13 16:12:11	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 16:12:12	--	Mode &bitlbee [+v joanneliu] by localhost.localdomain
+2013-03-13 16:12:25	--	Mode &bitlbee [-v paulknag] by localhost.localdomain
+2013-03-13 16:13:12	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 16:13:35	--	Mode &bitlbee [-v lunageorge] by localhost.localdomain
+2013-03-13 16:13:56	-->	vincebyrd (vincebyrd@gmail.com) has joined &bitlbee
+2013-03-13 16:14:45	--	Mode &bitlbee [+v mintzmichael] by localhost.localdomain
+2013-03-13 16:16:25	<--	mintzmichael (mintzmichael@gmail.com) has quit (Leaving...)
+2013-03-13 16:16:32	<--	vincebyrd (vincebyrd@gmail.com) has quit (Leaving...)
+2013-03-13 16:16:37	<--	rajpatel80 (rajpatel80@gmail.com) has quit (Leaving...)
+2013-03-13 16:17:48	-->	guillermodcockrum (guillermo.d.cockrum@gmail.com) has joined &bitlbee
+2013-03-13 16:17:52	-->	christianvillamor (christian.villamor@gmail.com) has joined &bitlbee
+2013-03-13 16:17:52	--	Mode &bitlbee [+v christianvillamor] by localhost.localdomain
+2013-03-13 16:19:12	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 16:19:19	-->	vincebyrd (vincebyrd@gmail.com) has joined &bitlbee
+2013-03-13 16:19:51	--	Mode &bitlbee [-v scottme] by localhost.localdomain
+2013-03-13 16:21:10	<--	vincebyrd (vincebyrd@gmail.com) has quit (Leaving...)
+2013-03-13 16:22:02	--	Mode &bitlbee [+v scottme] by localhost.localdomain
+2013-03-13 16:23:10	--	Mode &bitlbee [+v paulknag] by localhost.localdomain
+2013-03-13 16:23:12	--	Mode &bitlbee [+v timchu100] by localhost.localdomain
+2013-03-13 16:23:20	--	Mode &bitlbee [+v cmurball] by localhost.localdomain
+2013-03-13 16:23:51	--	Mode &bitlbee [-v timchu100] by localhost.localdomain
+2013-03-13 16:24:00	--	Mode &bitlbee [-v cmurball] by localhost.localdomain
+2013-03-13 16:24:02	--	Mode &bitlbee [-v afoung] by localhost.localdomain
+2013-03-13 16:24:31	-->	vincebyrd (vincebyrd@gmail.com) has joined &bitlbee
+2013-03-13 16:24:50	<--	scottme (scottme@gmail.com) has quit (Leaving...)
+2013-03-13 16:27:12	--	Mode &bitlbee [-v danieldho] by localhost.localdomain
+2013-03-13 16:28:15	--	Mode &bitlbee [-v paulknag] by localhost.localdomain
+2013-03-13 16:29:27	--	Mode &bitlbee [+v dtorchiano] by localhost.localdomain
+2013-03-13 16:29:42	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 16:30:38	--	Mode &bitlbee [+v paulknag] by localhost.localdomain
+2013-03-13 16:30:49	--	Mode &bitlbee [+v danieldho] by localhost.localdomain
+2013-03-13 16:30:50	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 16:30:50	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 16:31:39	--	Mode &bitlbee [-v jstandring] by localhost.localdomain
+2013-03-13 16:32:46	--	Mode &bitlbee [-v christianvillamor] by localhost.localdomain
+2013-03-13 16:33:13	<--	danieldho (daniel.dho@gmail.com) has quit (Leaving...)
+2013-03-13 16:33:18	--	Mode &bitlbee [-v dtorchiano] by localhost.localdomain
+2013-03-13 16:33:35	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 16:33:58	<--	pnoguerol (pnoguerol@gmail.com) has quit (Leaving...)
+2013-03-13 16:34:06	<--	shaladdle (shaladdle@gmail.com) has quit (Leaving...)
+2013-03-13 16:34:13	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 16:34:43	<--	vincebyrd (vincebyrd@gmail.com) has quit (Leaving...)
+2013-03-13 16:34:54	-->	weskeith (weskeith@gmail.com) has joined &bitlbee
+2013-03-13 16:34:54	--	Mode &bitlbee [+v weskeith] by localhost.localdomain
+2013-03-13 16:34:55	-->	pnoguerol (pnoguerol@gmail.com) has joined &bitlbee
+2013-03-13 16:34:55	--	Mode &bitlbee [+v pnoguerol] by localhost.localdomain
+2013-03-13 16:34:55	<--	weskeith (weskeith@gmail.com) has quit (Leaving...)
+2013-03-13 16:35:22	-->	shaladdle (shaladdle@gmail.com) has joined &bitlbee
+2013-03-13 16:35:22	--	Mode &bitlbee [+v shaladdle] by localhost.localdomain
+2013-03-13 16:35:22	--	Mode &bitlbee [-v shaladdle] by localhost.localdomain
+2013-03-13 16:36:19	-->	scottme (scottme@gmail.com) has joined &bitlbee
+2013-03-13 16:36:19	--	Mode &bitlbee [+v scottme] by localhost.localdomain
+2013-03-13 16:36:43	<--	guillermodcockrum (guillermo.d.cockrum@gmail.com) has quit (Leaving...)
+2013-03-13 16:37:05	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 16:37:53	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-13 16:37:55	<--	schew56 (schew56@gmail.com) has quit (Leaving...)
+2013-03-13 16:38:33	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 16:40:16	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 16:40:28	--	Mode &bitlbee [-v jamesjohndrow] by localhost.localdomain
+2013-03-13 16:40:42	--	Mode &bitlbee [+v henrygrins] by localhost.localdomain
+2013-03-13 16:40:57	--	Mode &bitlbee [+v jamesjohndrow] by localhost.localdomain
+2013-03-13 16:41:17	-->	aranade (aranade@gmail.com) has joined &bitlbee
+2013-03-13 16:41:31	--	Mode &bitlbee [-v kwraiks] by localhost.localdomain
+2013-03-13 16:41:32	--	Mode &bitlbee [-v henrygrins] by localhost.localdomain
+2013-03-13 16:41:39	--	Mode &bitlbee [+v shaladdle] by localhost.localdomain
+2013-03-13 16:42:28	--	Mode &bitlbee [+v aranade] by localhost.localdomain
+2013-03-13 16:43:56	<--	joanneliu (joanneliu@gmail.com) has quit (Leaving...)
+2013-03-13 16:44:15	<--	christianvillamor (christian.villamor@gmail.com) has quit (Leaving...)
+2013-03-13 16:44:59	--	Mode &bitlbee [+v jshottan] by localhost.localdomain
+2013-03-13 16:45:47	-->	joanneliu (joanneliu@gmail.com) has joined &bitlbee
+2013-03-13 16:45:47	--	Mode &bitlbee [+v joanneliu] by localhost.localdomain
+2013-03-13 16:47:38	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 16:48:16	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 16:48:16	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 16:48:41	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-13 16:50:43	-->	christianvillamor (christian.villamor@gmail.com) has joined &bitlbee
+2013-03-13 16:50:43	--	Mode &bitlbee [+v christianvillamor] by localhost.localdomain
+2013-03-13 16:51:04	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 16:51:13	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 16:51:57	--	Mode &bitlbee [-v paulknag] by localhost.localdomain
+2013-03-13 16:52:06	--	Mode &bitlbee [+v paulknag] by localhost.localdomain
+2013-03-13 16:52:15	--	Mode &bitlbee [+v jstandring] by localhost.localdomain
+2013-03-13 16:52:49	--	Mode &bitlbee [-v jennmkelly] by localhost.localdomain
+2013-03-13 16:52:52	<--	christianvillamor (christian.villamor@gmail.com) has quit (Leaving...)
+2013-03-13 16:53:18	--	Mode &bitlbee [-v paulknag] by localhost.localdomain
+2013-03-13 16:54:01	--	Mode &bitlbee [-v kwraiks] by localhost.localdomain
+2013-03-13 16:54:50	-->	asohanamarasingham (asohan.amarasingham@gmail.com) has joined &bitlbee
+2013-03-13 16:54:50	--	Mode &bitlbee [+v asohanamarasingham] by localhost.localdomain
+2013-03-13 16:55:02	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 16:55:06	--	Mode &bitlbee [+v timchu100] by localhost.localdomain
+2013-03-13 16:55:49	--	Mode &bitlbee [-v timchu100] by localhost.localdomain
+2013-03-13 16:55:56	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 16:56:39	--	Mode &bitlbee [-v shaladdle] by localhost.localdomain
+2013-03-13 16:56:49	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 16:56:50	--	Mode &bitlbee [-v bdoyle] by localhost.localdomain
+2013-03-13 16:57:45	--	Mode &bitlbee [-v jstandring] by localhost.localdomain
+2013-03-13 16:58:30	<--	ddberk (ddberk@gmail.com) has quit (Leaving...)
+2013-03-13 16:58:32	--	Mode &bitlbee [-v pnoguerol] by localhost.localdomain
+2013-03-13 16:58:34	--	Mode &bitlbee [+v pnoguerol] by localhost.localdomain
+2013-03-13 17:00:26	-->	mintzmichael (mintzmichael@gmail.com) has joined &bitlbee
+2013-03-13 17:00:26	--	Mode &bitlbee [+v mintzmichael] by localhost.localdomain
+2013-03-13 17:00:38	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 17:00:47	-->	markwachen (mark.wachen@gmail.com) has joined &bitlbee
+2013-03-13 17:00:54	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 17:01:28	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 17:01:45	<--	mintzmichael (mintzmichael@gmail.com) has quit (Leaving...)
+2013-03-13 17:02:08	--	Mode &bitlbee [+v lunageorge] by localhost.localdomain
+2013-03-13 17:02:24	--	Mode &bitlbee [+v markwachen] by localhost.localdomain
+2013-03-13 17:02:42	--	Mode &bitlbee [+v afoung] by localhost.localdomain
+2013-03-13 17:03:59	<--	asohanamarasingham (asohan.amarasingham@gmail.com) has quit (Leaving...)
+2013-03-13 17:05:00	--	Mode &bitlbee [-v lunageorge] by localhost.localdomain
+2013-03-13 17:05:40	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 17:07:03	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 17:07:36	-->	vincebyrd (vincebyrd@gmail.com) has joined &bitlbee
+2013-03-13 17:07:46	--	Mode &bitlbee [+v paulknag] by localhost.localdomain
+2013-03-13 17:08:03	--	Mode &bitlbee [+v timchu100] by localhost.localdomain
+2013-03-13 17:08:51	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-13 17:09:02	--	Mode &bitlbee [-v kwraiks] by localhost.localdomain
+2013-03-13 17:09:21	--	Mode &bitlbee [-v jshottan] by localhost.localdomain
+2013-03-13 17:09:55	<--	paulknag (paulknag@gmail.com) has quit (Leaving...)
+2013-03-13 17:09:59	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 17:10:05	--	Mode &bitlbee [-v timchu100] by localhost.localdomain
+2013-03-13 17:10:36	-->	asohanamarasingham (asohan.amarasingham@gmail.com) has joined &bitlbee
+2013-03-13 17:10:36	--	Mode &bitlbee [+v asohanamarasingham] by localhost.localdomain
+2013-03-13 17:11:52	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 17:12:40	--	Mode &bitlbee [+v cmurball] by localhost.localdomain
+2013-03-13 17:13:49	<--	afoung (afoung@gmail.com) has quit (Leaving...)
+2013-03-13 17:14:22	--	Mode &bitlbee [-v cmurball] by localhost.localdomain
+2013-03-13 17:14:56	-->	paulknag (paulknag@gmail.com) has joined &bitlbee
+2013-03-13 17:14:56	--	Mode &bitlbee [+v paulknag] by localhost.localdomain
+2013-03-13 17:15:05	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 17:15:48	<--	asohanamarasingham (asohan.amarasingham@gmail.com) has quit (Leaving...)
+2013-03-13 17:15:51	--	Mode &bitlbee [+v lunageorge] by localhost.localdomain
+2013-03-13 17:15:55	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 17:16:19	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 17:16:30	--	Mode &bitlbee [+v dtorchiano] by localhost.localdomain
+2013-03-13 17:16:42	--	Mode &bitlbee [+v jshottan] by localhost.localdomain
+2013-03-13 17:17:05	--	Mode &bitlbee [-v aranade] by localhost.localdomain
+2013-03-13 17:17:30	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 17:18:06	<--	kwraiks (kwraiks@gmail.com) has quit (Leaving...)
+2013-03-13 17:18:07	-->	kwraiks (kwraiks@gmail.com) has joined &bitlbee
+2013-03-13 17:18:17	-->	asohanamarasingham (asohan.amarasingham@gmail.com) has joined &bitlbee
+2013-03-13 17:18:17	--	Mode &bitlbee [+v asohanamarasingham] by localhost.localdomain
+2013-03-13 17:18:31	--	Mode &bitlbee [-v dtorchiano] by localhost.localdomain
+2013-03-13 17:18:40	--	Mode &bitlbee [+v shaladdle] by localhost.localdomain
+2013-03-13 17:18:48	-->	afoung (afoung@gmail.com) has joined &bitlbee
+2013-03-13 17:18:48	--	Mode &bitlbee [+v afoung] by localhost.localdomain
+2013-03-13 17:19:25	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 17:22:04	--	Mode &bitlbee [+v bdoyle] by localhost.localdomain
+2013-03-13 17:22:46	--	Mode &bitlbee [-v jamesjohndrow] by localhost.localdomain
+2013-03-13 17:22:57	--	Mode &bitlbee [-v afoung] by localhost.localdomain
+2013-03-13 17:24:09	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 17:24:28	<--	asohanamarasingham (asohan.amarasingham@gmail.com) has quit (Leaving...)
+2013-03-13 17:24:44	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 17:25:12	--	Mode &bitlbee [-v lunageorge] by localhost.localdomain
+2013-03-13 17:26:24	<--	annacfarina (annacfarina@gmail.com) has quit (Leaving...)
+2013-03-13 17:26:49	--	Mode &bitlbee [+v lunageorge] by localhost.localdomain
+2013-03-13 17:29:59	<--	joanneliu (joanneliu@gmail.com) has quit (Leaving...)
+2013-03-13 17:30:19	<--	jma0506 (jma0506@gmail.com) has quit (Leaving...)
+2013-03-13 17:31:01	--	Mode &bitlbee [+v cmurball] by localhost.localdomain
+2013-03-13 17:31:13	-->	rachelb (rachelb@gmail.com) has joined &bitlbee
+2013-03-13 17:31:13	--	Mode &bitlbee [+v rachelb] by localhost.localdomain
+2013-03-13 17:31:19	<--	rachelb (rachelb@gmail.com) has quit (Leaving...)
+2013-03-13 17:32:02	--	Mode &bitlbee [+v dtorchiano] by localhost.localdomain
+2013-03-13 17:32:34	--	Mode &bitlbee [-v cmurball] by localhost.localdomain
+2013-03-13 17:33:03	--	Mode &bitlbee [+v henrygrins] by localhost.localdomain
+2013-03-13 17:33:12	--	Mode &bitlbee [+v jamesjohndrow] by localhost.localdomain
+2013-03-13 17:33:23	<--	aranade (aranade@gmail.com) has quit (Leaving...)
+2013-03-13 17:33:28	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-13 17:33:41	--	Mode &bitlbee [-v shaladdle] by localhost.localdomain
+2013-03-13 17:33:53	--	Mode &bitlbee [-v henrygrins] by localhost.localdomain
+2013-03-13 17:34:13	--	Mode &bitlbee [+v jstandring] by localhost.localdomain
+2013-03-13 17:35:10	--	Mode &bitlbee [-v jstandring] by localhost.localdomain
+2013-03-13 17:37:29	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 17:37:42	--	Mode &bitlbee [+v timchu100] by localhost.localdomain
+2013-03-13 17:38:05	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 17:38:16	--	Mode &bitlbee [-v timchu100] by localhost.localdomain
+2013-03-13 17:38:19	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 17:39:45	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 17:41:07	-->	jma0506 (jma0506@gmail.com) has joined &bitlbee
+2013-03-13 17:41:08	--	Mode &bitlbee [+v jennmkelly] by localhost.localdomain
+2013-03-13 17:41:46	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 17:41:55	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 17:42:15	--	Mode &bitlbee [-v lunageorge] by localhost.localdomain
+2013-03-13 17:42:29	--	Mode &bitlbee [+v lunageorge] by localhost.localdomain
+2013-03-13 17:42:29	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 17:43:40	--	Mode &bitlbee [-v lunageorge] by localhost.localdomain
+2013-03-13 17:44:26	--	Mode &bitlbee [-v scottme] by localhost.localdomain
+2013-03-13 17:44:53	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 17:44:56	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 17:44:56	--	Mode &bitlbee [+v jstandring] by localhost.localdomain
+2013-03-13 17:44:56	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 17:45:20	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 17:45:26	--	Mode &bitlbee [-v dgame84] by localhost.localdomain
+2013-03-13 17:45:39	--	Mode &bitlbee [-v dtorchiano] by localhost.localdomain
+2013-03-13 17:45:56	-->	aranade (aranade@gmail.com) has joined &bitlbee
+2013-03-13 17:45:56	--	Mode &bitlbee [+v aranade] by localhost.localdomain
+2013-03-13 17:45:58	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 17:46:10	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 17:46:51	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 17:47:12	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 17:47:52	--	Mode &bitlbee [+v afoung] by localhost.localdomain
+2013-03-13 17:47:52	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 17:48:07	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 17:48:27	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 17:49:35	--	Mode &bitlbee [-v jamesjohndrow] by localhost.localdomain
+2013-03-13 17:49:49	-->	christianvillamor (christian.villamor@gmail.com) has joined &bitlbee
+2013-03-13 17:49:49	--	Mode &bitlbee [+v christianvillamor] by localhost.localdomain
+2013-03-13 17:50:10	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 17:50:24	--	Mode &bitlbee [+v dgame84] by localhost.localdomain
+2013-03-13 17:50:34	--	Mode &bitlbee [+v scottme] by localhost.localdomain
+2013-03-13 17:50:35	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 17:50:50	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 17:50:54	--	Mode &bitlbee [-v jstandring] by localhost.localdomain
+2013-03-13 17:51:05	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 17:51:29	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 17:52:02	-->	asohanamarasingham (asohan.amarasingham@gmail.com) has joined &bitlbee
+2013-03-13 17:52:02	--	Mode &bitlbee [+v asohanamarasingham] by localhost.localdomain
+2013-03-13 17:52:21	--	Mode &bitlbee [-v dgame84] by localhost.localdomain
+2013-03-13 17:52:36	--	Mode &bitlbee [+v jamesjohndrow] by localhost.localdomain
+2013-03-13 17:52:59	--	Mode &bitlbee [+v dgame84] by localhost.localdomain
+2013-03-13 17:53:04	--	Mode &bitlbee [-v kwraiks] by localhost.localdomain
+2013-03-13 17:53:58	--	Mode &bitlbee [+v jstandring] by localhost.localdomain
+2013-03-13 17:54:05	--	Mode &bitlbee [-v alexdegtiar] by localhost.localdomain
+2013-03-13 17:55:45	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 17:55:45	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 17:57:52	--	Mode &bitlbee [-v jennmkelly] by localhost.localdomain
+2013-03-13 17:58:05	--	Mode &bitlbee [-v dgame84] by localhost.localdomain
+2013-03-13 17:59:18	<--	bdoyle (bdoyle@gmail.com) has quit (Leaving...)
+2013-03-13 18:00:37	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 18:00:58	--	Mode &bitlbee [-v jshottan] by localhost.localdomain
+2013-03-13 18:01:03	--	Mode &bitlbee [+v dgame84] by localhost.localdomain
+2013-03-13 18:01:29	--	Mode &bitlbee [-v aranade] by localhost.localdomain
+2013-03-13 18:01:36	-->	joanneliu (joanneliu@gmail.com) has joined &bitlbee
+2013-03-13 18:01:36	--	Mode &bitlbee [+v joanneliu] by localhost.localdomain
+2013-03-13 18:01:53	--	Mode &bitlbee [-v dgame84] by localhost.localdomain
+2013-03-13 18:02:01	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 18:02:37	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 18:03:42	--	Mode &bitlbee [+v shaladdle] by localhost.localdomain
+2013-03-13 18:03:50	-->	katariyanamit (katariya.namit@gmail.com) has joined &bitlbee
+2013-03-13 18:04:04	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 18:04:16	--	Mode &bitlbee [+v jshottan] by localhost.localdomain
+2013-03-13 18:04:29	--	Mode &bitlbee [+v patrickwynn] by localhost.localdomain
+2013-03-13 18:04:58	--	Mode &bitlbee [-v jstandring] by localhost.localdomain
+2013-03-13 18:05:35	--	Mode &bitlbee [-v scottme] by localhost.localdomain
+2013-03-13 18:05:38	--	Mode &bitlbee [-v jshottan] by localhost.localdomain
+2013-03-13 18:05:43	--	Mode &bitlbee [+v lunageorge] by localhost.localdomain
+2013-03-13 18:06:03	-->	bdoyle (bdoyle@gmail.com) has joined &bitlbee
+2013-03-13 18:06:03	--	Mode &bitlbee [+v bdoyle] by localhost.localdomain
+2013-03-13 18:06:17	--	Mode &bitlbee [+v jstandring] by localhost.localdomain
+2013-03-13 18:06:42	--	Mode &bitlbee [+v dtorchiano] by localhost.localdomain
+2013-03-13 18:06:48	--	Mode &bitlbee [-v christianvillamor] by localhost.localdomain
+2013-03-13 18:06:58	--	Mode &bitlbee [-v afoung] by localhost.localdomain
+2013-03-13 18:07:53	-->	audrey720 (audrey720@gmail.com) has joined &bitlbee
+2013-03-13 18:07:53	--	Mode &bitlbee [+v audrey720] by localhost.localdomain
+2013-03-13 18:08:17	--	Mode &bitlbee [+v afoung] by localhost.localdomain
+2013-03-13 18:08:22	--	Mode &bitlbee [+v scottme] by localhost.localdomain
+2013-03-13 18:08:58	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 18:09:52	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 18:11:18	--	Mode &bitlbee [-v asohanamarasingham] by localhost.localdomain
+2013-03-13 18:11:44	-->	devensoni (devensoni@gmail.com) has joined &bitlbee
+2013-03-13 18:11:44	--	Mode &bitlbee [+v devensoni] by localhost.localdomain
+2013-03-13 18:11:47	--	Mode &bitlbee [-v bdoyle] by localhost.localdomain
+2013-03-13 18:12:14	<--	bdoyle (bdoyle@gmail.com) has quit (Leaving...)
+2013-03-13 18:12:54	-->	bdoyle (bdoyle@gmail.com) has joined &bitlbee
+2013-03-13 18:13:05	--	Mode &bitlbee [+v bdoyle] by localhost.localdomain
+2013-03-13 18:13:47	--	Mode &bitlbee [+v dgame84] by localhost.localdomain
+2013-03-13 18:13:51	--	Mode &bitlbee [-v jamesjohndrow] by localhost.localdomain
+2013-03-13 18:13:56	-->	yccovin (yccovin@gmail.com) has joined &bitlbee
+2013-03-13 18:13:56	--	Mode &bitlbee [+v yccovin] by localhost.localdomain
+2013-03-13 18:14:23	--	Mode &bitlbee [-v dgame84] by localhost.localdomain
+2013-03-13 18:14:34	--	Mode &bitlbee [+v dgame84] by localhost.localdomain
+2013-03-13 18:14:53	<--	markwachen (mark.wachen@gmail.com) has quit (Leaving...)
+2013-03-13 18:15:17	--	Mode &bitlbee [-v dgame84] by localhost.localdomain
+2013-03-13 18:15:19	<--	yccovin (yccovin@gmail.com) has quit (Leaving...)
+2013-03-13 18:16:28	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 18:16:35	--	Mode &bitlbee [-v jstandring] by localhost.localdomain
+2013-03-13 18:17:39	-->	schew56 (schew56@gmail.com) has joined &bitlbee
+2013-03-13 18:17:39	--	Mode &bitlbee [+v schew56] by localhost.localdomain
+2013-03-13 18:17:41	--	Mode &bitlbee [-v schew56] by localhost.localdomain
+2013-03-13 18:17:41	--	Mode &bitlbee [+v schew56] by localhost.localdomain
+2013-03-13 18:19:10	--	Mode &bitlbee [+v dgame84] by localhost.localdomain
+2013-03-13 18:19:27	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 18:20:04	--	Mode &bitlbee [-v patrickwynn] by localhost.localdomain
+2013-03-13 18:20:04	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 18:20:07	--	Mode &bitlbee [-v dgame84] by localhost.localdomain
+2013-03-13 18:21:00	--	Mode &bitlbee [-v dtorchiano] by localhost.localdomain
+2013-03-13 18:22:30	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 18:22:31	<--	audrey720 (audrey720@gmail.com) has quit (Leaving...)
+2013-03-13 18:22:41	--	Mode &bitlbee [+v jstandring] by localhost.localdomain
+2013-03-13 18:23:09	--	Mode &bitlbee [+v dgame84] by localhost.localdomain
+2013-03-13 18:23:25	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 18:23:42	--	Mode &bitlbee [-v dgame84] by localhost.localdomain
+2013-03-13 18:24:34	--	Mode &bitlbee [-v afoung] by localhost.localdomain
+2013-03-13 18:24:35	--	Mode &bitlbee [-v lunageorge] by localhost.localdomain
+2013-03-13 18:24:55	--	Mode &bitlbee [+v dgame84] by localhost.localdomain
+2013-03-13 18:25:28	--	Mode &bitlbee [+v dtorchiano] by localhost.localdomain
+2013-03-13 18:26:14	--	Mode &bitlbee [+v afoung] by localhost.localdomain
+2013-03-13 18:26:31	--	Mode &bitlbee [-v dgame84] by localhost.localdomain
+2013-03-13 18:26:35	--	Mode &bitlbee [-v jstandring] by localhost.localdomain
+2013-03-13 18:27:01	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 18:27:08	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 18:27:36	-->	weskeith (weskeith@gmail.com) has joined &bitlbee
+2013-03-13 18:27:36	--	Mode &bitlbee [+v weskeith] by localhost.localdomain
+2013-03-13 18:27:38	<--	weskeith (weskeith@gmail.com) has quit (Leaving...)
+2013-03-13 18:27:54	<--	shaladdle (shaladdle@gmail.com) has quit (Leaving...)
+2013-03-13 18:28:21	--	Mode &bitlbee [-v dtorchiano] by localhost.localdomain
+2013-03-13 18:28:49	--	Mode &bitlbee [+v dgame84] by localhost.localdomain
+2013-03-13 18:29:26	--	Mode &bitlbee [-v dgame84] by localhost.localdomain
+2013-03-13 18:29:32	<--	paulknag (paulknag@gmail.com) has quit (Leaving...)
+2013-03-13 18:29:37	--	Mode &bitlbee [+v lunageorge] by localhost.localdomain
+2013-03-13 18:29:46	-->	paulknag (paulknag@gmail.com) has joined &bitlbee
+2013-03-13 18:29:46	--	Mode &bitlbee [+v paulknag] by localhost.localdomain
+2013-03-13 18:30:39	--	Mode &bitlbee [+v christianvillamor] by localhost.localdomain
+2013-03-13 18:30:42	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 18:30:51	-->	yccovin (yccovin@gmail.com) has joined &bitlbee
+2013-03-13 18:30:51	--	Mode &bitlbee [+v yccovin] by localhost.localdomain
+2013-03-13 18:31:41	<--	aranade (aranade@gmail.com) has quit (Leaving...)
+2013-03-13 18:32:03	<--	yccovin (yccovin@gmail.com) has quit (Leaving...)
+2013-03-13 18:33:02	--	Mode &bitlbee [+v dgame84] by localhost.localdomain
+2013-03-13 18:33:08	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 18:33:10	-->	yccovin (yccovin@gmail.com) has joined &bitlbee
+2013-03-13 18:33:10	--	Mode &bitlbee [+v yccovin] by localhost.localdomain
+2013-03-13 18:33:45	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 18:33:50	--	Mode &bitlbee [-v dgame84] by localhost.localdomain
+2013-03-13 18:33:51	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-13 18:34:53	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 18:34:56	--	Mode &bitlbee [-v pnoguerol] by localhost.localdomain
+2013-03-13 18:35:33	--	Mode &bitlbee [+v dgame84] by localhost.localdomain
+2013-03-13 18:35:43	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 18:35:45	--	Mode &bitlbee [+v pnoguerol] by localhost.localdomain
+2013-03-13 18:35:59	<--	yccovin (yccovin@gmail.com) has quit (Leaving...)
+2013-03-13 18:38:23	--	Mode &bitlbee [-v kwraiks] by localhost.localdomain
+2013-03-13 18:40:53	--	Mode &bitlbee [-v lunageorge] by localhost.localdomain
+2013-03-13 18:41:12	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 18:41:30	--	Mode &bitlbee [-v dgame84] by localhost.localdomain
+2013-03-13 18:42:11	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 18:42:21	--	Mode &bitlbee [+v dgame84] by localhost.localdomain
+2013-03-13 18:42:27	<--	devensoni (devensoni@gmail.com) has quit (Leaving...)
+2013-03-13 18:42:46	--	Mode &bitlbee [-v bdoyle] by localhost.localdomain
+2013-03-13 18:42:52	-->	markwachen (mark.wachen@gmail.com) has joined &bitlbee
+2013-03-13 18:42:52	--	Mode &bitlbee [+v markwachen] by localhost.localdomain
+2013-03-13 18:42:58	-->	devensoni (devensoni@gmail.com) has joined &bitlbee
+2013-03-13 18:42:58	--	Mode &bitlbee [+v devensoni] by localhost.localdomain
+2013-03-13 18:45:06	--	Mode &bitlbee [+v patrickwynn] by localhost.localdomain
+2013-03-13 18:45:52	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 18:46:10	--	Mode &bitlbee [+v jshottan] by localhost.localdomain
+2013-03-13 18:46:10	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 18:46:11	--	Mode &bitlbee [-v patrickwynn] by localhost.localdomain
+2013-03-13 18:47:47	--	Mode &bitlbee [+v bdoyle] by localhost.localdomain
+2013-03-13 18:48:18	--	Mode &bitlbee [+v jstandring] by localhost.localdomain
+2013-03-13 18:49:57	<--	devensoni (devensoni@gmail.com) has quit (Leaving...)
+2013-03-13 18:50:47	--	Mode &bitlbee [-v afoung] by localhost.localdomain
+2013-03-13 18:51:38	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-13 18:53:07	--	Mode &bitlbee [-v joanneliu] by localhost.localdomain
+2013-03-13 18:53:09	<--	joanneliu (joanneliu@gmail.com) has quit (Leaving...)
+2013-03-13 18:53:21	-->	aranade (aranade@gmail.com) has joined &bitlbee
+2013-03-13 18:53:29	--	Mode &bitlbee [+v aranade] by localhost.localdomain
+2013-03-13 18:53:49	--	Mode &bitlbee [+v afoung] by localhost.localdomain
+2013-03-13 18:54:29	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 18:54:33	--	Mode &bitlbee [-v dgame84] by localhost.localdomain
+2013-03-13 18:55:11	--	Mode &bitlbee [-v jstandring] by localhost.localdomain
+2013-03-13 18:55:54	--	Mode &bitlbee [+v alexdegtiar] by localhost.localdomain
+2013-03-13 18:56:21	--	Mode &bitlbee [+v dgame84] by localhost.localdomain
+2013-03-13 18:56:59	--	Mode &bitlbee [-v alexdegtiar] by localhost.localdomain
+2013-03-13 18:57:41	--	Mode &bitlbee [+v jstandring] by localhost.localdomain
+2013-03-13 18:58:14	--	Mode &bitlbee [-v dgame84] by localhost.localdomain
+2013-03-13 18:58:56	<--	pnoguerol (pnoguerol@gmail.com) has quit (Leaving...)
+2013-03-13 19:00:35	--	Mode &bitlbee [-v jstandring] by localhost.localdomain
+2013-03-13 19:01:17	--	Mode &bitlbee [-v jshottan] by localhost.localdomain
+2013-03-13 19:01:23	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 19:01:58	--	Mode &bitlbee [-v schew56] by localhost.localdomain
+2013-03-13 19:04:10	--	Mode &bitlbee [-v paulknag] by localhost.localdomain
+2013-03-13 19:04:15	--	Mode &bitlbee [+v jennmkelly] by localhost.localdomain
+2013-03-13 19:04:37	<--	scottme (scottme@gmail.com) has quit (Leaving...)
+2013-03-13 19:04:43	-->	scottme (scottme@gmail.com) has joined &bitlbee
+2013-03-13 19:04:43	--	Mode &bitlbee [+v scottme] by localhost.localdomain
+2013-03-13 19:05:10	--	Mode &bitlbee [+v lunageorge] by localhost.localdomain
+2013-03-13 19:06:27	<--	kwraiks (kwraiks@gmail.com) has quit (Leaving...)
+2013-03-13 19:06:59	<--	markwachen (mark.wachen@gmail.com) has quit (Leaving...)
+2013-03-13 19:07:39	--	Mode &bitlbee [-v bdoyle] by localhost.localdomain
+2013-03-13 19:08:00	<--	vincebyrd (vincebyrd@gmail.com) has quit (Leaving...)
+2013-03-13 19:08:33	-->	markwachen (mark.wachen@gmail.com) has joined &bitlbee
+2013-03-13 19:08:33	--	Mode &bitlbee [+v markwachen] by localhost.localdomain
+2013-03-13 19:09:24	--	Mode &bitlbee [+v dgame84] by localhost.localdomain
+2013-03-13 19:09:59	--	Mode &bitlbee [-v dgame84] by localhost.localdomain
+2013-03-13 19:10:01	--	Mode &bitlbee [+v bdoyle] by localhost.localdomain
+2013-03-13 19:10:18	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 19:10:46	--	Mode &bitlbee [+v timchu100] by localhost.localdomain
+2013-03-13 19:11:31	--	Mode &bitlbee [-v timchu100] by localhost.localdomain
+2013-03-13 19:12:26	--	Mode &bitlbee [+v dgame84] by localhost.localdomain
+2013-03-13 19:13:15	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 19:14:01	<--	markwachen (mark.wachen@gmail.com) has quit (Leaving...)
+2013-03-13 19:16:28	<--	asohanamarasingham (asohan.amarasingham@gmail.com) has quit (Leaving...)
+2013-03-13 19:16:54	--	Mode &bitlbee [-v afoung] by localhost.localdomain
+2013-03-13 19:17:22	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 19:17:33	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 19:18:45	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 19:18:57	--	Mode &bitlbee [-v dgame84] by localhost.localdomain
+2013-03-13 19:19:23	--	Mode &bitlbee [+v dgame84] by localhost.localdomain
+2013-03-13 19:19:52	--	Mode &bitlbee [+v paulknag] by localhost.localdomain
+2013-03-13 19:19:55	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 19:20:25	--	Mode &bitlbee [+v jshottan] by localhost.localdomain
+2013-03-13 19:20:37	--	Mode &bitlbee [+v jstandring] by localhost.localdomain
+2013-03-13 19:20:40	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 19:20:45	--	Mode &bitlbee [-v aranade] by localhost.localdomain
+2013-03-13 19:21:05	--	Mode &bitlbee [-v jennmkelly] by localhost.localdomain
+2013-03-13 19:21:21	--	Mode &bitlbee [-v jstandring] by localhost.localdomain
+2013-03-13 19:22:02	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 19:22:03	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 19:23:03	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 19:23:05	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 19:23:42	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 19:23:48	-->	vincebyrd (vincebyrd@gmail.com) has joined &bitlbee
+2013-03-13 19:24:18	-->	asohanamarasingham (asohan.amarasingham@gmail.com) has joined &bitlbee
+2013-03-13 19:24:18	--	Mode &bitlbee [+v asohanamarasingham] by localhost.localdomain
+2013-03-13 19:24:59	<--	vincebyrd (vincebyrd@gmail.com) has quit (Leaving...)
+2013-03-13 19:24:59	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 19:25:38	<--	asohanamarasingham (asohan.amarasingham@gmail.com) has quit (Leaving...)
+2013-03-13 19:25:56	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 19:26:36	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 19:26:45	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 19:26:52	-->	shaladdle (shaladdle@gmail.com) has joined &bitlbee
+2013-03-13 19:26:52	--	Mode &bitlbee [+v shaladdle] by localhost.localdomain
+2013-03-13 19:27:55	--	Mode &bitlbee [+v dtorchiano] by localhost.localdomain
+2013-03-13 19:28:53	--	Mode &bitlbee [-v lunageorge] by localhost.localdomain
+2013-03-13 19:29:59	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 19:30:11	-->	joanneliu (joanneliu@gmail.com) has joined &bitlbee
+2013-03-13 19:30:13	--	Mode &bitlbee [+v joanneliu] by localhost.localdomain
+2013-03-13 19:30:15	<--	bdoyle (bdoyle@gmail.com) has quit (Leaving...)
+2013-03-13 19:31:00	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 19:31:03	--	Mode &bitlbee [-v dgame84] by localhost.localdomain
+2013-03-13 19:31:34	--	Mode &bitlbee [+v schew56] by localhost.localdomain
+2013-03-13 19:31:46	--	Mode &bitlbee [+v afoung] by localhost.localdomain
+2013-03-13 19:32:12	--	Mode &bitlbee [+v dgame84] by localhost.localdomain
+2013-03-13 19:32:22	-->	asohanamarasingham (asohan.amarasingham@gmail.com) has joined &bitlbee
+2013-03-13 19:32:25	--	Mode &bitlbee [-v dtorchiano] by localhost.localdomain
+2013-03-13 19:33:16	--	Mode &bitlbee [+v asohanamarasingham] by localhost.localdomain
+2013-03-13 19:34:22	--	Mode &bitlbee [+v patrickwynn] by localhost.localdomain
+2013-03-13 19:35:55	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 19:35:56	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 19:36:18	--	Mode &bitlbee [+v jennmkelly] by localhost.localdomain
+2013-03-13 19:36:30	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 19:36:40	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 19:36:44	-->	bvaidya124 (bvaidya124@gmail.com) has joined &bitlbee
+2013-03-13 19:36:44	--	Mode &bitlbee [+v bvaidya124] by localhost.localdomain
+2013-03-13 19:37:11	--	Mode &bitlbee [-v patrickwynn] by localhost.localdomain
+2013-03-13 19:37:56	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 19:38:44	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 19:38:51	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 19:39:37	<--	aranade (aranade@gmail.com) has quit (Leaving...)
+2013-03-13 19:39:41	-->	vincebyrd (vincebyrd@gmail.com) has joined &bitlbee
+2013-03-13 19:39:51	--	Mode &bitlbee [-v jshottan] by localhost.localdomain
+2013-03-13 19:40:15	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 19:40:15	--	Mode &bitlbee [+v lunageorge] by localhost.localdomain
+2013-03-13 19:40:38	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 19:41:47	<--	christianvillamor (christian.villamor@gmail.com) has quit (Leaving...)
+2013-03-13 19:41:49	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 19:43:16	--	Mode &bitlbee [-v lunageorge] by localhost.localdomain
+2013-03-13 19:43:40	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 19:44:39	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 19:45:04	<--	asohanamarasingham (asohan.amarasingham@gmail.com) has quit (Leaving...)
+2013-03-13 19:45:13	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 19:45:55	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 19:46:16	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 19:46:40	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 19:47:17	--	Mode &bitlbee [-v schew56] by localhost.localdomain
+2013-03-13 19:47:47	-->	aranade (aranade@gmail.com) has joined &bitlbee
+2013-03-13 19:47:57	-->	danieldho (daniel.dho@gmail.com) has joined &bitlbee
+2013-03-13 19:47:57	--	Mode &bitlbee [+v danieldho] by localhost.localdomain
+2013-03-13 19:48:08	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 19:48:12	--	Mode &bitlbee [+v aranade] by localhost.localdomain
+2013-03-13 19:48:30	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 19:49:00	-->	annacfarina (annacfarina@gmail.com) has joined &bitlbee
+2013-03-13 19:49:00	-->	pnoguerol (pnoguerol@gmail.com) has joined &bitlbee
+2013-03-13 19:49:06	-->	asohanamarasingham (asohan.amarasingham@gmail.com) has joined &bitlbee
+2013-03-13 19:49:06	--	Mode &bitlbee [+v asohanamarasingham] by localhost.localdomain
+2013-03-13 19:49:14	<--	danieldho (daniel.dho@gmail.com) has quit (Leaving...)
+2013-03-13 19:50:36	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 19:51:17	<--	asohanamarasingham (asohan.amarasingham@gmail.com) has quit (Leaving...)
+2013-03-13 19:51:18	--	Mode &bitlbee [-v jennmkelly] by localhost.localdomain
+2013-03-13 19:51:32	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 19:52:40	--	Mode &bitlbee [+v jstandring] by localhost.localdomain
+2013-03-13 19:52:48	--	Mode &bitlbee [+v pnoguerol] by localhost.localdomain
+2013-03-13 19:53:01	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 19:54:04	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 19:54:07	--	Mode &bitlbee [+v jennmkelly] by localhost.localdomain
+2013-03-13 19:55:25	--	Mode &bitlbee [-v jstandring] by localhost.localdomain
+2013-03-13 19:56:54	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 19:57:27	-->	kwraiks (kwraiks@gmail.com) has joined &bitlbee
+2013-03-13 19:57:27	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-13 19:58:03	-->	asohanamarasingham (asohan.amarasingham@gmail.com) has joined &bitlbee
+2013-03-13 19:58:03	--	Mode &bitlbee [+v asohanamarasingham] by localhost.localdomain
+2013-03-13 19:58:05	<--	asohanamarasingham (asohan.amarasingham@gmail.com) has quit (Leaving...)
+2013-03-13 19:58:08	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 19:58:48	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 19:58:52	--	Mode &bitlbee [+v dtorchiano] by localhost.localdomain
+2013-03-13 19:59:34	--	Mode &bitlbee [-v afoung] by localhost.localdomain
+2013-03-13 19:59:48	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 20:00:07	--	Mode &bitlbee [-v shaladdle] by localhost.localdomain
+2013-03-13 20:00:15	-->	asohanamarasingham (asohan.amarasingham@gmail.com) has joined &bitlbee
+2013-03-13 20:00:15	--	Mode &bitlbee [+v asohanamarasingham] by localhost.localdomain
+2013-03-13 20:00:16	<--	asohanamarasingham (asohan.amarasingham@gmail.com) has quit (Leaving...)
+2013-03-13 20:00:19	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 20:00:37	--	Mode &bitlbee [+v jshottan] by localhost.localdomain
+2013-03-13 20:00:57	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 20:01:38	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 20:02:11	--	Mode &bitlbee [-v dtorchiano] by localhost.localdomain
+2013-03-13 20:02:20	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 20:02:26	--	Mode &bitlbee [-v kwraiks] by localhost.localdomain
+2013-03-13 20:02:47	--	Mode &bitlbee [-v bvaidya124] by localhost.localdomain
+2013-03-13 20:03:16	--	Mode &bitlbee [-v aranade] by localhost.localdomain
+2013-03-13 20:03:59	--	Mode &bitlbee [+v shaladdle] by localhost.localdomain
+2013-03-13 20:04:11	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 20:04:22	--	Mode &bitlbee [-v dgame84] by localhost.localdomain
+2013-03-13 20:05:08	--	Mode &bitlbee [+v dtorchiano] by localhost.localdomain
+2013-03-13 20:05:12	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 20:05:30	--	Mode &bitlbee [+v aranade] by localhost.localdomain
+2013-03-13 20:05:50	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 20:05:55	--	Mode &bitlbee [+v afoung] by localhost.localdomain
+2013-03-13 20:06:55	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 20:07:41	--	Mode &bitlbee [+v lunageorge] by localhost.localdomain
+2013-03-13 20:07:50	--	Mode &bitlbee [+v timchu100] by localhost.localdomain
+2013-03-13 20:08:04	--	Mode &bitlbee [-v dtorchiano] by localhost.localdomain
+2013-03-13 20:08:52	--	Mode &bitlbee [-v timchu100] by localhost.localdomain
+2013-03-13 20:08:57	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 20:09:09	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-13 20:09:32	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 20:10:07	-->	yccovin (yccovin@gmail.com) has joined &bitlbee
+2013-03-13 20:10:07	--	Mode &bitlbee [+v yccovin] by localhost.localdomain
+2013-03-13 20:10:25	--	Mode &bitlbee [-v lunageorge] by localhost.localdomain
+2013-03-13 20:11:09	--	Mode &bitlbee [+v lunageorge] by localhost.localdomain
+2013-03-13 20:12:12	--	Mode &bitlbee [-v pnoguerol] by localhost.localdomain
+2013-03-13 20:12:17	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 20:13:10	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 20:13:11	--	Mode &bitlbee [+v schew56] by localhost.localdomain
+2013-03-13 20:13:41	--	Mode &bitlbee [+v dgame84] by localhost.localdomain
+2013-03-13 20:13:45	--	Mode &bitlbee [-v lunageorge] by localhost.localdomain
+2013-03-13 20:14:00	<--	aranade (aranade@gmail.com) has quit (Leaving...)
+2013-03-13 20:14:06	<--	afoung (afoung@gmail.com) has quit (Leaving...)
+2013-03-13 20:14:18	--	Mode &bitlbee [-v kwraiks] by localhost.localdomain
+2013-03-13 20:15:20	<--	yccovin (yccovin@gmail.com) has quit (Leaving...)
+2013-03-13 20:15:29	-->	yccovin (yccovin@gmail.com) has joined &bitlbee
+2013-03-13 20:15:29	--	Mode &bitlbee [+v yccovin] by localhost.localdomain
+2013-03-13 20:15:32	--	Mode &bitlbee [+v swapnas8] by localhost.localdomain
+2013-03-13 20:16:13	<--	scottme (scottme@gmail.com) has quit (Leaving...)
+2013-03-13 20:16:39	<--	yccovin (yccovin@gmail.com) has quit (Leaving...)
+2013-03-13 20:17:21	<--	schew56 (schew56@gmail.com) has quit (Leaving...)
+2013-03-13 20:17:32	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 20:17:52	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-13 20:18:15	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 20:18:20	--	Mode &bitlbee [-v jshottan] by localhost.localdomain
+2013-03-13 20:18:30	--	Mode &bitlbee [-v swapnas8] by localhost.localdomain
+2013-03-13 20:19:03	--	Mode &bitlbee [-v kwraiks] by localhost.localdomain
+2013-03-13 20:19:05	<--	kwraiks (kwraiks@gmail.com) has quit (Leaving...)
+2013-03-13 20:19:05	-->	kwraiks (kwraiks@gmail.com) has joined &bitlbee
+2013-03-13 20:19:20	--	Mode &bitlbee [+v timchu100] by localhost.localdomain
+2013-03-13 20:19:22	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 20:19:44	--	Mode &bitlbee [-v paulknag] by localhost.localdomain
+2013-03-13 20:22:20	-->	mintzmichael (mintzmichael@gmail.com) has joined &bitlbee
+2013-03-13 20:22:20	--	Mode &bitlbee [+v mintzmichael] by localhost.localdomain
+2013-03-13 20:22:21	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 20:22:25	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 20:22:59	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 20:24:22	--	Mode &bitlbee [-v dgame84] by localhost.localdomain
+2013-03-13 20:24:25	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 20:25:13	<--	annacfarina (annacfarina@gmail.com) has quit (Leaving...)
+2013-03-13 20:25:19	--	Mode &bitlbee [-v jennmkelly] by localhost.localdomain
+2013-03-13 20:25:45	--	Mode &bitlbee [-v timchu100] by localhost.localdomain
+2013-03-13 20:25:54	-->	maximebury (maxime.bury@gmail.com) has joined &bitlbee
+2013-03-13 20:26:30	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 20:26:45	--	Mode &bitlbee [+v dgame84] by localhost.localdomain
+2013-03-13 20:28:23	--	Mode &bitlbee [+v pnoguerol] by localhost.localdomain
+2013-03-13 20:28:53	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 20:29:12	--	Mode &bitlbee [-v dgame84] by localhost.localdomain
+2013-03-13 20:29:26	<--	mintzmichael (mintzmichael@gmail.com) has quit (Leaving...)
+2013-03-13 20:30:12	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 20:30:16	--	Mode &bitlbee [+v alexdegtiar] by localhost.localdomain
+2013-03-13 20:30:44	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-13 20:30:56	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 20:31:38	--	Mode &bitlbee [+v dgame84] by localhost.localdomain
+2013-03-13 20:31:47	--	Mode &bitlbee [-v kwraiks] by localhost.localdomain
+2013-03-13 20:31:50	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 20:31:53	-->	mintzmichael (mintzmichael@gmail.com) has joined &bitlbee
+2013-03-13 20:31:53	--	Mode &bitlbee [+v mintzmichael] by localhost.localdomain
+2013-03-13 20:32:31	--	Mode &bitlbee [-v dgame84] by localhost.localdomain
+2013-03-13 20:32:59	--	Mode &bitlbee [+v dtorchiano] by localhost.localdomain
+2013-03-13 20:33:09	--	Mode &bitlbee [-v alexdegtiar] by localhost.localdomain
+2013-03-13 20:33:19	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 20:33:30	--	Mode &bitlbee [-v pnoguerol] by localhost.localdomain
+2013-03-13 20:33:34	<--	vincebyrd (vincebyrd@gmail.com) has quit (Leaving...)
+2013-03-13 20:33:44	--	Mode &bitlbee [-v dtorchiano] by localhost.localdomain
+2013-03-13 20:34:07	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 20:34:16	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 20:34:21	--	Mode &bitlbee [+v alexdegtiar] by localhost.localdomain
+2013-03-13 20:34:39	--	Mode &bitlbee [+v patrickwynn] by localhost.localdomain
+2013-03-13 20:35:12	--	Mode &bitlbee [-v shaladdle] by localhost.localdomain
+2013-03-13 20:35:17	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 20:35:49	--	Mode &bitlbee [-v patrickwynn] by localhost.localdomain
+2013-03-13 20:36:04	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-13 20:36:07	--	Mode &bitlbee [+v bvaidya124] by localhost.localdomain
+2013-03-13 20:38:21	--	Mode &bitlbee [-v alexdegtiar] by localhost.localdomain
+2013-03-13 20:38:44	--	Mode &bitlbee [+v shaladdle] by localhost.localdomain
+2013-03-13 20:38:51	--	Mode &bitlbee [+v pnoguerol] by localhost.localdomain
+2013-03-13 20:39:23	--	Mode &bitlbee [-v kwraiks] by localhost.localdomain
+2013-03-13 20:39:26	--	Mode &bitlbee [+v jennmkelly] by localhost.localdomain
+2013-03-13 20:39:31	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 20:40:00	--	Mode &bitlbee [+v dgame84] by localhost.localdomain
+2013-03-13 20:40:11	-->	guillermodcockrum (guillermo.d.cockrum@gmail.com) has joined &bitlbee
+2013-03-13 20:40:11	--	Mode &bitlbee [+v guillermodcockrum] by localhost.localdomain
+2013-03-13 20:40:36	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 20:40:57	--	Mode &bitlbee [-v dgame84] by localhost.localdomain
+2013-03-13 20:41:30	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-13 20:41:46	--	Mode &bitlbee [+v dgame84] by localhost.localdomain
+2013-03-13 20:42:19	--	Mode &bitlbee [-v dgame84] by localhost.localdomain
+2013-03-13 20:42:58	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 20:42:58	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 20:43:03	<--	mintzmichael (mintzmichael@gmail.com) has quit (Leaving...)
+2013-03-13 20:43:03	--	Mode &bitlbee [-v kwraiks] by localhost.localdomain
+2013-03-13 20:43:32	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 20:43:46	-->	danieldho (daniel.dho@gmail.com) has joined &bitlbee
+2013-03-13 20:43:46	--	Mode &bitlbee [+v danieldho] by localhost.localdomain
+2013-03-13 20:43:52	--	Mode &bitlbee [-v pnoguerol] by localhost.localdomain
+2013-03-13 20:44:23	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 20:44:53	<--	danieldho (daniel.dho@gmail.com) has quit (Leaving...)
+2013-03-13 20:44:57	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 20:45:52	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 20:47:05	--	Mode &bitlbee [+v pnoguerol] by localhost.localdomain
+2013-03-13 20:47:10	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 20:47:36	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 20:48:09	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 20:48:09	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 20:48:49	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 20:49:22	-->	schew56 (schew56@gmail.com) has joined &bitlbee
+2013-03-13 20:49:22	--	Mode &bitlbee [+v schew56] by localhost.localdomain
+2013-03-13 20:49:36	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-13 20:51:09	--	Mode &bitlbee [-v bvaidya124] by localhost.localdomain
+2013-03-13 20:52:24	<--	kwraiks (kwraiks@gmail.com) has quit (Leaving...)
+2013-03-13 20:52:25	-->	kwraiks (kwraiks@gmail.com) has joined &bitlbee
+2013-03-13 20:52:25	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-13 20:55:03	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 20:55:44	--	Mode &bitlbee [+v timchu100] by localhost.localdomain
+2013-03-13 20:56:20	--	Mode &bitlbee [-v timchu100] by localhost.localdomain
+2013-03-13 20:57:00	--	Mode &bitlbee [-v pnoguerol] by localhost.localdomain
+2013-03-13 20:58:16	--	Mode &bitlbee [+v alexdegtiar] by localhost.localdomain
+2013-03-13 20:59:24	-->	scottme (scottme@gmail.com) has joined &bitlbee
+2013-03-13 20:59:24	--	Mode &bitlbee [+v scottme] by localhost.localdomain
+2013-03-13 21:00:00	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 21:00:38	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 21:00:48	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 21:01:17	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 21:01:31	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 21:01:37	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 21:01:47	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 21:02:56	--	Mode &bitlbee [-v alexdegtiar] by localhost.localdomain
+2013-03-13 21:03:23	--	Mode &bitlbee [-v schew56] by localhost.localdomain
+2013-03-13 21:03:23	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 21:03:26	<--	guillermodcockrum (guillermo.d.cockrum@gmail.com) has quit (Leaving...)
+2013-03-13 21:04:03	--	Mode &bitlbee [+v cmurball] by localhost.localdomain
+2013-03-13 21:04:11	<--	joanneliu (joanneliu@gmail.com) has quit (Leaving...)
+2013-03-13 21:04:12	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 21:04:44	<--	kwraiks (kwraiks@gmail.com) has quit (Leaving...)
+2013-03-13 21:05:01	-->	guillermodcockrum (guillermo.d.cockrum@gmail.com) has joined &bitlbee
+2013-03-13 21:05:01	--	Mode &bitlbee [+v guillermodcockrum] by localhost.localdomain
+2013-03-13 21:05:35	--	Mode &bitlbee [-v cmurball] by localhost.localdomain
+2013-03-13 21:07:00	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 21:07:09	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 21:07:37	--	Mode &bitlbee [+v alexdegtiar] by localhost.localdomain
+2013-03-13 21:08:41	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 21:08:58	--	Mode &bitlbee [+v timchu100] by localhost.localdomain
+2013-03-13 21:09:24	--	Mode &bitlbee [+v cmurball] by localhost.localdomain
+2013-03-13 21:09:38	--	Mode &bitlbee [+v dgame84] by localhost.localdomain
+2013-03-13 21:10:07	--	Mode &bitlbee [-v cmurball] by localhost.localdomain
+2013-03-13 21:10:12	--	Mode &bitlbee [-v dgame84] by localhost.localdomain
+2013-03-13 21:10:22	--	Mode &bitlbee [-v timchu100] by localhost.localdomain
+2013-03-13 21:13:25	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 21:13:43	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 21:14:02	--	Mode &bitlbee [+v bvaidya124] by localhost.localdomain
+2013-03-13 21:14:29	--	Mode &bitlbee [+v cmurball] by localhost.localdomain
+2013-03-13 21:14:32	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 21:14:34	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 21:16:07	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 21:17:08	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 21:17:43	--	Mode &bitlbee [+v pnoguerol] by localhost.localdomain
+2013-03-13 21:19:02	--	Mode &bitlbee [-v alexdegtiar] by localhost.localdomain
+2013-03-13 21:21:03	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 21:21:23	--	Mode &bitlbee [-v cmurball] by localhost.localdomain
+2013-03-13 21:21:26	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 21:22:04	-->	mintzmichael (mintzmichael@gmail.com) has joined &bitlbee
+2013-03-13 21:22:04	--	Mode &bitlbee [+v mintzmichael] by localhost.localdomain
+2013-03-13 21:22:08	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 21:22:13	-->	danieldho (daniel.dho@gmail.com) has joined &bitlbee
+2013-03-13 21:22:13	--	Mode &bitlbee [+v danieldho] by localhost.localdomain
+2013-03-13 21:22:44	--	Mode &bitlbee [-v pnoguerol] by localhost.localdomain
+2013-03-13 21:23:04	-->	pascaldavisg (pascal.davisg@gmail.com) has joined &bitlbee
+2013-03-13 21:23:04	--	Mode &bitlbee [+v pascaldavisg] by localhost.localdomain
+2013-03-13 21:23:14	<--	danieldho (daniel.dho@gmail.com) has quit (Leaving...)
+2013-03-13 21:23:29	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 21:24:03	-->	afoung (afoung@gmail.com) has joined &bitlbee
+2013-03-13 21:25:50	--	Mode &bitlbee [+v pnoguerol] by localhost.localdomain
+2013-03-13 21:26:51	--	Mode &bitlbee [-v jennmkelly] by localhost.localdomain
+2013-03-13 21:27:33	--	Mode &bitlbee [-v guillermodcockrum] by localhost.localdomain
+2013-03-13 21:27:39	<--	afoung (afoung@gmail.com) has quit (Leaving...)
+2013-03-13 21:28:16	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 21:28:25	-->	yccovin (yccovin@gmail.com) has joined &bitlbee
+2013-03-13 21:28:25	--	Mode &bitlbee [+v yccovin] by localhost.localdomain
+2013-03-13 21:28:45	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 21:29:02	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 21:29:08	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 21:30:04	<--	yccovin (yccovin@gmail.com) has quit (Leaving...)
+2013-03-13 21:31:40	<--	mintzmichael (mintzmichael@gmail.com) has quit (Leaving...)
+2013-03-13 21:33:04	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 21:34:15	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 21:34:57	-->	afoung (afoung@gmail.com) has joined &bitlbee
+2013-03-13 21:34:57	--	Mode &bitlbee [+v afoung] by localhost.localdomain
+2013-03-13 21:35:23	--	Mode &bitlbee [-v pnoguerol] by localhost.localdomain
+2013-03-13 21:35:35	--	Mode &bitlbee [-v shaladdle] by localhost.localdomain
+2013-03-13 21:35:38	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 21:36:35	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 21:37:21	-->	annacfarina (annacfarina@gmail.com) has joined &bitlbee
+2013-03-13 21:38:14	-->	devensoni (devensoni@gmail.com) has joined &bitlbee
+2013-03-13 21:38:14	--	Mode &bitlbee [+v devensoni] by localhost.localdomain
+2013-03-13 21:38:48	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 21:38:58	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 21:39:35	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 21:40:01	--	Mode &bitlbee [+v schew56] by localhost.localdomain
+2013-03-13 21:40:08	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 21:40:56	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 21:43:07	--	Mode &bitlbee [+v timchu100] by localhost.localdomain
+2013-03-13 21:43:51	--	Mode &bitlbee [-v timchu100] by localhost.localdomain
+2013-03-13 21:44:55	--	Mode &bitlbee [-v pascaldavisg] by localhost.localdomain
+2013-03-13 21:45:16	<--	annacfarina (annacfarina@gmail.com) has quit (Leaving...)
+2013-03-13 21:46:41	<--	bvaidya124 (bvaidya124@gmail.com) has quit (Leaving...)
+2013-03-13 21:47:06	--	Mode &bitlbee [-v schew56] by localhost.localdomain
+2013-03-13 21:48:38	<--	maximebury (maxime.bury@gmail.com) has quit (Leaving...)
+2013-03-13 21:48:47	--	Mode &bitlbee [+v timchu100] by localhost.localdomain
+2013-03-13 21:49:40	-->	christianvillamor (christian.villamor@gmail.com) has joined &bitlbee
+2013-03-13 21:49:40	--	Mode &bitlbee [+v christianvillamor] by localhost.localdomain
+2013-03-13 21:49:49	--	Mode &bitlbee [-v timchu100] by localhost.localdomain
+2013-03-13 21:49:55	--	Mode &bitlbee [+v timchu100] by localhost.localdomain
+2013-03-13 21:50:40	--	Mode &bitlbee [-v timchu100] by localhost.localdomain
+2013-03-13 21:51:25	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 21:51:34	-->	yccovin (yccovin@gmail.com) has joined &bitlbee
+2013-03-13 21:51:34	--	Mode &bitlbee [+v yccovin] by localhost.localdomain
+2013-03-13 21:51:54	--	Mode &bitlbee [+v cmurball] by localhost.localdomain
+2013-03-13 21:52:05	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 21:52:56	--	Mode &bitlbee [-v cmurball] by localhost.localdomain
+2013-03-13 21:53:43	--	Mode &bitlbee [+v guillermodcockrum] by localhost.localdomain
+2013-03-13 21:53:43	<--	yccovin (yccovin@gmail.com) has quit (Leaving...)
+2013-03-13 21:54:41	-->	asohanamarasingham (asohan.amarasingham@gmail.com) has joined &bitlbee
+2013-03-13 21:54:41	--	Mode &bitlbee [+v asohanamarasingham] by localhost.localdomain
+2013-03-13 21:55:56	--	Mode &bitlbee [+v alexdegtiar] by localhost.localdomain
+2013-03-13 21:57:59	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 21:58:05	--	Mode &bitlbee [+v lunageorge] by localhost.localdomain
+2013-03-13 21:58:51	--	Mode &bitlbee [-v alexdegtiar] by localhost.localdomain
+2013-03-13 21:59:11	--	Mode &bitlbee [+v alexdegtiar] by localhost.localdomain
+2013-03-13 21:59:37	--	Mode &bitlbee [+v cmurball] by localhost.localdomain
+2013-03-13 22:00:38	--	Mode &bitlbee [-v cmurball] by localhost.localdomain
+2013-03-13 22:01:01	<--	devensoni (devensoni@gmail.com) has quit (Leaving...)
+2013-03-13 22:01:36	-->	mintzmichael (mintzmichael@gmail.com) has joined &bitlbee
+2013-03-13 22:01:36	--	Mode &bitlbee [+v mintzmichael] by localhost.localdomain
+2013-03-13 22:01:54	<--	guillermodcockrum (guillermo.d.cockrum@gmail.com) has quit (Leaving...)
+2013-03-13 22:02:04	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 22:02:35	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 22:03:25	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 22:03:55	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 22:05:04	<--	mintzmichael (mintzmichael@gmail.com) has quit (Leaving...)
+2013-03-13 22:05:22	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 22:05:31	--	Mode &bitlbee [-v alexdegtiar] by localhost.localdomain
+2013-03-13 22:05:51	--	Mode &bitlbee [+v pnoguerol] by localhost.localdomain
+2013-03-13 22:06:08	--	Mode &bitlbee [-v christianvillamor] by localhost.localdomain
+2013-03-13 22:07:22	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 22:09:01	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 22:09:35	-->	maximebury (maxime.bury@gmail.com) has joined &bitlbee
+2013-03-13 22:10:46	--	Mode &bitlbee [+v alexdegtiar] by localhost.localdomain
+2013-03-13 22:11:00	--	Mode &bitlbee [+v schew56] by localhost.localdomain
+2013-03-13 22:11:14	<--	scottme (scottme@gmail.com) has quit (Leaving...)
+2013-03-13 22:11:21	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 22:11:41	--	Mode &bitlbee [-v alexdegtiar] by localhost.localdomain
+2013-03-13 22:12:47	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 22:12:48	--	Mode &bitlbee [+v dgame84] by localhost.localdomain
+2013-03-13 22:12:59	-->	guillermodcockrum (guillermo.d.cockrum@gmail.com) has joined &bitlbee
+2013-03-13 22:13:00	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 22:13:02	--	Mode &bitlbee [-v dgame84] by localhost.localdomain
+2013-03-13 22:14:09	<--	guillermodcockrum (guillermo.d.cockrum@gmail.com) has quit (Leaving...)
+2013-03-13 22:14:39	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 22:14:51	--	Mode &bitlbee [+v christianvillamor] by localhost.localdomain
+2013-03-13 22:15:27	--	Mode &bitlbee [-v afoung] by localhost.localdomain
+2013-03-13 22:16:14	--	Mode &bitlbee [-v schew56] by localhost.localdomain
+2013-03-13 22:17:35	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 22:17:44	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 22:18:13	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 22:18:52	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 22:19:02	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 22:19:13	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 22:20:00	-->	markwachen (mark.wachen@gmail.com) has joined &bitlbee
+2013-03-13 22:20:56	--	Mode &bitlbee [-v pnoguerol] by localhost.localdomain
+2013-03-13 22:21:06	-->	jill95446 (jill95446@gmail.com) has joined &bitlbee
+2013-03-13 22:21:15	--	Mode &bitlbee [+v markwachen] by localhost.localdomain
+2013-03-13 22:21:18	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 22:21:56	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 22:22:19	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 22:22:55	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 22:24:06	-->	devensoni (devensoni@gmail.com) has joined &bitlbee
+2013-03-13 22:24:06	--	Mode &bitlbee [+v devensoni] by localhost.localdomain
+2013-03-13 22:25:06	<--	devensoni (devensoni@gmail.com) has quit (Leaving...)
+2013-03-13 22:26:52	--	Mode &bitlbee [-v lunageorge] by localhost.localdomain
+2013-03-13 22:27:08	<--	asohanamarasingham (asohan.amarasingham@gmail.com) has quit (Leaving...)
+2013-03-13 22:30:26	--	Mode &bitlbee [+v timchu100] by localhost.localdomain
+2013-03-13 22:31:12	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 22:31:35	--	Mode &bitlbee [-v timchu100] by localhost.localdomain
+2013-03-13 22:32:11	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 22:32:25	--	Mode &bitlbee [+v pnoguerol] by localhost.localdomain
+2013-03-13 22:33:27	-->	scottme (scottme@gmail.com) has joined &bitlbee
+2013-03-13 22:33:27	--	Mode &bitlbee [+v scottme] by localhost.localdomain
+2013-03-13 22:34:08	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 22:35:13	--	Mode &bitlbee [-v christianvillamor] by localhost.localdomain
+2013-03-13 22:38:57	-->	asohanamarasingham (asohan.amarasingham@gmail.com) has joined &bitlbee
+2013-03-13 22:38:57	--	Mode &bitlbee [+v asohanamarasingham] by localhost.localdomain
+2013-03-13 22:39:12	--	Mode &bitlbee [+v paulknag] by localhost.localdomain
+2013-03-13 22:39:36	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 22:39:37	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 22:39:45	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 22:40:15	--	Mode &bitlbee [+v dtorchiano] by localhost.localdomain
+2013-03-13 22:40:51	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 22:41:16	<--	asohanamarasingham (asohan.amarasingham@gmail.com) has quit (Leaving...)
+2013-03-13 22:42:54	--	Mode &bitlbee [+v cmurball] by localhost.localdomain
+2013-03-13 22:43:01	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 22:43:05	-->	yccovin (yccovin@gmail.com) has joined &bitlbee
+2013-03-13 22:43:05	--	Mode &bitlbee [+v yccovin] by localhost.localdomain
+2013-03-13 22:44:05	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 22:44:14	--	Mode &bitlbee [-v cmurball] by localhost.localdomain
+2013-03-13 22:45:05	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 22:45:24	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 22:45:55	--	Mode &bitlbee [-v dtorchiano] by localhost.localdomain
+2013-03-13 22:46:38	-->	asohanamarasingham (asohan.amarasingham@gmail.com) has joined &bitlbee
+2013-03-13 22:46:38	--	Mode &bitlbee [+v asohanamarasingham] by localhost.localdomain
+2013-03-13 22:47:27	--	Mode &bitlbee [+v dgame84] by localhost.localdomain
+2013-03-13 22:47:29	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 22:47:29	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 22:47:55	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 22:48:15	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 22:48:44	-->	annacfarina (annacfarina@gmail.com) has joined &bitlbee
+2013-03-13 22:50:26	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 22:50:35	--	Mode &bitlbee [+v cmurball] by localhost.localdomain
+2013-03-13 22:52:40	--	Mode &bitlbee [+v christianvillamor] by localhost.localdomain
+2013-03-13 22:52:57	--	Mode &bitlbee [-v cmurball] by localhost.localdomain
+2013-03-13 22:52:57	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 22:53:33	<--	yccovin (yccovin@gmail.com) has quit (Leaving...)
+2013-03-13 22:54:10	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 22:54:12	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 22:55:08	--	Mode &bitlbee [-v dgame84] by localhost.localdomain
+2013-03-13 22:55:50	<--	christianvillamor (christian.villamor@gmail.com) has quit (Leaving...)
+2013-03-13 22:56:22	-->	jweiss11 (jweiss11@gmail.com) has joined &bitlbee
+2013-03-13 22:56:22	--	Mode &bitlbee [+v jweiss11] by localhost.localdomain
+2013-03-13 22:56:26	--	Mode &bitlbee [+v dgame84] by localhost.localdomain
+2013-03-13 22:56:49	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 22:57:45	--	Mode &bitlbee [+v timchu100] by localhost.localdomain
+2013-03-13 22:58:17	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 22:59:02	--	Mode &bitlbee [-v timchu100] by localhost.localdomain
+2013-03-13 22:59:12	<--	jweiss11 (jweiss11@gmail.com) has quit (Leaving...)
+2013-03-13 22:59:14	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 23:01:31	--	Mode &bitlbee [+v lunageorge] by localhost.localdomain
+2013-03-13 23:02:10	--	Mode &bitlbee [+v pascaldavisg] by localhost.localdomain
+2013-03-13 23:03:21	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-13 23:03:45	--	Mode &bitlbee [-v asohanamarasingham] by localhost.localdomain
+2013-03-13 23:03:56	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 23:05:10	--	Mode &bitlbee [+v cmurball] by localhost.localdomain
+2013-03-13 23:05:43	--	Mode &bitlbee [+v schew56] by localhost.localdomain
+2013-03-13 23:05:44	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 23:05:55	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 23:06:05	--	Mode &bitlbee [-v cmurball] by localhost.localdomain
+2013-03-13 23:06:20	<--	schew56 (schew56@gmail.com) has quit (Leaving...)
+2013-03-13 23:06:30	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 23:06:43	-->	christianvillamor (christian.villamor@gmail.com) has joined &bitlbee
+2013-03-13 23:06:43	--	Mode &bitlbee [+v christianvillamor] by localhost.localdomain
+2013-03-13 23:07:06	--	Mode &bitlbee [+v afoung] by localhost.localdomain
+2013-03-13 23:07:46	--	Mode &bitlbee [-v dgame84] by localhost.localdomain
+2013-03-13 23:08:01	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-13 23:08:59	--	Mode &bitlbee [-v jma0506] by localhost.localdomain
+2013-03-13 23:10:52	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 23:11:50	--	Mode &bitlbee [-v lunageorge] by localhost.localdomain
+2013-03-13 23:12:12	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 23:13:23	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-13 23:15:14	--	Mode &bitlbee [+v cmurball] by localhost.localdomain
+2013-03-13 23:15:51	--	Mode &bitlbee [-v cmurball] by localhost.localdomain
+2013-03-13 23:15:57	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 23:18:32	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 23:18:34	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 23:19:16	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-13 23:19:25	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-13 23:20:13	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-13 23:20:13	--	Mode &bitlbee [-v pascaldavisg] by localhost.localdomain
+2013-03-13 23:21:50	--	Mode &bitlbee [-v christianvillamor] by localhost.localdomain
+2013-03-13 23:25:25	--	Mode &bitlbee [+v cmurball] by localhost.localdomain
+2013-03-13 23:26:41	<--	christianvillamor (christian.villamor@gmail.com) has quit (Leaving...)
+2013-03-13 23:27:49	--	Mode &bitlbee [-v cmurball] by localhost.localdomain
+2013-03-13 23:29:38	--	Mode &bitlbee [+v cmurball] by localhost.localdomain
+2013-03-13 23:29:40	--	Mode &bitlbee [+v alexdegtiar] by localhost.localdomain
+2013-03-13 23:29:59	--	Mode &bitlbee [-v afoung] by localhost.localdomain
+2013-03-13 23:30:53	--	Mode &bitlbee [+v shaladdle] by localhost.localdomain
+2013-03-13 23:32:31	--	Mode &bitlbee [+v timchu100] by localhost.localdomain
+2013-03-13 23:33:06	--	Mode &bitlbee [-v timchu100] by localhost.localdomain
+2013-03-13 23:33:41	--	Mode &bitlbee [-v cmurball] by localhost.localdomain
+2013-03-13 23:33:48	--	Mode &bitlbee [+v cmurball] by localhost.localdomain
+2013-03-13 23:35:34	-->	kwraiks (kwraiks@gmail.com) has joined &bitlbee
+2013-03-13 23:35:34	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-13 23:35:56	--	Mode &bitlbee [-v alexdegtiar] by localhost.localdomain
+2013-03-13 23:36:26	--	Mode &bitlbee [-v cmurball] by localhost.localdomain
+2013-03-13 23:37:50	--	Mode &bitlbee [+v cmurball] by localhost.localdomain
+2013-03-13 23:38:35	--	Mode &bitlbee [-v cmurball] by localhost.localdomain
+2013-03-13 23:38:56	--	Mode &bitlbee [-v kwraiks] by localhost.localdomain
+2013-03-13 23:39:22	--	Mode &bitlbee [+v cmurball] by localhost.localdomain
+2013-03-13 23:39:27	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-13 23:40:10	<--	afoung (afoung@gmail.com) has quit (Leaving...)
+2013-03-13 23:40:14	--	Mode &bitlbee [-v cmurball] by localhost.localdomain
+2013-03-13 23:41:09	--	Mode &bitlbee [-v kwraiks] by localhost.localdomain
+2013-03-13 23:41:49	<--	annacfarina (annacfarina@gmail.com) has quit (Leaving...)
+2013-03-13 23:42:49	<--	pnoguerol (pnoguerol@gmail.com) has quit (Leaving...)
+2013-03-13 23:50:12	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-13 23:50:13	--	Mode &bitlbee [+v cmurball] by localhost.localdomain
+2013-03-13 23:51:36	--	Mode &bitlbee [+v alexdegtiar] by localhost.localdomain
+2013-03-13 23:52:00	--	Mode &bitlbee [-v cmurball] by localhost.localdomain
+2013-03-13 23:52:35	--	Mode &bitlbee [-v alexdegtiar] by localhost.localdomain
+2013-03-13 23:54:37	--	Mode &bitlbee [+v cmurball] by localhost.localdomain
+2013-03-13 23:54:41	--	Mode &bitlbee [+v asohanamarasingham] by localhost.localdomain
+2013-03-13 23:55:03	--	Mode &bitlbee [-v shaladdle] by localhost.localdomain
+2013-03-13 23:55:45	--	Mode &bitlbee [+v shaladdle] by localhost.localdomain
+2013-03-13 23:55:46	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-13 23:56:46	--	Mode &bitlbee [-v kwraiks] by localhost.localdomain
+2013-03-13 23:58:32	--	Mode &bitlbee [-v cmurball] by localhost.localdomain
+2013-03-13 23:58:51	--	Mode &bitlbee [+v cmurball] by localhost.localdomain
+2013-03-14 00:02:08	--	Mode &bitlbee [+v dgame84] by localhost.localdomain
+2013-03-14 00:02:43	--	Mode &bitlbee [-v dgame84] by localhost.localdomain
+2013-03-14 00:03:48	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-14 00:04:41	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-14 00:07:16	--	Mode &bitlbee [-v kwraiks] by localhost.localdomain
+2013-03-14 00:08:16	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-14 00:08:53	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-14 00:10:19	--	Mode &bitlbee [-v asohanamarasingham] by localhost.localdomain
+2013-03-14 00:10:35	--	Mode &bitlbee [-v kwraiks] by localhost.localdomain
+2013-03-14 00:13:14	-->	devensoni (devensoni@gmail.com) has joined &bitlbee
+2013-03-14 00:13:14	--	Mode &bitlbee [+v devensoni] by localhost.localdomain
+2013-03-14 00:13:17	<--	devensoni (devensoni@gmail.com) has quit (Leaving...)
+2013-03-14 00:15:52	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-14 00:16:04	--	Mode &bitlbee [-v shaladdle] by localhost.localdomain
+2013-03-14 00:17:10	--	Mode &bitlbee [+v shaladdle] by localhost.localdomain
+2013-03-14 00:17:35	--	Mode &bitlbee [+v jamesjohndrow] by localhost.localdomain
+2013-03-14 00:18:46	--	Mode &bitlbee [-v cmurball] by localhost.localdomain
+2013-03-14 00:19:20	--	Mode &bitlbee [+v cmurball] by localhost.localdomain
+2013-03-14 00:19:23	-->	afoung (afoung@gmail.com) has joined &bitlbee
+2013-03-14 00:19:32	--	Mode &bitlbee [+v afoung] by localhost.localdomain
+2013-03-14 00:19:34	<--	scottme (scottme@gmail.com) has quit (Leaving...)
+2013-03-14 00:19:51	--	Mode &bitlbee [-v markwachen] by localhost.localdomain
+2013-03-14 00:20:18	--	Mode &bitlbee [-v cmurball] by localhost.localdomain
+2013-03-14 00:20:19	--	Mode &bitlbee [+v cmurball] by localhost.localdomain
+2013-03-14 00:21:15	--	Mode &bitlbee [-v cmurball] by localhost.localdomain
+2013-03-14 00:21:16	--	Mode &bitlbee [+v jshottan] by localhost.localdomain
+2013-03-14 00:22:49	-->	scottme (scottme@gmail.com) has joined &bitlbee
+2013-03-14 00:22:49	--	Mode &bitlbee [+v scottme] by localhost.localdomain
+2013-03-14 00:23:26	--	Mode &bitlbee [-v jshottan] by localhost.localdomain
+2013-03-14 00:23:29	-->	schew56 (schew56@gmail.com) has joined &bitlbee
+2013-03-14 00:24:31	<--	scottme (scottme@gmail.com) has quit (Leaving...)
+2013-03-14 00:26:50	--	Mode &bitlbee [+v cmurball] by localhost.localdomain
+2013-03-14 00:26:54	<--	jennmkelly (jenn.m.kelly@gmail.com) has quit (Leaving...)
+2013-03-14 00:27:35	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-14 00:27:43	<--	afoung (afoung@gmail.com) has quit (Leaving...)
+2013-03-14 00:29:05	--	Mode &bitlbee [-v kwraiks] by localhost.localdomain
+2013-03-14 00:31:02	-->	devensoni (devensoni@gmail.com) has joined &bitlbee
+2013-03-14 00:31:02	--	Mode &bitlbee [+v devensoni] by localhost.localdomain
+2013-03-14 00:31:12	<--	devensoni (devensoni@gmail.com) has quit (Leaving...)
+2013-03-14 00:31:22	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-14 00:32:37	--	Mode &bitlbee [-v jamesjohndrow] by localhost.localdomain
+2013-03-14 00:34:34	--	Mode &bitlbee [+v asohanamarasingham] by localhost.localdomain
+2013-03-14 00:34:40	-->	kayvonf (kayvonf@gmail.com) has joined &bitlbee
+2013-03-14 00:34:40	--	Mode &bitlbee [+v kayvonf] by localhost.localdomain
+2013-03-14 00:34:51	--	Mode &bitlbee [+v timchu100] by localhost.localdomain
+2013-03-14 00:35:35	--	Mode &bitlbee [-v timchu100] by localhost.localdomain
+2013-03-14 00:38:15	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-14 00:39:22	-->	afoung (afoung@gmail.com) has joined &bitlbee
+2013-03-14 00:39:22	--	Mode &bitlbee [+v afoung] by localhost.localdomain
+2013-03-14 00:40:02	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-14 00:42:43	--	Mode &bitlbee [-v asohanamarasingham] by localhost.localdomain
+2013-03-14 00:43:07	--	Mode &bitlbee [+v asohanamarasingham] by localhost.localdomain
+2013-03-14 00:43:37	--	Mode &bitlbee [-v kwraiks] by localhost.localdomain
+2013-03-14 00:47:26	--	Mode &bitlbee [-v shaladdle] by localhost.localdomain
+2013-03-14 00:48:51	--	Mode &bitlbee [-v paulknag] by localhost.localdomain
+2013-03-14 00:49:57	<--	maximebury (maxime.bury@gmail.com) has quit (Leaving...)
+2013-03-14 00:50:43	--	Mode &bitlbee [-v asohanamarasingham] by localhost.localdomain
+2013-03-14 01:03:19	<--	afoung (afoung@gmail.com) has quit (Leaving...)
+2013-03-14 01:04:05	--	Mode &bitlbee [+v patrickwynn] by localhost.localdomain
+2013-03-14 01:05:47	--	Mode &bitlbee [-v patrickwynn] by localhost.localdomain
+2013-03-14 01:06:04	-->	afoung (afoung@gmail.com) has joined &bitlbee
+2013-03-14 01:06:04	--	Mode &bitlbee [+v afoung] by localhost.localdomain
+2013-03-14 01:06:42	<--	schew56 (schew56@gmail.com) has quit (Leaving...)
+2013-03-14 01:11:58	--	Mode &bitlbee [+v asohanamarasingham] by localhost.localdomain
+2013-03-14 01:13:21	--	Mode &bitlbee [-v asohanamarasingham] by localhost.localdomain
+2013-03-14 01:19:06	--	Mode &bitlbee [+v asohanamarasingham] by localhost.localdomain
+2013-03-14 01:21:41	--	Mode &bitlbee [-v asohanamarasingham] by localhost.localdomain
+2013-03-14 01:22:31	--	Mode &bitlbee [+v asohanamarasingham] by localhost.localdomain
+2013-03-14 01:24:05	<--	afoung (afoung@gmail.com) has quit (Leaving...)
+2013-03-14 01:24:46	-->	jjherman (jjherman@gmail.com) has joined &bitlbee
+2013-03-14 01:24:46	--	Mode &bitlbee [+v jjherman] by localhost.localdomain
+2013-03-14 01:25:21	--	Mode &bitlbee [+v timchu100] by localhost.localdomain
+2013-03-14 01:26:00	--	Mode &bitlbee [+v nfeltman] by localhost.localdomain
+2013-03-14 01:26:41	--	Mode &bitlbee [-v timchu100] by localhost.localdomain
+2013-03-14 01:27:11	--	Mode &bitlbee [-v kayvonf] by localhost.localdomain
+2013-03-14 01:27:26	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-14 01:28:33	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-14 01:32:49	--	Mode &bitlbee [-v asohanamarasingham] by localhost.localdomain
+2013-03-14 01:33:52	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-14 01:35:05	-->	afoung (afoung@gmail.com) has joined &bitlbee
+2013-03-14 01:35:05	--	Mode &bitlbee [+v afoung] by localhost.localdomain
+2013-03-14 01:37:11	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-14 01:37:55	--	Mode &bitlbee [-v afoung] by localhost.localdomain
+2013-03-14 01:38:46	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-14 01:39:43	--	Mode &bitlbee [+v kayvonf] by localhost.localdomain
+2013-03-14 01:40:07	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-14 01:41:18	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-14 01:42:18	<--	afoung (afoung@gmail.com) has quit (Leaving...)
+2013-03-14 01:42:29	--	Mode &bitlbee [-v rmeuse] by localhost.localdomain
+2013-03-14 01:44:32	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-14 01:44:47	--	Mode &bitlbee [+v kjacobs11] by localhost.localdomain
+2013-03-14 01:45:46	<--	jjherman (jjherman@gmail.com) has quit (Leaving...)
+2013-03-14 01:52:47	<--	jamesjohndrow (james.johndrow@gmail.com) has quit (Leaving...)
+2013-03-14 01:53:46	--	Mode &bitlbee [-v kwraiks] by localhost.localdomain
+2013-03-14 01:55:44	-->	afoung (afoung@gmail.com) has joined &bitlbee
+2013-03-14 01:56:32	--	Mode &bitlbee [+v afoung] by localhost.localdomain
+2013-03-14 01:58:50	<--	afoung (afoung@gmail.com) has quit (Leaving...)
+2013-03-14 01:59:20	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-14 02:00:49	--	Mode &bitlbee [-v kjacobs11] by localhost.localdomain
+2013-03-14 02:03:08	-->	danieldho (daniel.dho@gmail.com) has joined &bitlbee
+2013-03-14 02:03:08	--	Mode &bitlbee [+v danieldho] by localhost.localdomain
+2013-03-14 02:05:14	--	Mode &bitlbee [-v bryantto] by localhost.localdomain
+2013-03-14 02:05:53	--	Mode &bitlbee [-v nfeltman] by localhost.localdomain
+2013-03-14 02:06:25	--	Mode &bitlbee [+v timchu100] by localhost.localdomain
+2013-03-14 02:07:10	--	Mode &bitlbee [-v timchu100] by localhost.localdomain
+2013-03-14 02:08:41	<--	danieldho (daniel.dho@gmail.com) has quit (Leaving...)
+2013-03-14 02:09:05	--	Mode &bitlbee [+v nfeltman] by localhost.localdomain
+2013-03-14 02:09:49	--	Mode &bitlbee [-v nfeltman] by localhost.localdomain
+2013-03-14 02:10:18	--	Mode &bitlbee [+v nfeltman] by localhost.localdomain
+2013-03-14 02:11:48	-->	yccovin (yccovin@gmail.com) has joined &bitlbee
+2013-03-14 02:11:48	--	Mode &bitlbee [+v yccovin] by localhost.localdomain
+2013-03-14 02:13:46	<--	yccovin (yccovin@gmail.com) has quit (Leaving...)
+2013-03-14 02:13:47	--	Mode &bitlbee [-v nfeltman] by localhost.localdomain
+2013-03-14 10:30:02	@root	jabber - Error: Error while reading from server
+2013-03-14 10:30:02	@root	jabber - Signing off..
+2013-03-14 10:30:02	<--	timchu100 (timchu100@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-14 10:30:02	<--	markwachen (mark.wachen@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-14 10:30:02	<--	kwraiks (kwraiks@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-14 10:30:02	<--	kayvonf (kayvonf@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-14 10:30:02	<--	jma0506 (jma0506@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-14 10:30:02	<--	bryantto (bryantto@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-14 10:30:02	<--	asohanamarasingham (asohan.amarasingham@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-14 10:30:02	<--	scopazzi (scopazzi@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-14 10:30:02	<--	paulknag (paulknag@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-14 10:30:02	<--	pascaldavisg (pascal.davisg@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-14 10:30:02	<--	lunageorge (luna.george@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-14 10:30:02	<--	kjacobs11 (kjacobs11@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-14 10:30:02	<--	jstandring (jstandring@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-14 10:30:02	<--	jshottan (jshottan@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-14 10:30:02	<--	dtorchiano (dtorchiano@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-14 10:30:02	<--	dgame84 (dgame84@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-14 10:30:02	<--	deniseeeee (deniseeeee@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-14 10:30:02	<--	cjb272 (cjb272@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-14 10:30:02	<--	maneeshgoel (maneeshgoel@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-14 10:30:02	<--	jill95446 (jill95446@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-14 10:30:02	<--	patrickwynn (patrickwynn@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-14 10:30:02	<--	brianb (brianb@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-14 10:30:02	<--	schulman9 (schulman9@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-14 10:30:02	<--	katariyanamit (katariya.namit@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-14 10:30:02	<--	janehu (jane.hu@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-14 10:30:02	<--	cmurball (cmu.rball@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-14 10:30:02	<--	alexdegtiar (alexdegtiar@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-14 10:30:02	<--	swapnas8 (swapnas8@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-14 10:30:02	<--	rmeuse (rmeuse@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-14 10:30:02	<--	henrygrins (henrygrins@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-14 10:30:02	<--	nfeltman (nfeltman@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-14 10:30:02	<--	shaladdle (shaladdle@gmail.com) has quit (localhost.localdomain gmail.com)
+2013-03-14 10:30:02	@root	jabber - Reconnecting in 5 seconds..
+2013-03-14 10:30:07	@root	jabber - Logging in: Connecting
+2013-03-14 10:30:07	@root	jabber - Logging in: Connected to server, logging in
+2013-03-14 10:30:07	@root	jabber - Logging in: Converting stream to TLS
+2013-03-14 10:30:07	@root	jabber - Logging in: Connected to server, logging in
+2013-03-14 10:30:07	@root	jabber - Logging in: Authentication finished
+2013-03-14 10:30:07	@root	jabber - Logging in: Server changed session resource string to `BitlBeeB07D625B'
+2013-03-14 10:30:07	@root	jabber - Logging in: Authenticated, requesting buddy list
+2013-03-14 10:30:07	@root	jabber - Logging in: Logged in
+2013-03-14 10:30:08	-->	dgame84 (dgame84@gmail.com) has joined &bitlbee
+2013-03-14 10:30:08	-->	cmurball (cmu.rball@gmail.com) has joined &bitlbee
+2013-03-14 10:30:08	-->	janehu (jane.hu@gmail.com) has joined &bitlbee
+2013-03-14 10:30:08	-->	annacfarina (annacfarina@gmail.com) has joined &bitlbee
+2013-03-14 10:30:08	-->	katariyanamit (katariya.namit@gmail.com) has joined &bitlbee
+2013-03-14 10:30:08	-->	kwraiks (kwraiks@gmail.com) has joined &bitlbee
+2013-03-14 10:30:08	--	Mode &bitlbee [+v kwraiks] by localhost.localdomain
+2013-03-14 10:30:08	-->	alexdegtiar (alexdegtiar@gmail.com) has joined &bitlbee
+2013-03-14 10:30:08	--	Mode &bitlbee [+v alexdegtiar] by localhost.localdomain
+2013-03-14 10:30:08	-->	jennmkelly (jenn.m.kelly@gmail.com) has joined &bitlbee
+2013-03-14 10:30:08	--	Mode &bitlbee [+v jennmkelly] by localhost.localdomain
+2013-03-14 10:30:08	-->	swapnas8 (swapnas8@gmail.com) has joined &bitlbee
+2013-03-14 10:30:08	--	Mode &bitlbee [+v swapnas8] by localhost.localdomain
+2013-03-14 10:30:08	-->	schulman9 (schulman9@gmail.com) has joined &bitlbee
+2013-03-14 10:30:08	-->	shaladdle (shaladdle@gmail.com) has joined &bitlbee
+2013-03-14 10:30:08	-->	mintzmichael (mintzmichael@gmail.com) has joined &bitlbee
+2013-03-14 10:30:08	--	Mode &bitlbee [+v mintzmichael] by localhost.localdomain
+2013-03-14 10:30:08	-->	bryantto (bryantto@gmail.com) has joined &bitlbee
+2013-03-14 10:30:08	--	Mode &bitlbee [+v bryantto] by localhost.localdomain
+2013-03-14 10:30:08	-->	rmeuse (rmeuse@gmail.com) has joined &bitlbee
+2013-03-14 10:30:08	--	Mode &bitlbee [+v rmeuse] by localhost.localdomain
+2013-03-14 10:30:08	-->	nfeltman (nfeltman@gmail.com) has joined &bitlbee
+2013-03-14 10:30:08	--	Mode &bitlbee [+v nfeltman] by localhost.localdomain
+2013-03-14 10:30:08	-->	cjb272 (cjb272@gmail.com) has joined &bitlbee
+2013-03-14 10:30:08	--	Mode &bitlbee [+v cjb272] by localhost.localdomain
+2013-03-14 10:30:08	-->	jstandring (jstandring@gmail.com) has joined &bitlbee
+2013-03-14 10:30:08	-->	paulknag (paulknag@gmail.com) has joined &bitlbee
+2013-03-14 10:30:08	-->	jma0506 (jma0506@gmail.com) has joined &bitlbee
+2013-03-14 10:30:08	--	Mode &bitlbee [+v jma0506] by localhost.localdomain
+2013-03-14 10:30:08	-->	patrickwynn (patrickwynn@gmail.com) has joined &bitlbee
+2013-03-14 10:30:08	-->	scopazzi (scopazzi@gmail.com) has joined &bitlbee
+2013-03-14 10:30:08	-->	timchu100 (timchu100@gmail.com) has joined &bitlbee
+2013-03-14 10:30:08	-->	markwachen (mark.wachen@gmail.com) has joined &bitlbee
+2013-03-14 10:30:08	--	Mode &bitlbee [+v markwachen] by localhost.localdomain
+2013-03-14 10:30:08	-->	jamesjohndrow (james.johndrow@gmail.com) has joined &bitlbee
+2013-03-14 10:30:08	--	Mode &bitlbee [+v jamesjohndrow] by localhost.localdomain
+2013-03-14 10:30:08	-->	henrygrins (henrygrins@gmail.com) has joined &bitlbee
+2013-03-14 10:30:08	-->	dtorchiano (dtorchiano@gmail.com) has joined &bitlbee
+2013-03-14 10:30:08	-->	ddberk (ddberk@gmail.com) has joined &bitlbee
+2013-03-14 10:30:08	-->	brianb (brianb@gmail.com) has joined &bitlbee
+2013-03-14 10:30:08	-->	pnoguerol (pnoguerol@gmail.com) has joined &bitlbee
+2013-03-14 10:30:08	-->	jshottan (jshottan@gmail.com) has joined &bitlbee
+2013-03-14 10:30:48	--	irc: disconnected from server
+2013-03-14 10:30:58	-->	fibonacci (fibonacci@localhost.localdomain) has joined &bitlbee
+2013-03-14 10:30:58	--	Mode &bitlbee [+Ct] by localhost.localdomain
+2013-03-14 10:30:58	--	Nicks &bitlbee: [@fibonacci @root]
+2013-03-14 10:30:58	--	Channel &bitlbee: 2 nicks (2 ops, 0 halfops, 0 voices, 0 normals)
+2013-03-14 10:30:58	--	Topic for &bitlbee is "Welcome to the control channel. Type help for help information."
+2013-03-14 10:30:58	--	Topic set by root (root@localhost.localdomain) on Thu, 14 Mar 2013 10:30:58
+2013-03-14 10:30:58	@root	Welcome to the BitlBee gateway!
+2013-03-14 10:30:58	@root	 
+2013-03-14 10:30:58	@root	If you've never used BitlBee before, please do read the help information using the help command. Lots of FAQs are answered there.
+2013-03-14 10:30:58	@root	If you already have an account on this server, just use the identify command to identify yourself.
+2013-03-14 10:31:00	--	Mode &bitlbee [+Ct]
+2013-03-14 13:54:48	--	irc: disconnected from server
+2013-03-14 13:54:58	-->	fibonacci (fibonacci@localhost.localdomain) has joined &bitlbee
+2013-03-14 13:54:58	--	Mode &bitlbee [+Ct] by localhost.localdomain
+2013-03-14 13:54:58	--	Nicks &bitlbee: [@fibonacci @root]
+2013-03-14 13:54:58	--	Channel &bitlbee: 2 nicks (2 ops, 0 halfops, 0 voices, 0 normals)
+2013-03-14 13:54:58	--	Topic for &bitlbee is "Welcome to the control channel. Type help for help information."
+2013-03-14 13:54:58	--	Topic set by root (root@localhost.localdomain) on Thu, 14 Mar 2013 13:54:58
+2013-03-14 13:54:58	@root	Welcome to the BitlBee gateway!
+2013-03-14 13:54:58	@root	 
+2013-03-14 13:54:58	@root	If you've never used BitlBee before, please do read the help information using the help command. Lots of FAQs are answered there.
+2013-03-14 13:54:58	@root	If you already have an account on this server, just use the identify command to identify yourself.
+2013-03-14 13:55:00	--	Mode &bitlbee [+Ct]
+2013-03-14 18:06:46	--	irc: disconnected from server
+2013-03-14 18:06:56	-->	fibonacci (fibonacci@localhost.localdomain) has joined &bitlbee
+2013-03-14 18:06:56	--	Mode &bitlbee [+Ct] by localhost.localdomain
+2013-03-14 18:06:56	--	Nicks &bitlbee: [@fibonacci @root]
+2013-03-14 18:06:56	--	Channel &bitlbee: 2 nicks (2 ops, 0 halfops, 0 voices, 0 normals)
+2013-03-14 18:06:56	--	Topic for &bitlbee is "Welcome to the control channel. Type help for help information."
+2013-03-14 18:06:56	--	Topic set by root (root@localhost.localdomain) on Thu, 14 Mar 2013 18:06:56
+2013-03-14 18:06:56	@root	Welcome to the BitlBee gateway!
+2013-03-14 18:06:56	@root	 
+2013-03-14 18:06:56	@root	If you've never used BitlBee before, please do read the help information using the help command. Lots of FAQs are answered there.
+2013-03-14 18:06:56	@root	If you already have an account on this server, just use the identify command to identify yourself.
+2013-03-14 18:06:58	--	Mode &bitlbee [+Ct]
+2013-03-15 12:10:32	--	irc: disconnected from server
+2013-03-15 12:10:42	-->	fibonacci (fibonacci@localhost.localdomain) has joined &bitlbee
+2013-03-15 12:10:42	--	Mode &bitlbee [+Ct] by localhost.localdomain
+2013-03-15 12:10:42	--	Nicks &bitlbee: [@fibonacci @root]
+2013-03-15 12:10:42	--	Channel &bitlbee: 2 nicks (2 ops, 0 halfops, 0 voices, 0 normals)
+2013-03-15 12:10:42	--	Topic for &bitlbee is "Welcome to the control channel. Type help for help information."
+2013-03-15 12:10:42	--	Topic set by root (root@localhost.localdomain) on Fri, 15 Mar 2013 12:10:42
+2013-03-15 12:10:42	@root	Welcome to the BitlBee gateway!
+2013-03-15 12:10:42	@root	 
+2013-03-15 12:10:42	@root	If you've never used BitlBee before, please do read the help information using the help command. Lots of FAQs are answered there.
+2013-03-15 12:10:42	@root	If you already have an account on this server, just use the identify command to identify yourself.
+2013-03-15 12:10:44	--	Mode &bitlbee [+Ct]
+2013-03-16 11:34:33	--	irc: disconnected from server
+2013-03-16 11:34:43	-->	fibonacci (fibonacci@localhost.localdomain) has joined &bitlbee
+2013-03-16 11:34:43	--	Mode &bitlbee [+Ct] by localhost.localdomain
+2013-03-16 11:34:43	--	Nicks &bitlbee: [@fibonacci @root]
+2013-03-16 11:34:43	--	Channel &bitlbee: 2 nicks (2 ops, 0 halfops, 0 voices, 0 normals)
+2013-03-16 11:34:43	--	Topic for &bitlbee is "Welcome to the control channel. Type help for help information."
+2013-03-16 11:34:43	--	Topic set by root (root@localhost.localdomain) on Sat, 16 Mar 2013 11:34:43
+2013-03-16 11:34:43	@root	Welcome to the BitlBee gateway!
+2013-03-16 11:34:43	@root	 
+2013-03-16 11:34:43	@root	If you've never used BitlBee before, please do read the help information using the help command. Lots of FAQs are answered there.
+2013-03-16 11:34:43	@root	If you already have an account on this server, just use the identify command to identify yourself.
+2013-03-16 11:34:45	--	Mode &bitlbee [+Ct]
+2013-03-17 20:46:54	--	irc: disconnected from server
+2013-03-17 20:47:04	-->	fibonacci (fibonacci@localhost.localdomain) has joined &bitlbee
+2013-03-17 20:47:04	--	Mode &bitlbee [+Ct] by localhost.localdomain
+2013-03-17 20:47:04	--	Nicks &bitlbee: [@fibonacci @root]
+2013-03-17 20:47:04	--	Channel &bitlbee: 2 nicks (2 ops, 0 halfops, 0 voices, 0 normals)
+2013-03-17 20:47:04	--	Topic for &bitlbee is "Welcome to the control channel. Type help for help information."
+2013-03-17 20:47:04	--	Topic set by root (root@localhost.localdomain) on Sun, 17 Mar 2013 20:47:04
+2013-03-17 20:47:04	@root	Welcome to the BitlBee gateway!
+2013-03-17 20:47:04	@root	 
+2013-03-17 20:47:04	@root	If you've never used BitlBee before, please do read the help information using the help command. Lots of FAQs are answered there.
+2013-03-17 20:47:04	@root	If you already have an account on this server, just use the identify command to identify yourself.
+2013-03-17 20:47:06	--	Mode &bitlbee [+Ct]
+2013-03-18 12:03:11	--	irc: disconnected from server
+2013-03-18 12:03:21	-->	fibonacci (fibonacci@localhost.localdomain) has joined &bitlbee
+2013-03-18 12:03:21	--	Mode &bitlbee [+Ct] by localhost.localdomain
+2013-03-18 12:03:21	--	Nicks &bitlbee: [@fibonacci @root]
+2013-03-18 12:03:21	--	Channel &bitlbee: 2 nicks (2 ops, 0 halfops, 0 voices, 0 normals)
+2013-03-18 12:03:21	--	Topic for &bitlbee is "Welcome to the control channel. Type help for help information."
+2013-03-18 12:03:21	--	Topic set by root (root@localhost.localdomain) on Mon, 18 Mar 2013 12:03:21
+2013-03-18 12:03:21	@root	Welcome to the BitlBee gateway!
+2013-03-18 12:03:21	@root	 
+2013-03-18 12:03:21	@root	If you've never used BitlBee before, please do read the help information using the help command. Lots of FAQs are answered there.
+2013-03-18 12:03:21	@root	If you already have an account on this server, just use the identify command to identify yourself.
+2013-03-18 12:03:23	--	Mode &bitlbee [+Ct]
+2013-03-19 08:49:51	--	irc: disconnected from server
+2013-03-19 08:51:01	-->	fibonacci (fibonacci@localhost.localdomain) has joined &bitlbee
+2013-03-19 08:51:01	--	Mode &bitlbee [+Ct] by localhost.localdomain
+2013-03-19 08:51:01	--	Nicks &bitlbee: [@fibonacci @root]
+2013-03-19 08:51:01	--	Channel &bitlbee: 2 nicks (2 ops, 0 halfops, 0 voices, 0 normals)
+2013-03-19 08:51:01	--	Topic for &bitlbee is "Welcome to the control channel. Type help for help information."
+2013-03-19 08:51:01	--	Topic set by root (root@localhost.localdomain) on Tue, 19 Mar 2013 08:51:01
+2013-03-19 08:51:01	@root	Welcome to the BitlBee gateway!
+2013-03-19 08:51:01	@root	 
+2013-03-19 08:51:01	@root	If you've never used BitlBee before, please do read the help information using the help command. Lots of FAQs are answered there.
+2013-03-19 08:51:01	@root	If you already have an account on this server, just use the identify command to identify yourself.
+2013-03-19 08:51:03	--	Mode &bitlbee [+Ct]
+2013-03-19 11:47:11	--	irc: disconnected from server
+2013-03-19 11:47:21	-->	fibonacci (fibonacci@localhost.localdomain) has joined &bitlbee
+2013-03-19 11:47:21	--	Mode &bitlbee [+Ct] by localhost.localdomain
+2013-03-19 11:47:21	--	Nicks &bitlbee: [@fibonacci @root]
+2013-03-19 11:47:21	--	Channel &bitlbee: 2 nicks (2 ops, 0 halfops, 0 voices, 0 normals)
+2013-03-19 11:47:21	--	Topic for &bitlbee is "Welcome to the control channel. Type help for help information."
+2013-03-19 11:47:21	--	Topic set by root (root@localhost.localdomain) on Tue, 19 Mar 2013 11:47:21
+2013-03-19 11:47:21	@root	Welcome to the BitlBee gateway!
+2013-03-19 11:47:21	@root	 
+2013-03-19 11:47:21	@root	If you've never used BitlBee before, please do read the help information using the help command. Lots of FAQs are answered there.
+2013-03-19 11:47:21	@root	If you already have an account on this server, just use the identify command to identify yourself.
+2013-03-19 11:47:23	--	Mode &bitlbee [+Ct]
+2013-03-19 23:18:17	--	irc: disconnected from server
+2013-03-19 23:18:28	-->	fibonacci (fibonacci@localhost.localdomain) has joined &bitlbee
+2013-03-19 23:18:28	--	Mode &bitlbee [+Ct] by localhost.localdomain
+2013-03-19 23:18:28	--	Nicks &bitlbee: [@fibonacci @root]
+2013-03-19 23:18:28	--	Channel &bitlbee: 2 nicks (2 ops, 0 halfops, 0 voices, 0 normals)
+2013-03-19 23:18:28	--	Topic for &bitlbee is "Welcome to the control channel. Type help for help information."
+2013-03-19 23:18:28	--	Topic set by root (root@localhost.localdomain) on Tue, 19 Mar 2013 23:18:27
+2013-03-19 23:18:28	@root	Welcome to the BitlBee gateway!
+2013-03-19 23:18:28	@root	 
+2013-03-19 23:18:28	@root	If you've never used BitlBee before, please do read the help information using the help command. Lots of FAQs are answered there.
+2013-03-19 23:18:28	@root	If you already have an account on this server, just use the identify command to identify yourself.
+2013-03-19 23:18:30	--	Mode &bitlbee [+Ct]
+2013-03-20 11:56:35	--	irc: disconnected from server
+2013-03-20 11:56:45	-->	fibonacci (fibonacci@localhost.localdomain) has joined &bitlbee
+2013-03-20 11:56:45	--	Mode &bitlbee [+Ct] by localhost.localdomain
+2013-03-20 11:56:45	--	Nicks &bitlbee: [@fibonacci @root]
+2013-03-20 11:56:45	--	Channel &bitlbee: 2 nicks (2 ops, 0 halfops, 0 voices, 0 normals)
+2013-03-20 11:56:45	--	Topic for &bitlbee is "Welcome to the control channel. Type help for help information."
+2013-03-20 11:56:45	--	Topic set by root (root@localhost.localdomain) on Wed, 20 Mar 2013 11:56:45
+2013-03-20 11:56:45	@root	Welcome to the BitlBee gateway!
+2013-03-20 11:56:45	@root	 
+2013-03-20 11:56:45	@root	If you've never used BitlBee before, please do read the help information using the help command. Lots of FAQs are answered there.
+2013-03-20 11:56:45	@root	If you already have an account on this server, just use the identify command to identify yourself.
+2013-03-20 11:56:47	--	Mode &bitlbee [+Ct]
+2013-03-20 23:45:13	--	irc: disconnected from server
+2013-03-21 00:06:24	-->	fibonacci (fibonacci@localhost.localdomain) has joined &bitlbee
+2013-03-21 00:06:24	--	Mode &bitlbee [+Ct] by localhost.localdomain
+2013-03-21 00:06:24	--	Nicks &bitlbee: [@fibonacci @root]
+2013-03-21 00:06:24	--	Channel &bitlbee: 2 nicks (2 ops, 0 halfops, 0 voices, 0 normals)
+2013-03-21 00:06:24	--	Topic for &bitlbee is "Welcome to the control channel. Type help for help information."
+2013-03-21 00:06:24	--	Topic set by root (root@localhost.localdomain) on Thu, 21 Mar 2013 00:06:24
+2013-03-21 00:06:24	@root	Welcome to the BitlBee gateway!
+2013-03-21 00:06:24	@root	 
+2013-03-21 00:06:24	@root	If you've never used BitlBee before, please do read the help information using the help command. Lots of FAQs are answered there.
+2013-03-21 00:06:24	@root	If you already have an account on this server, just use the identify command to identify yourself.
+2013-03-21 00:06:26	--	Mode &bitlbee [+Ct]
+2013-03-21 09:00:32	--	irc: disconnected from server
+2013-03-21 09:00:42	-->	fibonacci (fibonacci@localhost.localdomain) has joined &bitlbee
+2013-03-21 09:00:42	--	Mode &bitlbee [+Ct] by localhost.localdomain
+2013-03-21 09:00:42	--	Nicks &bitlbee: [@fibonacci @root]
+2013-03-21 09:00:42	--	Channel &bitlbee: 2 nicks (2 ops, 0 halfops, 0 voices, 0 normals)
+2013-03-21 09:00:42	--	Topic for &bitlbee is "Welcome to the control channel. Type help for help information."
+2013-03-21 09:00:42	--	Topic set by root (root@localhost.localdomain) on Thu, 21 Mar 2013 09:00:42
+2013-03-21 09:00:42	@root	Welcome to the BitlBee gateway!
+2013-03-21 09:00:42	@root	 
+2013-03-21 09:00:42	@root	If you've never used BitlBee before, please do read the help information using the help command. Lots of FAQs are answered there.
+2013-03-21 09:00:42	@root	If you already have an account on this server, just use the identify command to identify yourself.
+2013-03-21 09:00:44	--	Mode &bitlbee [+Ct]
+2013-03-21 11:08:40	--	irc: disconnected from server
+2013-03-21 11:08:50	-->	fibonacci (fibonacci@localhost.localdomain) has joined &bitlbee
+2013-03-21 11:08:50	--	Mode &bitlbee [+Ct] by localhost.localdomain
+2013-03-21 11:08:50	--	Nicks &bitlbee: [@fibonacci @root]
+2013-03-21 11:08:50	--	Channel &bitlbee: 2 nicks (2 ops, 0 halfops, 0 voices, 0 normals)
+2013-03-21 11:08:50	--	Topic for &bitlbee is "Welcome to the control channel. Type help for help information."
+2013-03-21 11:08:50	--	Topic set by root (root@localhost.localdomain) on Thu, 21 Mar 2013 11:08:50
+2013-03-21 11:08:50	@root	Welcome to the BitlBee gateway!
+2013-03-21 11:08:50	@root	 
+2013-03-21 11:08:50	@root	If you've never used BitlBee before, please do read the help information using the help command. Lots of FAQs are answered there.
+2013-03-21 11:08:50	@root	If you already have an account on this server, just use the identify command to identify yourself.
+2013-03-21 11:08:52	--	Mode &bitlbee [+Ct]
+2013-03-21 14:47:26	--	irc: disconnected from server
+2013-03-21 14:47:36	-->	fibonacci (fibonacci@localhost.localdomain) has joined &bitlbee
+2013-03-21 14:47:36	--	Mode &bitlbee [+Ct] by localhost.localdomain
+2013-03-21 14:47:36	--	Nicks &bitlbee: [@fibonacci @root]
+2013-03-21 14:47:36	--	Channel &bitlbee: 2 nicks (2 ops, 0 halfops, 0 voices, 0 normals)
+2013-03-21 14:47:36	--	Topic for &bitlbee is "Welcome to the control channel. Type help for help information."
+2013-03-21 14:47:36	--	Topic set by root (root@localhost.localdomain) on Thu, 21 Mar 2013 14:47:36
+2013-03-21 14:47:36	@root	Welcome to the BitlBee gateway!
+2013-03-21 14:47:36	@root	 
+2013-03-21 14:47:36	@root	If you've never used BitlBee before, please do read the help information using the help command. Lots of FAQs are answered there.
+2013-03-21 14:47:36	@root	If you already have an account on this server, just use the identify command to identify yourself.
+2013-03-21 14:47:38	--	Mode &bitlbee [+Ct]

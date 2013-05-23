@@ -103,7 +103,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm .|. shiftMask, xK_Page_Up),    shiftToNext)
     , ((modm .|. shiftMask, xK_Left),       shiftToPrev)
     , ((modm .|. shiftMask, xK_Page_Down),  shiftToPrev)
-    , ((modm,               xK_Tab),        toggleWS)
+    , ((modm,               xK_Tab),        toggleWS' ["NSP"])
     , ((modm              , xK_n),          moveTo Next EmptyWS)
     , ((modm .|. shiftMask, xK_n),          shiftTo Next EmptyWS)
 

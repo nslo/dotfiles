@@ -1,7 +1,7 @@
 export EDITOR=vim
 #alias ls="ls --color=always"
 
-
+#echo PATH=~/cabal/bin:$PATH
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh

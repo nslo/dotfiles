@@ -1,0 +1,2 @@
+xvt.perl-ext-common: default,clipboard
+URxvt.urgentOnBell: true
