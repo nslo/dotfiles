@@ -112,11 +112,11 @@ ipv6 = off
 local_hostname = ""
 nicks = "voxpopuli,fanservice"
 notify = ""
-password = "XXXXX"
+password = "kalimaaaaa"
 proxy = ""
 realname = ""
 sasl_mechanism = plain
-sasl_password = "XXXXX"
+sasl_password = "kalimaaaaa"
 sasl_timeout = 15
 sasl_username = ""
 ssl = off
@@ -135,11 +135,11 @@ freenode.ssl_cert
 freenode.ssl_priorities
 freenode.ssl_dhkey_size
 freenode.ssl_verify
-freenode.password = "XXXXX"
+freenode.password = "kalimaaaaa"
 freenode.capabilities
 freenode.sasl_mechanism
 freenode.sasl_username
-freenode.sasl_password = "XXXXX"
+freenode.sasl_password = "kalimaaaaa"
 freenode.sasl_timeout
 freenode.autoconnect = on
 freenode.autoreconnect
@@ -161,3 +161,37 @@ freenode.away_check_max_nicks
 freenode.default_msg_part
 freenode.default_msg_quit
 freenode.notify
+&bitlbee.addresses = "localhost"
+&bitlbee.proxy
+&bitlbee.ipv6
+&bitlbee.ssl
+&bitlbee.ssl_cert
+&bitlbee.ssl_priorities
+&bitlbee.ssl_dhkey_size
+&bitlbee.ssl_verify
+&bitlbee.password
+&bitlbee.capabilities
+&bitlbee.sasl_mechanism
+&bitlbee.sasl_username
+&bitlbee.sasl_password
+&bitlbee.sasl_timeout
+&bitlbee.autoconnect = on
+&bitlbee.autoreconnect
+&bitlbee.autoreconnect_delay
+&bitlbee.nicks
+&bitlbee.username
+&bitlbee.realname
+&bitlbee.local_hostname
+&bitlbee.command = "/msg &bitlbee identify XXXX"
+&bitlbee.command_delay
+&bitlbee.autojoin
+&bitlbee.autorejoin
+&bitlbee.autorejoin_delay
+&bitlbee.connection_timeout
+&bitlbee.anti_flood_prio_high
+&bitlbee.anti_flood_prio_low
+&bitlbee.away_check
+&bitlbee.away_check_max_nicks
+&bitlbee.default_msg_part
+&bitlbee.default_msg_quit
+&bitlbee.notify

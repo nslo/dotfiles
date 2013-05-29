@@ -185,7 +185,7 @@ myLayout = boringWindows $ smartBorders $ tall ||| mtall ||| threecol ||| full |
      -- default tiling algorithm partitions the screen into two panes
      tall       = renamed [Replace "|="]    $ spacing s $ minimize (Tall nmaster delta ratio)
      mtall      = renamed [Replace "П"]     $ spacing s $ minimize (Mirror tall)
-     threecol   = renamed [Replace "|||"]   $ spacing s $ minimize (ThreeCol 1 (3/100) (2/5))
+     threecol   = renamed [Replace "|||"]   $ spacing s $ minimize (ThreeCol 1 (3/100) (1/5))
      full       = renamed [Replace "■"]     $ spacing s $ minimize Full
      float      = renamed [Replace ":"]     $ spacing s $ minimize simplestFloat
      -- The default number of windows in the master pane
