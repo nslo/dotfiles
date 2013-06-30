@@ -33,15 +33,21 @@ trayer --edge top --align right --SetDockType true --SetPartialStrut true --expa
 
 SpiderOak &
 
-firefox &
+dropboxd &
 
-skype &
-
-pidgin &
+# skyped starts skype; used for bitlbee
+skyped &
 
 checkgmail -no_cookies &
 
 dunst &
+
+# pulse doesn't initiate correctly if X starts it automatically
+pulseaudio --start
+
+sleep 5
+
+pasystray &
 
 #launch wm
 exec xmonad

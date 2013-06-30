@@ -1,6 +1,6 @@
 #uncomment to get sound from internal speaker/headphones 
-#defaults.pcm.card 1
-#defaults.pcm.device 0
+defaults.pcm.card 1
+defaults.pcm.device 0
 
 # attempt to get sound from multiple applications at once
 # (doesn't work) -- now seems to work

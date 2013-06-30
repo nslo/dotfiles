@@ -205,16 +205,16 @@ myLayout = boringWindows $ smartBorders $ tall ||| mtall ||| threecol ||| full |
 -- and click on the client you're interested in.
 --
 myManageHook = (composeAll
-    [ className =? "Pidgin"         --> doShift "3"
-    , className =? "Skype"          --> doShift "3"
-    , className =? "Firefox"        --> doShift "1"
-    , stringProperty "WM_NAME" =? "turses"                      --> doShift "3" 
+    [  title    =? "Float"  --> doFloat
+    -- className =? "Pidgin"         --> doShift "3"
+    --, className =? "Skype"          --> doShift "3"
+    --, className =? "Firefox"        --> doShift "1"
+    --, stringProperty "WM_NAME" =? "turses"                      --> doShift "3" 
     --, stringProperty "WM_NAME" =? "ncmpcpp ver. 0.5.10"         --> doShift "2"
     --, className                =? "ncmpcpp"                     --> doShift "2"
-    , title                    =? "Float"                     --> doFloat
-    , title                    =? "ncmpcpp"                     --> doShift "2"
-    , stringProperty "WM_NAME" =? "ranger:~/Desktop"       --> doShift "2"
-    , stringProperty "WM_ICON_NAME" =? "todo (~/Desktop) - VIM" --> doShift "1"
+    --, title                    =? "ncmpcpp"                     --> doShift "2"
+    --, stringProperty "WM_NAME" =? "ranger:~/Desktop"       --> doShift "2"
+    --, stringProperty "WM_ICON_NAME" =? "todo (~/Desktop) - VIM" --> doShift "1"
     , className =? "Gimp"           --> doFloat
     , resource  =? "desktop_window" --> doIgnore
     , resource  =? "kdesktop"       --> doIgnore
