@@ -1,55 +1,24 @@
+# to be on the safe side
 export EDITOR=vim
-#alias ls="ls --color=always"
-
-#echo PATH=~/cabal/bin:$PATH
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
+# aliases
+alias rpi="ssh -Y pi@192.168.1.110"
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-#ZSH_THEME="juanghurtado" #check this out for more git info
-#ZSH_THEME="pygmalion" #decent colors
+#PATH
+#echo PATH=~/cabal/bin:$PATH
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# Set to this to use case-sensitive completion
-# CASE_SENSITIVE="true"
-
-# Comment this out to disable bi-weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment to change how many often would you like to wait before auto-updates occur? (in days)
-# export UPDATE_ZSH_DAYS=13
-
-# Uncomment following line if you want to disable colors in ls
-# DISABLE_LS_COLORS="true"
-
-# Uncomment following line if you want to disable autosetting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment following line if you want red dots to be displayed while waiting for completion
-#COMPLETION_WAITING_DOTS="true"
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
+# Plugins. Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
 
 # git settings
 source $ZSH/oh-my-zsh.sh
 
-
+# fix autocorrection
 unsetopt correct_all
 setopt nocorrect_all
-# Customize to your needs...
-
-
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
@@ -64,11 +33,11 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+# colors, keys, tetris
 autoload -U colors && colors
 autoload -U tetris
 zle -N tetris
 bindkey ^T tetris
-
 bindkey "\e[1~" beginning-of-line # Home
 bindkey "\e[4~" end-of-line # End
 bindkey "\e[5~" beginning-of-history # PageUp
@@ -86,6 +55,8 @@ bindkey "\e[Z" reverse-menu-complete # Shift+Tab
 bindkey "\e[7~" beginning-of-line # Home
 bindkey "\e[8~" end-of-line # End
 
+
+#PROMPT
 # show vi mode
 vim_ins_mode="%{$fg[blue]%}[INSERT]%{$reset_color%}"
 vim_cmd_mode="%{$fg[red]%}[COMMAND]%{$reset_color%}"
@@ -124,3 +95,5 @@ ZSH_THEME_GIT_PROMPT_DIRTY=" %{$fg[red]%}*%{$fg[magenta]%}"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 
 #%{$FG[237]%}------------------------------------------------------------%{$reset_color%}
+
+#END PROMPT

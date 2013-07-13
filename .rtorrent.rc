@@ -104,3 +104,6 @@ peer_exchange = yes
 
 # Send notification to dunst on finished torrent
 system.method.set_key = event.download.finished,notify_me,"execute=/home/fibonacci/Code/Scripts/dunst_rtorrent,$d.get_name="
+
+# Attemp to pre-allocate space for files
+system.file_allocate.set = yes
