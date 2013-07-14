@@ -1,5 +1,22 @@
-execute pathogen#infect()
+"execute pathogen#infect()
 
+" Vundle
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'scrooloose/syntastic'
+filetype plugin indent on
+" fallback config file for ycm
+let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
+
+" Syntastic
+let g:syntastic_enable_signs=1
+let g:syntastic_auto_loc_list=1
+
+" Normal VIM stuff
 if has('gui_running')
     set guioptions-=T  " no toolbar
     set guioptions-=r  "remove right-hand scroll bar 
@@ -7,8 +24,8 @@ if has('gui_running')
     set lines=66 columns=90
 endif
 
-filetype on
-filetype indent on
+"filetype on
+"filetype indent on
 syntax enable
 
 colorscheme gummybears_trans

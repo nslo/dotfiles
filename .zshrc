@@ -8,7 +8,7 @@ ZSH=$HOME/.oh-my-zsh
 alias rpi="ssh -Y pi@192.168.1.110"
 
 #PATH
-#echo PATH=~/cabal/bin:$PATH
+#echo PATH=~/.cabal/bin:$PATH
 
 # Plugins. Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
