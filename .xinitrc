@@ -33,7 +33,7 @@ trayer --edge top --align right --SetDockType true --SetPartialStrut true --expa
 
 SpiderOak &
 
-dropboxd &
+#dropboxd &
 
 # skyped starts skype; used for bitlbee
 skyped &
