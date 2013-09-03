@@ -110,13 +110,13 @@ default_msg_part = "WeeChat %v"
 default_msg_quit = "WeeChat %v"
 ipv6 = off
 local_hostname = ""
-nicks = "voxpopuli,fanservice"
+nicks = "XXXXXXX,XXXXXXX"
 notify = ""
-password = "kalimaaaaa"
+password = "XXXXXXX"
 proxy = ""
 realname = ""
 sasl_mechanism = plain
-sasl_password = "kalimaaaaa"
+sasl_password = "XXXXXXX"
 sasl_timeout = 15
 sasl_username = ""
 ssl = off
@@ -124,7 +124,7 @@ ssl_cert = ""
 ssl_dhkey_size = 2048
 ssl_priorities = "NORMAL"
 ssl_verify = on
-username = "fanservice"
+username = "XXXXXXX"
 
 [server]
 freenode.addresses = "chat.freenode.net/6667"
@@ -135,22 +135,22 @@ freenode.ssl_cert
 freenode.ssl_priorities
 freenode.ssl_dhkey_size
 freenode.ssl_verify
-freenode.password = "kalimaaaaa"
+freenode.password = "XXXXXXX"
 freenode.capabilities
 freenode.sasl_mechanism
 freenode.sasl_username
-freenode.sasl_password = "kalimaaaaa"
+freenode.sasl_password = "XXXXXXX"
 freenode.sasl_timeout
 freenode.autoconnect = on
 freenode.autoreconnect
 freenode.autoreconnect_delay
 freenode.nicks
-freenode.username = "fanservice"
+freenode.username = "XXXXXXX"
 freenode.realname
 freenode.local_hostname
 freenode.command
 freenode.command_delay
-freenode.autojoin = "#haskell"
+freenode.autojoin = "#haskell, ##OpenGL, #sml"
 freenode.autorejoin
 freenode.autorejoin_delay
 freenode.connection_timeout
@@ -182,7 +182,7 @@ freenode.notify
 &bitlbee.username
 &bitlbee.realname
 &bitlbee.local_hostname
-&bitlbee.command = "/msg &bitlbee identify XXXX"
+&bitlbee.command = "/msg &bitlbee identify XXXXXXXX"
 &bitlbee.command_delay
 &bitlbee.autojoin
 &bitlbee.autorejoin
@@ -195,3 +195,37 @@ freenode.notify
 &bitlbee.default_msg_part
 &bitlbee.default_msg_quit
 &bitlbee.notify
+mozilla.addresses = "irc.mozilla.org/6667"
+mozilla.proxy
+mozilla.ipv6
+mozilla.ssl
+mozilla.ssl_cert
+mozilla.ssl_priorities
+mozilla.ssl_dhkey_size
+mozilla.ssl_verify
+mozilla.password
+mozilla.capabilities
+mozilla.sasl_mechanism
+mozilla.sasl_username
+mozilla.sasl_password
+mozilla.sasl_timeout
+mozilla.autoconnect = on
+mozilla.autoreconnect
+mozilla.autoreconnect_delay
+mozilla.nicks
+mozilla.username
+mozilla.realname
+mozilla.local_hostname
+mozilla.command
+mozilla.command_delay
+mozilla.autojoin = "#rust"
+mozilla.autorejoin
+mozilla.autorejoin_delay
+mozilla.connection_timeout
+mozilla.anti_flood_prio_high
+mozilla.anti_flood_prio_low
+mozilla.away_check
+mozilla.away_check_max_nicks
+mozilla.default_msg_part
+mozilla.default_msg_quit
+mozilla.notify
