@@ -44,12 +44,15 @@ set incsearch
 set showcmd
 set autoread
 set t_Co=256
+set completeopt-=preview
 
 " Keymappings
 nnoremap <F1> <nop>
 inoremap <F1> <nop>
 nnoremap <C-t> <nop>
 inoremap <C-t> <nop>
+nnoremap <CapsLock> <nop>
+inoremap <CapsLock> <nop>
 ca tn tabnew
 let mapleader=","
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>

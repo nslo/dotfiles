@@ -1,3 +1,5 @@
+{-# OPTIONS -fno-warn-missing-signatures #-}
+
 import XMonad
 import XMonad.Hooks.DynamicLog
 import XMonad.Hooks.ManageHelpers (isFullscreen, doFullFloat)
@@ -6,70 +8,76 @@ import XMonad.Hooks.UrgencyHook
 import XMonad.Hooks.SetWMName
 import XMonad.Layout.NoBorders
 import XMonad.Layout.Minimize
+--import XMonad.Layout.LayoutModifier
 import XMonad.Layout.BoringWindows (boringWindows, focusUp, focusDown)
 import XMonad.Layout.ThreeColumns
 import XMonad.Layout.Renamed
 import XMonad.Layout.Spacing
 import XMonad.Layout.SimplestFloat
 import XMonad.Actions.CycleWS
-import XMonad.Actions.WindowGo
+--import XMonad.Actions.WindowGo
 import XMonad.Util.Scratchpad
-import XMonad.Util.Run
-import XMonad.Util.StringProp
+--import XMonad.Util.Run
+--import XMonad.Util.StringProp
+--import Graphics.X11.Types
 import Graphics.X11.ExtraTypes.XF86
-import Data.Monoid
+--import Data.Monoid
 import System.Exit
-import Data.List
-
+--import Data.List
+import Data.Word
+import Data.Monoid
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
 
 ------------------------------------------------------------------------
 -- Some general settings
---
+------------------------------------------------------------------------
 
 -- The preferred terminal program
-myTerminal      = "urxvt"
+myTerminal :: [Char]
+myTerminal = "urxvt"
 
 -- Whether focus follows the mouse pointer.
 myFocusFollowsMouse :: Bool
 myFocusFollowsMouse = True
 
 -- Width of the window border in pixels.
-myBorderWidth   = 2
+myBorderWidth :: Word32
+myBorderWidth = 2
 
 -- "Windows key" is usually mod4Mask.
-myModMask       = mod4Mask
+myModMask :: KeyMask
+myModMask = mod4Mask
 
 -- Workspaces and their names
-myWorkspaces    = ["1","2","3","4","5","6","7","8","9","0","A","B"]
+myWorkspaces :: [[Char]]
+myWorkspaces = ["1","2","3","4","5","6","7","8","9","0","A","B"]
 
 -- Border colors for unfocused and focused windows, respectively.
-myNormalBorderColor  = "#000000"
---myFocusedBorderColor = "#AAB2E3"
+myNormalBorderColor :: [Char]
+myNormalBorderColor = "#000000"
+myFocusedBorderColor :: [Char]
 myFocusedBorderColor = "#3732C7" --blue
---myFocusedBorderColor = "#D90024" --red
---myFocusedBorderColor = "#F0E800" --yellow
---myFocusedBorderColor = "#D44819"
---myFocusedBorderColor = "#186B0A"
 
 ------------------------------------------------------------------------
 -- Key bindings
---
+------------------------------------------------------------------------
+
+myKeys :: XConfig Layout -> M.Map (KeyMask, KeySym) (X ())
 myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
 
     -- launch a terminal
     [ ((modm, xK_Return),           spawn $ XMonad.terminal conf)
 
     -- launch dmenu
-    , ((modm, xK_r),                spawn "exe=`dmenu_run -b -nb black -nf grey -sf yellow` && eval \"exec $exe\"")   
-    --, ((modm,             xK_r ), spawn "dmenu_run")
+    , ((modm, xK_r),    spawn "exe=`dmenu_run -b -nb black -nf grey -sf yellow` && eval \"exec $exe\"")   
 
     -- Lock the screen
     , ((modm,           xK_z),      spawn "xscreensaver-command -lock")
 
     -- Take a screenshot
     , ((0,              xK_Print),  spawn "scrot ~/Desktop/TEMP/%Y-%m-%d-%T-screenshot.png")
+    , ((modm,           xK_p),      spawn "scrot ~/Desktop/TEMP/%Y-%m-%d-%T-screenshot.png")
 
     -- Show scratchpad
     , ((modm, xK_BackSpace),        scratchpadSpawnActionTerminal myTerminal)
@@ -86,7 +94,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     -- close focused window
     , ((modm .|. shiftMask, xK_c),          kill)
 
-     -- Rotate through the available layout algorithms
+     -- Rotate through the available layouts
     , ((modm,               xK_space),      sendMessage NextLayout)
 
     --  Reset the layouts on the current workspace to default
@@ -107,14 +115,12 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm              , xK_n),          moveTo Next EmptyWS)
     , ((modm .|. shiftMask, xK_n),          shiftTo Next EmptyWS)
 
-    -- Minimize windows
+    -- Minimize/unminimize window
     , ((modm,               xK_m),      withFocused minimizeWindow)
     , ((modm .|. shiftMask, xK_m),      sendMessage RestoreNextMinimizedWin)
 
-    -- Move focus to the next non-minimized window
+    -- Move focus to the next/previous non-minimized window
     , ((modm,               xK_j     ), focusDown)
-
-    -- Move focus to the previous non-minimized window
     , ((modm,               xK_k     ), focusUp  )
 
     -- Swap the focused window and the master window
@@ -157,12 +163,15 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
         , (f, m) <- [(W.greedyView, 0), (W.shift, shiftMask)]]
 
 -- Key binding to toggle the status bar.
-toggleStrutsKey XConfig {XMonad.modMask = modMask} = (modMask, xK_b)
+toggleStrutsKey :: XConfig t -> (KeyMask, KeySym)
+toggleStrutsKey XConfig {XMonad.modMask = modkey} = (modkey, xK_b)
 
 
 ------------------------------------------------------------------------
 -- Mouse bindings: default actions bound to mouse events
---
+------------------------------------------------------------------------
+
+myMouseBindings :: XConfig t -> M.Map (KeyMask, Button) (Window -> X())
 myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
 
     -- mod-button1, Set the window to floating mode and move by dragging
@@ -176,18 +185,21 @@ myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
 
 ------------------------------------------------------------------------
 -- Layouts:
+------------------------------------------------------------------------
 
 -- If you change layout bindings be sure to use 'mod-shift-space' after
 -- restarting (with 'mod-q') to reset your layout state to the new
 -- defaults, as xmonad preserves your old layout settings by default.
-myLayout = boringWindows $ smartBorders $ tall ||| mtall ||| threecol ||| full ||| float
+
+-- signature missing
+myLayout = boringWindows $ smartBorders $ tall ||| mtall ||| threecol ||| full ||| floating
   where
      -- default tiling algorithm partitions the screen into two panes
      tall       = renamed [Replace "|="]    $ spacing s $ minimize (Tall nmaster delta ratio)
      mtall      = renamed [Replace "П"]     $ spacing s $ minimize (Mirror tall)
      threecol   = renamed [Replace "|||"]   $ spacing s $ minimize (ThreeCol 1 (3/100) (1/5))
      full       = renamed [Replace "■"]     $ spacing s $ minimize Full
-     float      = renamed [Replace ":"]     $ spacing s $ minimize simplestFloat
+     floating   = renamed [Replace ":"]     $ spacing s $ minimize simplestFloat
      -- The default number of windows in the master pane
      nmaster    = 1
      -- Default proportion of screen occupied by master pane
@@ -199,11 +211,13 @@ myLayout = boringWindows $ smartBorders $ tall ||| mtall ||| threecol ||| full |
 
 ------------------------------------------------------------------------
 -- Window rules:
+------------------------------------------------------------------------
 
 -- To find the property name associated with a program, use
 -- > xprop | grep WM_CLASS
 -- and click on the client you're interested in.
---
+
+myManageHook :: Query (Endo WindowSet)
 myManageHook = (composeAll
     [  title    =? "Float"  --> doFloat
     -- className =? "Pidgin"         --> doShift "3"
@@ -231,25 +245,32 @@ manageScratchPad = scratchpadManageHook (W.RationalRect l t w h)
 
 ------------------------------------------------------------------------
 -- Event handling
+------------------------------------------------------------------------
 
 -- Defines a custom handler function for X Events. The function should
 -- return (All True) if the default handler is to be run afterwards. To
 -- combine event hooks use mappend or mconcat from Data.Monoid.
 --
+myEventHook :: Event -> X All
 myEventHook = minimizeEventHook
 
 ------------------------------------------------------------------------
 -- Status bars and logging
+------------------------------------------------------------------------
 
 -- Perform an arbitrary action on each internal state change or X event.
 -- See the 'XMonad.Hooks.DynamicLog' extension for examples.
---
+
+myLogHook :: X ()
 myLogHook = return ()
 
 ------------------------------------------------------------------------
 -- Startup hook
+------------------------------------------------------------------------
 
 -- Perform an arbitrary action each time xmonad starts or is restarted
+
+myStartupHook :: X ()
 myStartupHook = do
     setWMName "LG3D"
     --raiseMaybe (runInTerm "" "turses") (stringProperty "WM_NAME" =? "turses")
@@ -261,6 +282,9 @@ myStartupHook = do
 
 ------------------------------------------------------------------------
 -- Pretty print to the status bar
+------------------------------------------------------------------------
+
+myPP :: PP
 myPP = defaultPP { ppCurrent = xmobarColor "#ffffff" "#006C82" . wrap " " " "
                  , ppUrgent  = xmobarColor "#ffffff" "#FF0000" . wrap " " " "
                  , ppLayout  = xmobarColor "#429942" "" 
@@ -273,11 +297,14 @@ myPP = defaultPP { ppCurrent = xmobarColor "#ffffff" "#006C82" . wrap " " " "
 
 ------------------------------------------------------------------------
 -- Run xmonad with specified settings
---
+------------------------------------------------------------------------
+
+main :: IO ()
 main = xmonad =<< statusBar "xmobar" myPP toggleStrutsKey defaults
 
+-- signature missing
 defaults = withUrgencyHook NoUrgencyHook defaultConfig {
-      -- simple stuff
+        -- simple stuff
         terminal           = myTerminal,
         focusFollowsMouse  = myFocusFollowsMouse,
         borderWidth        = myBorderWidth,
@@ -286,11 +313,11 @@ defaults = withUrgencyHook NoUrgencyHook defaultConfig {
         normalBorderColor  = myNormalBorderColor,
         focusedBorderColor = myFocusedBorderColor,
 
-      -- key bindings
+        -- key bindings
         keys               = myKeys,
         mouseBindings      = myMouseBindings,
 
-      -- hooks, layouts
+        -- hooks, layouts
         layoutHook         = myLayout,
         manageHook         = myManageHook,
         handleEventHook    = myEventHook,
