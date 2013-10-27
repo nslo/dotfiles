@@ -4,28 +4,22 @@ import XMonad
 import XMonad.Hooks.DynamicLog
 import XMonad.Hooks.ManageHelpers (isFullscreen, doFullFloat)
 import XMonad.Hooks.Minimize
-import XMonad.Hooks.UrgencyHook
 import XMonad.Hooks.SetWMName
-import XMonad.Layout.NoBorders
-import XMonad.Layout.Minimize
---import XMonad.Layout.LayoutModifier
+import XMonad.Hooks.UrgencyHook
 import XMonad.Layout.BoringWindows (boringWindows, focusUp, focusDown)
-import XMonad.Layout.ThreeColumns
+import XMonad.Layout.Grid
+import XMonad.Layout.Minimize
+import XMonad.Layout.NoBorders
 import XMonad.Layout.Renamed
-import XMonad.Layout.Spacing
 import XMonad.Layout.SimplestFloat
+import XMonad.Layout.Spacing
+import XMonad.Layout.ThreeColumns
 import XMonad.Actions.CycleWS
---import XMonad.Actions.WindowGo
 import XMonad.Util.Scratchpad
---import XMonad.Util.Run
---import XMonad.Util.StringProp
---import Graphics.X11.Types
-import Graphics.X11.ExtraTypes.XF86
---import Data.Monoid
-import System.Exit
---import Data.List
-import Data.Word
 import Data.Monoid
+import Data.Word
+import Graphics.X11.ExtraTypes.XF86
+import System.Exit
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
 
@@ -192,11 +186,11 @@ myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
 -- defaults, as xmonad preserves your old layout settings by default.
 
 -- signature missing
-myLayout = boringWindows $ smartBorders $ tall ||| mtall ||| threecol ||| full ||| floating
+myLayout = boringWindows $ smartBorders $ tall ||| grid ||| threecol ||| full ||| floating
   where
      -- default tiling algorithm partitions the screen into two panes
      tall       = renamed [Replace "|="]    $ spacing s $ minimize (Tall nmaster delta ratio)
-     mtall      = renamed [Replace "П"]     $ spacing s $ minimize (Mirror tall)
+     grid       = renamed [Replace "+"]     $ spacing s $ minimize Grid
      threecol   = renamed [Replace "|||"]   $ spacing s $ minimize (ThreeCol 1 (3/100) (1/5))
      full       = renamed [Replace "■"]     $ spacing s $ minimize Full
      floating   = renamed [Replace ":"]     $ spacing s $ minimize simplestFloat
