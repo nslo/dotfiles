@@ -56,3 +56,4 @@ inoremap <CapsLock> <nop>
 ca tn tabnew
 let mapleader=","
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+nnoremap Y y$

@@ -168,12 +168,12 @@ toggleStrutsKey XConfig {XMonad.modMask = modkey} = (modkey, xK_b)
 myMouseBindings :: XConfig t -> M.Map (KeyMask, Button) (Window -> X())
 myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
 
-    -- mod-button1, Set the window to floating mode and move by dragging
+    -- Set the window to floating mode and move by dragging
     [ ((modm, button1), (\w -> focus w >> mouseMoveWindow w
                                        >> windows W.shiftMaster))
 
-    -- mod-button2, Set the window to floating mode and resize by dragging
-    , ((modm, button2), (\w -> focus w >> mouseResizeWindow w
+    -- Set the window to floating mode and resize by dragging
+    , ((modm, button3), (\w -> focus w >> mouseResizeWindow w
                                        >> windows W.shiftMaster))
     ]
 
