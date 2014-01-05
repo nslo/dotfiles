@@ -7,6 +7,7 @@ Bundle 'gmarik/vundle'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-sensible'
+Bundle 'tpope/vim-surround'
 filetype plugin indent on
 " fallback config file for ycm
 let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
@@ -27,8 +28,8 @@ endif
 " Colors
 syntax enable
 colorscheme gummybears_trans
-autocmd Filetype python colorscheme railscasts256_trans
-autocmd Filetype haskell colorscheme railscasts256_trans
+"autocmd Filetype python colorscheme railscasts256_trans
+"autocmd Filetype haskell colorscheme railscasts256_trans
 hi CursorLine term=bold cterm=bold gui=bold ctermbg=black guibg=black
 set cursorline
 
