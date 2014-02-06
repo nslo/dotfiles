@@ -7,6 +7,8 @@ map <C-q> <Nop>
 imap <C-q> <Nop>
 cmap <C-q> <Nop>
 
+map <C-k> <Nop>
+
 noremap <C-Tab> <C-6>
 cnoremap <C-Tab> <C-6>
 inoremap <C-Tab> <C-6>

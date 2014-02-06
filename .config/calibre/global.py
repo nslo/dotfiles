@@ -50,6 +50,10 @@ swap_author_names = False
 # Add new formats to existing book records
 add_formats_to_existing = False
  
+# check for dupes on ctl
+# Check for duplicates when copying to another library
+check_for_dupes_on_ctl = False
+ 
 # installation uuid
 # Installation UUID
 installation_uuid = 'c3f81ccb-c0f3-4101-a5a7-9e7020f6167e'
@@ -57,6 +61,10 @@ installation_uuid = 'c3f81ccb-c0f3-4101-a5a7-9e7020f6167e'
 # new book tags
 # Tags to apply to books added to the library
 new_book_tags = cPickle.loads('\x80\x02]q\x01.')
+ 
+# mark new books
+# Mark newly added books. The mark is a temporary mark that is automatically removed when calibre is restarted.
+mark_new_books = False
  
 # saved searches
 # List of named saved searches
