@@ -8,6 +8,8 @@ Bundle 'Valloric/YouCompleteMe'
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-sensible'
 Bundle 'tpope/vim-surround'
+Bundle 'bling/vim-airline'
+Bundle 'kien/ctrlp.vim'
 filetype plugin indent on
 " fallback config file for ycm
 let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
@@ -32,6 +34,19 @@ colorscheme gummybears_trans
 "autocmd Filetype haskell colorscheme railscasts256_trans
 hi CursorLine term=bold cterm=bold gui=bold ctermbg=black guibg=black
 set cursorline
+
+" 80 character indicator                                                        
+if exists('+colorcolumn')                                                       
+    set colorcolumn=81                                                          
+else                                                                            
+    au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)             
+endif                                                                           
+hi ColorColumn ctermbg=4                                                        
+
+" Spellcheck
+hi clear SpellBad
+hi clear SpellCap
+hi SpellBad cterm=underline
 
 " Other Vim options
 set number
@@ -58,3 +73,6 @@ ca tn tabnew
 let mapleader=","
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 nnoremap Y y$
+
+" Airline
+let g:airline#extensions#tabline#enabled = 1

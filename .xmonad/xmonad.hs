@@ -28,7 +28,7 @@ import qualified Data.Map        as M
 ------------------------------------------------------------------------
 
 -- The preferred terminal program
-myTerminal :: [Char]
+myTerminal :: String
 myTerminal = "urxvt"
 
 -- Whether focus follows the mouse pointer.
@@ -44,13 +44,13 @@ myModMask :: KeyMask
 myModMask = mod4Mask
 
 -- Workspaces and their names
-myWorkspaces :: [[Char]]
+myWorkspaces :: [String]
 myWorkspaces = ["1","2","3","4","5","6","7","8","9","0","A","B"]
 
 -- Border colors for unfocused and focused windows, respectively.
-myNormalBorderColor :: [Char]
+myNormalBorderColor :: String
 myNormalBorderColor = "#000000"
-myFocusedBorderColor :: [Char]
+myFocusedBorderColor :: String
 myFocusedBorderColor = "#3732C7" --blue
 
 ------------------------------------------------------------------------
@@ -142,7 +142,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm,               xK_period), sendMessage (IncMasterN (-1)))
 
     -- Quit xmonad
-    , ((modm .|. shiftMask, xK_q     ), io (exitWith ExitSuccess))
+    , ((modm .|. shiftMask, xK_q     ), io exitSuccess)
 
     -- Restart xmonad
     , ((modm              , xK_q     ), spawn "xmonad --recompile; xmonad --restart")
@@ -166,15 +166,13 @@ toggleStrutsKey XConfig {XMonad.modMask = modkey} = (modkey, xK_b)
 ------------------------------------------------------------------------
 
 myMouseBindings :: XConfig t -> M.Map (KeyMask, Button) (Window -> X())
-myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
-
+myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList
     -- Set the window to floating mode and move by dragging
-    [ ((modm, button1), (\w -> focus w >> mouseMoveWindow w
-                                       >> windows W.shiftMaster))
-
+    [ ((modm, button1), \w -> focus w >> mouseMoveWindow w
+            >> windows W.shiftMaster)
     -- Set the window to floating mode and resize by dragging
-    , ((modm, button3), (\w -> focus w >> mouseResizeWindow w
-                                       >> windows W.shiftMaster))
+    , ((modm, button3), \w -> focus w >> mouseResizeWindow w
+            >> windows W.shiftMaster)
     ]
 
 ------------------------------------------------------------------------
@@ -189,11 +187,11 @@ myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
 myLayout = boringWindows $ smartBorders $ tall ||| grid ||| threecol ||| full ||| floating
   where
      -- default tiling algorithm partitions the screen into two panes
-     tall       = renamed [Replace "|="]    $ spacing s $ minimize (Tall nmaster delta ratio)
-     grid       = renamed [Replace "+"]     $ spacing s $ minimize Grid
-     threecol   = renamed [Replace "|||"]   $ spacing s $ minimize (ThreeCol 1 (3/100) (1/5))
-     full       = renamed [Replace "■"]     $ spacing s $ minimize Full
-     floating   = renamed [Replace ":"]     $ spacing s $ minimize simplestFloat
+     tall       = renamed [Replace "|="]    $ smartSpacing s $ minimize (Tall nmaster delta ratio)
+     grid       = renamed [Replace "+"]     $ smartSpacing s $ minimize Grid
+     threecol   = renamed [Replace "|||"]   $ smartSpacing s $ minimize (ThreeCol 1 (3/100) (1/5))
+     full       = renamed [Replace "■"]     $ smartSpacing s $ minimize Full
+     floating   = renamed [Replace ":"]     $ smartSpacing s $ minimize simplestFloat
      -- The default number of windows in the master pane
      nmaster    = 1
      -- Default proportion of screen occupied by master pane
@@ -212,7 +210,7 @@ myLayout = boringWindows $ smartBorders $ tall ||| grid ||| threecol ||| full ||
 -- and click on the client you're interested in.
 
 myManageHook :: Query (Endo WindowSet)
-myManageHook = (composeAll
+myManageHook = composeAll
     [  title    =? "Float"  --> doFloat
     -- className =? "Pidgin"         --> doShift "3"
     --, className =? "Skype"          --> doShift "3"
@@ -226,7 +224,7 @@ myManageHook = (composeAll
     , className =? "Gimp"           --> doFloat
     , resource  =? "desktop_window" --> doIgnore
     , resource  =? "kdesktop"       --> doIgnore
-    , isFullscreen                  --> doFullFloat])
+    , isFullscreen                  --> doFullFloat]
     <+> manageScratchPad
 
 manageScratchPad :: ManageHook
@@ -265,8 +263,8 @@ myLogHook = return ()
 -- Perform an arbitrary action each time xmonad starts or is restarted
 
 myStartupHook :: X ()
-myStartupHook = do
-    setWMName "LG3D"
+myStartupHook = setWMName "LG3D"
+    --do setWMName "LG3D"
     --raiseMaybe (runInTerm "" "turses") (stringProperty "WM_NAME" =? "turses")
     ----raiseMaybe (runInTerm "" "ncmpcpp") (stringProperty "WM_NAME" =? "ncmpcpp ver. 0.5.10")
     ----raiseMaybe (runInTerm "-name ncmpcpp" "ncmpcpp") (stringProperty "WM_COMMAND" =? "ncmpcpp")
@@ -283,7 +281,8 @@ myPP = defaultPP { ppCurrent = xmobarColor "#ffffff" "#006C82" . wrap " " " "
                  , ppUrgent  = xmobarColor "#ffffff" "#FF0000" . wrap " " " "
                  , ppLayout  = xmobarColor "#429942" "" 
                  , ppHidden  = noScratchPad
-                 , ppTitle   = xmobarColor "#ee9a00" "" . shorten 80
+                 , ppTitle   = xmobarColor "#7094FF" "" . shorten 80
+                 --, ppTitle   = xmobarColor "#ee9a00" "" . shorten 80
                  , ppSep     = xmobarColor "#429942" "" "   "
                  }
                  -- filter out scratchpad workspace

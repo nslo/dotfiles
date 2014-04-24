@@ -6,6 +6,7 @@ ZSH=$HOME/.oh-my-zsh
 
 # aliases
 alias rpi="ssh -Y pi@192.168.1.110"
+alias sshx='ssh -c arcfour,blowfish-cbc -XC' 
 
 #PATH
 #echo PATH=~/.cabal/bin:$PATH
@@ -55,8 +56,6 @@ bindkey "\e[Z" reverse-menu-complete # Shift+Tab
 bindkey "\e[7~" beginning-of-line # Home
 bindkey "\e[8~" end-of-line # End
 
-
-
 # Colorized man pages in less
 man() {
     env LESS_TERMCAP_mb=$'\E[01;31m' \
@@ -69,10 +68,7 @@ man() {
     man "$@"
 }
 
-
-
-
-#PROMPT
+#####PROMPT#####
 # show vi mode
 vim_ins_mode="%{$fg[blue]%}[INSERT]%{$reset_color%}"
 vim_cmd_mode="%{$fg[red]%}[COMMAND]%{$reset_color%}"
@@ -89,20 +85,12 @@ function zle-line-finish {
 }
 zle -N zle-line-finish
 
-# old left prompt without oh-my-zsh
-#PROMPT="%{$fg[yellow]%}%B%n@%m>%b $(git_prompt_info)\ %{$reset_color%}"
-
 # multi-line prompt 
 PROMPT='%{$reset_color%}
 %{$reset_color%}
 %{$fg[green]%}%n%{$fg_bold[yellow]%}@%{$reset_color%}%{$fg[green]%}%m %{$reset_color%} %{$fg[cyan]%}%D{[%I:%M:%S]} %{$fg_bold[yellow]%}%~ %{$reset_color%} $(git_prompt_info) 
 %{$reset_color%}%{$fg[blue]%}->%{$fg_bold[blue]%} %#%{$reset_color%} '
 
-# single line version
-#PROMPT='%{$fg_bold[yellow]%}%n%{$fg[magenta]%}@%{$fg_bold[yellow]%}%m %{$reset_color%} %{$fg[cyan]%}%D{[%I:%M:%S]} $(git_prompt_info) \
-#%{$reset_color%}%{$fg[blue]%}->%{$fg_bold[blue]%} %#%{$reset_color%} '
-
-#RPROMPT="%{$fg[red]%}%B%~%b"
 RPROMPT='${vim_mode}'
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[magenta]%}["
@@ -110,6 +98,4 @@ ZSH_THEME_GIT_PROMPT_SUFFIX="]%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_DIRTY=" %{$fg[red]%}*%{$fg[magenta]%}"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 
-#%{$FG[237]%}------------------------------------------------------------%{$reset_color%}
-
-#END PROMPT
+#####END PROMPT#####
