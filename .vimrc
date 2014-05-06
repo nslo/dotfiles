@@ -69,10 +69,23 @@ nnoremap <C-t> <nop>
 inoremap <C-t> <nop>
 nnoremap <CapsLock> <nop>
 inoremap <CapsLock> <nop>
+nnoremap <Q> <nop>
+inoremap <Q> <nop>
 ca tn tabnew
 let mapleader=","
+" For youcompleteme
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+" Get rest of line on Y
 nnoremap Y y$
+" Easy access to + register
+nmap <leader>y "+y
+vmap <leader>y "+y
+nmap <leader>d "+d
+vmap <leader>d "+d
+nmap <leader>p "+p
+vmap <leader>p "+p
+nmap <leader>P "+P
+vmap <leader>P "+P
 
 " Airline
 let g:airline#extensions#tabline#enabled = 1

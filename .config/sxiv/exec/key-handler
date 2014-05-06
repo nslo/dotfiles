@@ -1,0 +1,6 @@
+#!/bin/sh
+
+case "$1" in
+"C-w")
+        feh --bg-fill "$2" ;;
+esac
