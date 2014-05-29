@@ -86,6 +86,8 @@ nmap <leader>p "+p
 vmap <leader>p "+p
 nmap <leader>P "+P
 vmap <leader>P "+P
+" Make cw consistent with dw, yw, vw
+onoremap w :execute 'normal! '.v:count1.'w'<CR>
 
 " Airline
 let g:airline#extensions#tabline#enabled = 1
