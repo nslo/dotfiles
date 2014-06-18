@@ -8,9 +8,11 @@ imap <C-q> <Nop>
 cmap <C-q> <Nop>
 
 map <C-k> <Nop>
+map <C-j> <Nop>
 
 noremap <C-Tab> <C-6>
 cnoremap <C-Tab> <C-6>
 inoremap <C-Tab> <C-6>
 
 ignorekeys add -except=<S-j>,<S-k> /mail\.google\.com/
+ignorekeys add /docs\.google\.com/

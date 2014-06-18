@@ -9,7 +9,7 @@ alias rpi="ssh -Y pi@192.168.1.110"
 alias sshx='ssh -c arcfour,blowfish-cbc -XC' 
 
 #PATH
-#echo PATH=~/.cabal/bin:$PATH
+export PATH=~/.cabal/bin:$PATH
 
 # Plugins. Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
