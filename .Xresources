@@ -16,6 +16,8 @@ URxvt.boldfont: xft:DejaVu Sans Mono:pixelsize=11:antialias=true:hinting=true
 !URxvt.font: xft:Inconsolata:pixelsize=12
 URxvt.scrollBar_right:false
 URxvt.scrollBar:false
+URxvt.cursorBlink: 1
+!URxvt.cursorUnderline: 1
 
 
 !black

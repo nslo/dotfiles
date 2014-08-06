@@ -11,6 +11,7 @@ import XMonad.Layout.Grid
 import XMonad.Layout.Minimize
 import XMonad.Layout.NoBorders
 import XMonad.Layout.Renamed
+import XMonad.Layout.ResizableTile
 import XMonad.Layout.SimplestFloat
 import XMonad.Layout.Spacing
 import XMonad.Layout.ThreeColumns
@@ -64,10 +65,14 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     [ ((modm, xK_Return),           spawn $ XMonad.terminal conf)
 
     -- launch dmenu
-    , ((modm, xK_r),    spawn "exe=`dmenu_run -b -nb black -nf grey -sf yellow` && eval \"exec $exe\"")   
+    -- , ((modm, xK_r),    spawn "dmenu_yeganesh")   
+    -- , ((modm, xK_r),    spawn "exe=`dmenu_run -b -nb black -nf grey -sf yellow` && eval \"exec $exe\"")   
+    , ((modm, xK_r),    spawn "dmenu_run -b -nb black -nf grey -sf yellow")
 
     -- Lock the screen
-    , ((modm,           xK_z),      spawn "xscreensaver-command -lock")
+    , ((modm,           xK_z),      spawn "xautolock -locknow")
+    --, ((modm,           xK_z),      spawn "slimlock")
+    --, ((modm,           xK_z),      spawn "xscreensaver-command -lock")
 
     -- Take a screenshot
     , ((0,              xK_Print),  spawn "scrot ~/Desktop/TEMP/%Y-%m-%d-%T-screenshot.png")
@@ -81,9 +86,10 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((0, xF86XK_MonBrightnessDown),       spawn "xbacklight -20")
 
     -- Volume
-    , ((0, xF86XK_AudioRaiseVolume),        spawn "amixer -c 1 sset Master 3%+")
-    , ((0, xF86XK_AudioLowerVolume),        spawn "amixer -c 1 sset Master 3%-")
-    , ((0, xF86XK_AudioMute),               spawn "amixer -c 1 sset Master toggle")
+    --, ((0, xF86XK_AudioRaiseVolume),        spawn "amixer -c 1 sset Master 3%+")
+    , ((0, xF86XK_AudioRaiseVolume),        spawn "amixer sset Master 3%+")
+    , ((0, xF86XK_AudioLowerVolume),        spawn "amixer sset Master 3%-")
+    , ((0, xF86XK_AudioMute),               spawn "amixer sset Master toggle")
 
     -- close focused window
     , ((modm .|. shiftMask, xK_c),          kill)
@@ -119,31 +125,27 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
 
     -- Swap the focused window and the master window
     , ((modm .|. shiftMask, xK_Return), windows W.swapMaster)
-
     -- Swap the focused window with the next window
     , ((modm .|. shiftMask, xK_j     ), windows W.swapDown  )
-
     -- Swap the focused window with the previous window
     , ((modm .|. shiftMask, xK_k     ), windows W.swapUp    )
 
     -- Shrink the master area
     , ((modm,               xK_h     ), sendMessage Shrink)
-
     -- Expand the master area
     , ((modm,               xK_l     ), sendMessage Expand)
+    -- Shrink a window vertically
+    , ((modm,               xK_Down  ), sendMessage MirrorShrink)
+    , ((modm,               xK_i     ), sendMessage MirrorShrink)
+    -- Expand a window vertically
+    , ((modm,               xK_Up    ), sendMessage MirrorExpand)
+    , ((modm,               xK_u     ), sendMessage MirrorExpand)
 
     -- Push window back into tiling
     , ((modm,               xK_t     ), withFocused $ windows . W.sink)
 
-    -- Increment the number of windows in the master area
-    , ((modm,               xK_comma ), sendMessage (IncMasterN 1))
-
-    -- Deincrement the number of windows in the master area
-    , ((modm,               xK_period), sendMessage (IncMasterN (-1)))
-
     -- Quit xmonad
     , ((modm .|. shiftMask, xK_q     ), io exitSuccess)
-
     -- Restart xmonad
     , ((modm              , xK_q     ), spawn "xmonad --recompile; xmonad --restart")
     ]
@@ -187,7 +189,8 @@ myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList
 myLayout = boringWindows $ smartBorders $ tall ||| grid ||| threecol ||| full ||| floating
   where
      -- default tiling algorithm partitions the screen into two panes
-     tall       = renamed [Replace "|="]    $ smartSpacing s $ minimize (Tall nmaster delta ratio)
+     tall       = renamed [Replace "|="]    $ smartSpacing s $ minimize (ResizableTall nmaster delta ratio [])
+     -- tall       = renamed [Replace "|="]    $ smartSpacing s $ minimize (Tall nmaster delta ratio)
      grid       = renamed [Replace "+"]     $ smartSpacing s $ minimize Grid
      threecol   = renamed [Replace "|||"]   $ smartSpacing s $ minimize (ThreeCol 1 (3/100) (1/5))
      full       = renamed [Replace "■"]     $ smartSpacing s $ minimize Full

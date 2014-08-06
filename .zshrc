@@ -1,5 +1,8 @@
-# to be on the safe side
+# To be on the safe side.
 export EDITOR=vim
+
+# Pacmatic
+export PACMAN='pacmatic'
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
@@ -7,6 +10,10 @@ ZSH=$HOME/.oh-my-zsh
 # aliases
 alias rpi="ssh -Y pi@192.168.1.110"
 alias sshx='ssh -c arcfour,blowfish-cbc -XC' 
+# vimpager
+export PAGER=/bin/vimpager
+alias less=$PAGER
+alias zless=$PAGER
 
 #PATH
 export PATH=~/.cabal/bin:$PATH
