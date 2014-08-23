@@ -75,15 +75,17 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     --, ((modm,           xK_z),      spawn "xscreensaver-command -lock")
 
     -- Take a screenshot
-    , ((0,              xK_Print),  spawn "scrot ~/Desktop/TEMP/%Y-%m-%d-%T-screenshot.png")
+    --, ((0,              xK_Print),  spawn "scrot ~/Desktop/TEMP/%Y-%m-%d-%T-screenshot.png")
     , ((modm,           xK_p),      spawn "scrot ~/Desktop/TEMP/%Y-%m-%d-%T-screenshot.png")
 
     -- Show scratchpad
     , ((modm, xK_BackSpace),        scratchpadSpawnActionTerminal myTerminal)
 
     -- Screen brightness
-    , ((0, xF86XK_MonBrightnessUp),         spawn "xbacklight +20")
-    , ((0, xF86XK_MonBrightnessDown),       spawn "xbacklight -20")
+    --, ((0, xF86XK_MonBrightnessUp),         spawn "xbacklight +20")
+    --, ((0, xF86XK_MonBrightnessDown),       spawn "xbacklight -20")
+    , ((0, xF86XK_MonBrightnessUp),         spawn "light -A 10")
+    , ((0, xF86XK_MonBrightnessDown),       spawn "light -U 10")
 
     -- Volume
     --, ((0, xF86XK_AudioRaiseVolume),        spawn "amixer -c 1 sset Master 3%+")

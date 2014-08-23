@@ -30,7 +30,7 @@ trayer --edge top --align right --SetDockType true --SetPartialStrut true --expa
 udiskie -2 --tray &
 
 # screen locking
-xautolock -time 3 -locker slimlock &
+xautolock -time 15 -locker slimlock &
 
 # notification manager
 dunst &

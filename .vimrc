@@ -3,29 +3,23 @@ set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
-Bundle 'gmarik/vundle'
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'scrooloose/syntastic'
-Bundle 'tpope/vim-sensible'
-Bundle 'tpope/vim-surround'
-Bundle 'bling/vim-airline'
-Bundle 'kien/ctrlp.vim'
+Plugin 'gmarik/Vundle.vim'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-sensible'
+Plugin 'tpope/vim-surround'
+Plugin 'bling/vim-airline'
+Plugin 'kien/ctrlp.vim'
+call vundle#end()
 filetype plugin indent on
+
 " fallback config file for ycm
-let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf='~/Code/.ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf=0
 
 " Syntastic
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_loc_list=1
-
-" GVim options
-if has('gui_running')
-    set guioptions-=T  " no toolbar
-    set guioptions-=r  "remove right-hand scroll bar 
-    colorscheme slate
-    set lines=66 columns=90
-endif
 
 " Colors
 syntax enable
@@ -34,6 +28,15 @@ colorscheme gummybears_trans
 "autocmd Filetype haskell colorscheme railscasts256_trans
 hi CursorLine term=bold cterm=bold gui=bold ctermbg=black guibg=black
 set cursorline
+
+" GVim options
+if has('gui_running')
+    set guioptions-=T  " no toolbar
+    "set guioptions-=r  "remove right-hand scroll bar 
+    set lines=66 columns=90
+    colorscheme jellybeans
+    set guifont=consolas:h9
+endif
 
 " 80 character indicator                                                        
 if exists('+colorcolumn')                                                       
