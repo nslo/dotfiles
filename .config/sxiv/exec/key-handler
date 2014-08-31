@@ -2,5 +2,6 @@
 
 case "$1" in
 "C-w")
-        feh --bg-fill "$2" ;;
+        feh --bg-fill "$2"
+        cp "$2" /tmp/wallpaper.jpg ;;
 esac

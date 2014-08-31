@@ -8,7 +8,7 @@ export PACMAN='pacmatic'
 ZSH=$HOME/.oh-my-zsh
 
 # aliases
-alias rpi="ssh -Y pi@192.168.1.110"
+alias rpi="ssh -Y root@192.168.1.139"
 alias sshx='ssh -c arcfour,blowfish-cbc -XC' 
 # vimpager
 export PAGER=/bin/vimpager
