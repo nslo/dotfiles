@@ -47,5 +47,8 @@ pulseaudio --start
 sleep 5
 pasystray &
 
+# ssh keys
+eval `ssh-agent`
+
 # launch window manager
 exec xmonad
