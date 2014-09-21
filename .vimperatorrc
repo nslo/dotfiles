@@ -1,7 +1,12 @@
 set hintchars=asdfghjkl
 
+ignorekeys add -except=<S-j>,<S-k> /mail\.google\.com/
+ignorekeys add /docs\.google\.com/
+
 nmap <S-j> <C-PageDown>
+cmap <S-j> <C-PageDown>
 nmap <S-k> <C-PageUp>
+cmap <S-k> <C-PageUp>
 nmap d <C-w>
 map <C-q> <Nop>
 imap <C-q> <Nop>
@@ -10,9 +15,7 @@ cmap <C-q> <Nop>
 map <C-k> <Nop>
 map <C-j> <Nop>
 
-noremap <C-Tab> <C-6>
-cnoremap <C-Tab> <C-6>
-inoremap <C-Tab> <C-6>
+noremap <C-Tab> i<C-Tab>
+cnoremap <C-Tab> i<C-Tab>
+inoremap <C-Tab> i<C-Tab
 
-ignorekeys add -except=<S-j>,<S-k> /mail\.google\.com/
-ignorekeys add /docs\.google\.com/

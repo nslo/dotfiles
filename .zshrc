@@ -1,22 +1,23 @@
 # To be on the safe side.
-export EDITOR=vim
+export EDITOR="vim"
+export BROWSER="firefox"
 
-# Pacmatic
-export PACMAN='pacmatic'
+#PATH
+export PATH="~/.cabal/bin:$PATH"
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
+# Pacmatic
+export PACMAN="pacmatic"
+
 # aliases
-alias sshx='ssh -c arcfour,blowfish-cbc -XC' 
+alias sshx="ssh -c arcfour,blowfish-cbc -XC"
 
 # vimpager
-export PAGER=/bin/vimpager
+export PAGER="/bin/vimpager"
 alias less=$PAGER
 alias zless=$PAGER
-
-#PATH
-export PATH=~/.cabal/bin:$PATH
 
 # Plugins. Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)

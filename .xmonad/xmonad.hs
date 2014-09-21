@@ -71,8 +71,6 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
 
     -- Lock the screen
     , ((modm,           xK_z),      spawn "xautolock -locknow")
-    --, ((modm,           xK_z),      spawn "slimlock")
-    --, ((modm,           xK_z),      spawn "xscreensaver-command -lock")
 
     -- Take a screenshot
     --, ((0,              xK_Print),  spawn "scrot ~/Desktop/TEMP/%Y-%m-%d-%T-screenshot.png")
@@ -82,8 +80,6 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm, xK_BackSpace),        scratchpadSpawnActionTerminal myTerminal)
 
     -- Screen brightness
-    --, ((0, xF86XK_MonBrightnessUp),         spawn "xbacklight +20")
-    --, ((0, xF86XK_MonBrightnessDown),       spawn "xbacklight -20")
     , ((0, xF86XK_MonBrightnessUp),         spawn "light -A 10")
     , ((0, xF86XK_MonBrightnessDown),       spawn "light -U 10")
 
