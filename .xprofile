@@ -30,8 +30,9 @@ trayer --edge top --align right --SetDockType true --SetPartialStrut true --expa
 udiskie -2 --tray &
 
 # screen locking
-light-locker &
-xautolock -time 15 -locker "light-locker-command -l" &
+#light-locker --no-lock-on-suspend &
+#xautolock -time 15 -locker "light-locker-command -l" &
+xautolock -time 15 -locker slimlock &
 
 # notification manager
 dunst &

@@ -71,6 +71,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
 
     -- Lock the screen
     , ((modm,           xK_z),      spawn "xautolock -locknow")
+    --, ((modm,           xK_z),      spawn "light-locker-command -l")
 
     -- Take a screenshot
     --, ((0,              xK_Print),  spawn "scrot ~/Desktop/TEMP/%Y-%m-%d-%T-screenshot.png")
