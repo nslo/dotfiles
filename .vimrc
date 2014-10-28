@@ -56,7 +56,7 @@ set lbr
 set tabstop=4
 set shiftwidth=4
 set expandtab
-set ignorecase
+set wildignorecase
 set smartcase
 set incsearch
 set showcmd
