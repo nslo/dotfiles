@@ -10,6 +10,7 @@ Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
 Plugin 'bling/vim-airline'
 Plugin 'kien/ctrlp.vim'
+Plugin 'gorkunov/smartpairs.vim'
 call vundle#end()
 filetype plugin indent on
 
@@ -24,8 +25,6 @@ let g:syntastic_auto_loc_list=1
 " Colors
 syntax enable
 colorscheme gummybears_trans
-"autocmd Filetype python colorscheme railscasts256_trans
-"autocmd Filetype haskell colorscheme railscasts256_trans
 hi CursorLine term=bold cterm=bold gui=bold ctermbg=black guibg=black
 set cursorline
 

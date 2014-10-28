@@ -135,10 +135,10 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm,               xK_l     ), sendMessage Expand)
     -- Shrink a window vertically
     , ((modm,               xK_Down  ), sendMessage MirrorShrink)
-    , ((modm,               xK_i     ), sendMessage MirrorShrink)
+    , ((modm,               xK_u     ), sendMessage MirrorShrink)
     -- Expand a window vertically
     , ((modm,               xK_Up    ), sendMessage MirrorExpand)
-    , ((modm,               xK_u     ), sendMessage MirrorExpand)
+    , ((modm,               xK_i     ), sendMessage MirrorExpand)
 
     -- Push window back into tiling
     , ((modm,               xK_t     ), withFocused $ windows . W.sink)
