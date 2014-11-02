@@ -11,6 +11,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'bling/vim-airline'
 Plugin 'kien/ctrlp.vim'
 Plugin 'gorkunov/smartpairs.vim'
+Plugin 'rhysd/vim-clang-format'
 call vundle#end()
 filetype plugin indent on
 
@@ -95,3 +96,8 @@ onoremap w :execute 'normal! '.v:count1.'w'<CR>
 
 " Airline
 let g:airline#extensions#tabline#enabled = 1
+
+" clang-format
+let g:clang_format#auto_format = 1
+let g:clang_format#style_options = {
+    \ "BreakBeforeBraces" : "Allman"}
