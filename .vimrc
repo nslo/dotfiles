@@ -5,38 +5,22 @@ set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'bling/vim-airline'
+Plugin 'gorkunov/smartpairs.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'rhysd/vim-clang-format'
+Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
-Plugin 'bling/vim-airline'
-Plugin 'kien/ctrlp.vim'
-Plugin 'gorkunov/smartpairs.vim'
-Plugin 'rhysd/vim-clang-format'
 call vundle#end()
 filetype plugin indent on
-
-" fallback config file for ycm
-let g:ycm_global_ycm_extra_conf='~/Code/.ycm_extra_conf.py'
-let g:ycm_confirm_extra_conf=0
-
-" Syntastic
-let g:syntastic_enable_signs=1
-let g:syntastic_auto_loc_list=1
 
 " Colors
 syntax enable
 colorscheme gummybears_trans
 hi CursorLine term=bold cterm=bold gui=bold ctermbg=black guibg=black
 set cursorline
-
-" GVim options
-if has('gui_running')
-    set guioptions-=T  " no toolbar
-    "set guioptions-=r  "remove right-hand scroll bar 
-    set lines=66 columns=90
-    colorscheme jellybeans
-    set guifont=consolas:h9
-endif
 
 " 80 character indicator                                                        
 if exists('+colorcolumn')                                                       
@@ -49,36 +33,47 @@ hi ColorColumn ctermbg=4
 " Spellcheck
 hi clear SpellBad
 hi clear SpellCap
-hi SpellBad cterm=underline
+hi SpellBad cterm=bold ctermfg=black ctermbg=red
+
+" GVim options
+if has('gui_running')
+    set guioptions-=T " no toolbar
+    set lines=66 columns=90
+    colorscheme jellybeans
+    "set guifont=consolas:h9
+endif
 
 " Other Vim options
 set number
 set lbr
 set tabstop=4
 set shiftwidth=4
-set expandtab
+set expandtab " turn tabs into spaces
+" Ignore case when opening file in vim
 set wildignorecase
-set ignorecase
-set smartcase
-set incsearch
+" When you type the first tab, it will complete as much as possible, the second
+" tab hit will provide a list, the third and subsequent tabs will cycle through
+" completion options so you can complete the file without further keys
+set wildmode=longest,list,full
+set wildmenu " completion with menu
+set ignorecase " case insensitive searching
+set smartcase " but become sensitive if you type uppercase
+set incsearch "highlight as search string is typed
 set showcmd
-set autoread
+set autoread " auto update when file changed from outside
 set t_Co=256
-set completeopt-=preview
+set undofile
+"set completeopt-=preview
 
 " Keymappings
 nnoremap <F1> <nop>
 inoremap <F1> <nop>
 nnoremap <C-t> <nop>
 inoremap <C-t> <nop>
-nnoremap <CapsLock> <nop>
-inoremap <CapsLock> <nop>
 nnoremap <Q> <nop>
 inoremap <Q> <nop>
 ca tn tabnew
 let mapleader=","
-" For youcompleteme
-nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 " Get rest of line on Y
 nnoremap Y y$
 " Easy access to + register
@@ -97,8 +92,25 @@ onoremap w :execute 'normal! '.v:count1.'w'<CR>
 
 " Airline
 let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme = 'murmur'
+"let g:airline_powerline_fonts = 1
 
 " clang-format
 let g:clang_format#auto_format = 1
 let g:clang_format#style_options = {
     \ "BreakBeforeBraces" : "Allman"}
+
+" YouCompleteMe
+nnoremap <leader>jd :YcmCompleter GoTo<CR>
+let g:ycm_enable_diagnostic_signs = 0 "Don't like gutter constantly coming and going.
+let g:ycm_seed_identifiers_with_syntax = 1
+let g:ycm_add_preview_to_completeopt = 1
+let g:ycm_key_detailed_diagnostics = '<leader>n'
+let g:ycm_goto_buffer_command = 'new-tab'
+let g:ycm_global_ycm_extra_conf='~/Code/.ycm_extra_conf.py'
+let g:ycm_confirm_extra_conf=0
+let g:ycm_autoclose_preview_window_after_completion = 1
+
+" Syntastic
+let g:syntastic_enable_signs=1
+let g:syntastic_auto_loc_list=1
