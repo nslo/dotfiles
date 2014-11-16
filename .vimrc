@@ -8,6 +8,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'bling/vim-airline'
 Plugin 'gorkunov/smartpairs.vim'
 Plugin 'kien/ctrlp.vim'
+Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/syntastic'
@@ -63,6 +64,7 @@ set showcmd
 set autoread " auto update when file changed from outside
 set t_Co=256
 set undofile
+set hidden " allows modified buffers to be hidden
 "set completeopt-=preview
 
 " Keymappings
@@ -92,8 +94,8 @@ onoremap w :execute 'normal! '.v:count1.'w'<CR>
 
 " Airline
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline_theme = 'murmur'
-"let g:airline_powerline_fonts = 1
 
 " clang-format
 let g:clang_format#auto_format = 1
@@ -114,3 +116,27 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 " Syntastic
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_loc_list=1
+
+" CtrlP
+nmap <leader>p :CtrlP<cr>
+nmap <leader>bb :CtrlPBuffer<cr>
+nmap <leader>bm :CtrlPMixed<cr>
+nmap <leader>bs :CtrlPMRU<cr>
+
+" Buffergator / buffers
+let g:buffergator_viewport_split_policy = 'R'
+let g:buffergator_suppress_keymaps = 1
+" mru buffers
+let g:buffergator_mru_cycle_loop = 1
+nmap <leader>jj :BuffergatorMruCyclePrev<cr>
+nmap <leader>kk :BuffergatorMruCycleNext<cr>
+" View the entire list of buffers open
+nmap <leader>bl :BuffergatorOpen<cr>
+" Open empty buffer
+nmap <leader>T :enew<cr>
+" Close the current buffer and move to the previous one
+nmap <leader>bq :bp <BAR> bd #<cr>
+" Move to the next buffer
+nmap <leader>l :bnext<CR>
+" Move to the previous buffer
+nmap <leader>h :bprevious<CR>
