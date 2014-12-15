@@ -102,7 +102,10 @@ let g:airline_theme = 'murmur'
 " clang-format
 let g:clang_format#auto_format = 1
 let g:clang_format#style_options = {
-    \ "BreakBeforeBraces" : "Allman"}
+    \ "AccessModifierOffset" : -4,
+    \ "AlwaysBreakTemplateDeclarations" : "true",
+    \ "BreakBeforeBraces" : "Allman",
+    \ "Standard" : "C++11"}
 
 " YouCompleteMe
 nnoremap <leader>jd :YcmCompleter GoTo<CR>
