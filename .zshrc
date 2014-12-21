@@ -3,7 +3,7 @@ export EDITOR="vim"
 export BROWSER="firefox"
 
 #PATH
-export PATH="~/.cabal/bin:$PATH"
+export PATH=".cabal/bin:$PATH"
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
