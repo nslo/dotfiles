@@ -3,11 +3,11 @@ export BROWSER="firefox"
 export PATH=".cabal/bin:$PATH"
 export PACMAN="pacmatic"
 
-# Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
-
 # aliases
 alias sshx="ssh -c arcfour,blowfish-cbc -XC"
+
+# Path to your oh-my-zsh configuration.
+ZSH=$HOME/.oh-my-zsh
 
 # Plugins. Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
@@ -85,7 +85,6 @@ zle -N zle-line-finish
 
 # multi-line prompt 
 PROMPT='%{$reset_color%}
-%{$reset_color%}
 %{$fg[green]%}%n%{$fg_bold[yellow]%}@%{$reset_color%}%{$fg[green]%}%m %{$reset_color%} %{$fg[cyan]%}%D{[%I:%M:%S]} %{$fg_bold[yellow]%}%~ %{$reset_color%} $(git_prompt_info) 
 %{$reset_color%}%{$fg[blue]%}->%{$fg_bold[blue]%} %#%{$reset_color%} '
 
