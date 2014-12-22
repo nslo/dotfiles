@@ -1,23 +1,13 @@
-# To be on the safe side.
 export EDITOR="vim"
 export BROWSER="firefox"
-
-#PATH
 export PATH=".cabal/bin:$PATH"
+export PACMAN="pacmatic"
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
-# Pacmatic
-export PACMAN="pacmatic"
-
 # aliases
 alias sshx="ssh -c arcfour,blowfish-cbc -XC"
-
-# vimpager
-export PAGER="/bin/vimpager"
-alias less=$PAGER
-alias zless=$PAGER
 
 # Plugins. Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
@@ -107,3 +97,10 @@ ZSH_THEME_GIT_PROMPT_DIRTY=" %{$fg[red]%}*%{$fg[magenta]%}"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 
 #####END PROMPT#####
+
+# for grep options error (2014-11)
+unset GREP_OPTIONS
+
+# zsh syntax highlighting
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
