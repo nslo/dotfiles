@@ -106,6 +106,7 @@ let g:clang_format#style_options = {
     \ "AllowShortFunctionsOnASingleLine" : "None",
     \ "AlwaysBreakTemplateDeclarations" : "true",
     \ "BreakBeforeBraces" : "Allman",
+    \ "PointerAlignment" : "Right",
     \ "Standard" : "C++11"}
 
 " YouCompleteMe
