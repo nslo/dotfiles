@@ -103,6 +103,7 @@ let g:airline_theme = 'murmur'
 let g:clang_format#auto_format = 1
 let g:clang_format#style_options = {
     \ "AccessModifierOffset" : -4,
+    \ "AllowShortFunctionsOnASingleLine" : "None",
     \ "AlwaysBreakTemplateDeclarations" : "true",
     \ "BreakBeforeBraces" : "Allman",
     \ "Standard" : "C++11"}
