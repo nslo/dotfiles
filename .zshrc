@@ -99,7 +99,3 @@ ZSH_THEME_GIT_PROMPT_CLEAN=""
 
 # for grep options error (2014-11)
 unset GREP_OPTIONS
-
-# zsh syntax highlighting
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
