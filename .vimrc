@@ -6,7 +6,6 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'bling/vim-airline'
-Plugin 'gorkunov/smartpairs.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'jeetsukumaran/vim-buffergator'
@@ -16,12 +15,16 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
+" Syntax
+Plugin 'tikhomirov/vim-glsl'
+Plugin 'wting/rust.vim'
 call vundle#end()
 filetype plugin indent on
 
 " Colors
 syntax enable
-colorscheme gummybears_trans
+"colorscheme gummybears_trans
+colorscheme hybrid_trans
 hi CursorLine term=bold cterm=bold gui=bold ctermbg=black guibg=black
 set cursorline
 

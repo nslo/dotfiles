@@ -1,6 +1,6 @@
-set EDITOR vim
-set BROWSER firefox
-set PACMAN pacmatic
+set -x EDITOR vim
+set -x BROWSER firefox
+set -x PACMAN pacmatic
 
 set -x PATH $PATH .cabal/bin:$PATH
 

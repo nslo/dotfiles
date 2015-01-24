@@ -17,17 +17,17 @@ synclient TapButton1=1
 # cursor for xmonad
 xsetroot -cursor_name left_ptr
 
-# numlock
+# numlock on
 numlockx &
-
-# merge resources file (for things like terminal colors)
-[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
 # compositor for transparency (urxvt)
 xcompmgr &
 
+# merge resources file (for things like terminal colors)
+[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
+
 # system tray
-trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --width 6 --height 18 --transparent true --alpha 0 --tint 0x000000 &
+trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --width 7 --height 18 --transparent true --alpha 0 --tint 0x000000 &
 
 # auto-mounting
 udiskie -2 --tray &

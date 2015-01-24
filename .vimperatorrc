@@ -17,3 +17,4 @@ noremap <C-Tab> i<C-Tab>
 cnoremap <C-Tab> i<C-Tab>
 inoremap <C-Tab> i<C-Tab
 
+highlight Hint font-family: "DejaVu Sans Mono"; font-size: 12px; font-weight: bold; text-transform: uppercase; color: white; background-color: red; padding: 2px

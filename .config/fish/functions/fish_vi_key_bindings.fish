@@ -5,8 +5,6 @@ function fish_vi_key_bindings --description 'vi-like key bindings for fish'
     set init_mode $argv[1]
   end
 
-  bind $argv \cl 'clear; commandline -f repaint'
-
   ##
   ## command mode
   ##
@@ -16,6 +14,8 @@ function fish_vi_key_bindings --description 'vi-like key bindings for fish'
   #
   # normal (default) mode
   #
+
+  bind $argv \cl 'clear; commandline -f repaint'
 
   bind \cd exit
   bind \cc 'commandline ""'

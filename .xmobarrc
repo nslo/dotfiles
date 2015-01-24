@@ -3,7 +3,7 @@ Config { font = "xft:DejaVu Sans Mono:pixelsize=12"
        , fgColor = "grey"
        , border = NoBorder
        , borderColor = "#000000"
-       , position = TopW L 94
+       , position = TopW L 93
        , commands = [ Run Wireless "wlo1" ["-t", "<fc=#3296b8><essid></fc> <quality>", "-m", "3"] 10
                     , Run MultiCpu ["-t", "<fc=#3296b8>CPU</fc> <autototal>", "-L","25","-H","49","--normal","#e3df07","--high","#ff0000", "-m", "2"] 20
                     , Run CoreTemp ["-t", "<fc=#3296b8>Temp</fc> <core0> <core1> <core2> <core3>", "-M", "2", "-L","65","-H","80","--normal","#e3df07","--high","#ff0000"] 20
