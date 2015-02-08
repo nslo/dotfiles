@@ -40,7 +40,8 @@ xautolock -time 15 -locker slimlock &
 dunst &
 
 # skyped starts skype (used for bitlbee)
-skyped &
+#skyped &
+skype &
 
 #dropboxd &
 

@@ -1,25 +1,32 @@
-" Vundle
-set nocompatible
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim/
-call vundle#begin()
-Plugin 'gmarik/Vundle.vim'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'bling/vim-airline'
-Plugin 'kien/ctrlp.vim'
-Plugin 'kien/rainbow_parentheses.vim'
-Plugin 'jeetsukumaran/vim-buffergator'
-Plugin 'rhysd/vim-clang-format'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'scrooloose/syntastic'
-Plugin 'tpope/vim-surround'
+" Plugins
+call plug#begin('~/.vim/plugged')
+Plug 'airblade/vim-gitgutter'
+Plug 'bling/vim-airline'
+Plug 'kien/ctrlp.vim'
+Plug 'kien/rainbow_parentheses.vim'
+Plug 'jeetsukumaran/vim-buffergator'
+Plug 'rhysd/vim-clang-format'
+Plug 'rking/ag.vim'
+Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/syntastic'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fugitive'
+Plug 'Shougo/vimproc.vim', { 'do': 'make' }
+Plug 'Valloric/YouCompleteMe', { 'do': './install.sh --clang-completer && ln -s /usr/lib/libclang.so libclang.so' }
 " Syntax
-Plugin 'tikhomirov/vim-glsl'
-Plugin 'wting/rust.vim'
-call vundle#end()
-filetype plugin indent on
+Plug 'tikhomirov/vim-glsl'
+Plug 'wting/rust.vim'
+" Haskell
+Plug 'eagletmt/ghcmod-vim'
+Plug 'eagletmt/neco-ghc'
+Plug 'yogsototh/haskell-vim'
+call plug#end()
+
+set shell=/bin/bash " To make vim-gitgutter work with Fish
 
 " Colors
+filetype on
+filetype plugin indent on
 syntax enable
 "colorscheme gummybears_trans
 colorscheme hybrid_trans
@@ -33,6 +40,9 @@ else
     au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)             
 endif                                                                           
 hi ColorColumn ctermbg=4                                                        
+
+" Trim trailing whitespace
+autocmd FileType c,cpp,haskell autocmd BufWritePre <buffer> :%s/\s\+$//e
 
 " Spellcheck
 hi clear SpellBad
@@ -120,10 +130,13 @@ let g:ycm_goto_buffer_command = 'same-buffer'
 let g:ycm_global_ycm_extra_conf='~/Code/.ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf=0
 let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_semantic_triggers = {'haskell' : ['.']} "neco-ghc
 
 " Syntastic
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_loc_list=1
+let g:syntastic_mode_map={'mode': 'active', 'passive_filetypes': ['haskell']}
+let g:syntastic_always_populate_loc_list = 1
 
 " CtrlP
 nmap <leader>c :CtrlP<cr>
@@ -148,3 +161,26 @@ nmap <leader>bq :bp <BAR> bd #<cr>
 nmap <leader>l :bnext<CR>
 " Move to the previous buffer
 nmap <leader>h :bprevious<CR>
+
+" Haskell
+nmap <silent> <leader>ht :GhcModType<CR>
+nmap <silent> <leader>hh :GhcModTypeClear<CR>
+nmap <silent> <leader>hT :GhcModTypeInsert<CR>
+nmap <silent> <leader>hc :SyntasticCheck ghc_mod<CR>:lopen<CR>
+nmap <silent> <leader>hl :SyntasticCheck hlint<CR>:lopen<CR>
+" Auto-checking on writing
+autocmd BufWritePost *.hs,*.lhs GhcModCheckAndLintAsync
+"  neocomplcache (advanced completion)
+autocmd BufEnter *.hs,*.lhs let g:neocomplcache_enable_at_startup = 1
+" yogsotoh/haskell-vim
+let g:haskell_enable_quantification = 1
+let g:haskell_enable_recursivedo = 1
+let g:haskell_enable_arrowsyntax = 1
+let g:haskell_enable_pattern_synonyms = 1
+let g:haskell_enable_typeroles = 1
+let g:haskell_indent_if = 3
+let g:haskell_indent_case = 5
+let g:haskell_indent_let = 4
+let g:haskell_indent_where = 6
+let g:haskell_indent_do = 3
+let g:haskell_indent_in = 1

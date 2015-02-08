@@ -2,7 +2,7 @@ set -x EDITOR vim
 set -x BROWSER firefox
 set -x PACMAN pacmatic
 
-set -x PATH $PATH .cabal/bin:$PATH
+set -x PATH $PATH ~/.cabal/bin
 
 set -g fish_key_bindings fish_vi_key_bindings
 
