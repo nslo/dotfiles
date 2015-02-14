@@ -1,0 +1,5 @@
+#! /bin/sh
+
+find * -prune -type d | while read d; do 
+    stow "$d"
+done

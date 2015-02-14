@@ -27,7 +27,7 @@ session = /home/fibonacci/.session
 
 # Watch a directory for new torrents, and stop those that have been
 # deleted.
-schedule = watch_directory,0,5,load_start=/home/fibonacci/Desktop/TEMP/*.torrent
+schedule = watch_directory,0,5,load_start=/home/fibonacci/Desktop/temp/*.torrent
 schedule = untied_directory,5,5,stop_untied=
 schedule = tied_directory,5,5,start_tied=
 
