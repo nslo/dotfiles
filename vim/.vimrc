@@ -47,7 +47,7 @@ autocmd FileType c,cpp,haskell autocmd BufWritePre <buffer> :%s/\s\+$//e
 " Spellcheck
 hi clear SpellBad
 hi clear SpellCap
-hi SpellBad cterm=bold ctermfg=black ctermbg=red
+hi SpellBad cterm=bold ctermfg=red ctermbg=black
 
 " GVim options
 if has('gui_running')
@@ -116,7 +116,6 @@ let g:clang_format#style_options = {
     \ "AccessModifierOffset" : -4,
     \ "AllowShortFunctionsOnASingleLine" : "None",
     \ "AlwaysBreakTemplateDeclarations" : "true",
-    \ "BreakBeforeBraces" : "Allman",
     \ "PointerAlignment" : "Right",
     \ "Standard" : "C++11"}
 

@@ -140,37 +140,6 @@
 ##  - filter_playlist_on_priorities
 ##
 
-def_key "k"
-  scroll_up
-def_key "j"
-  scroll_down
-def_key "U"
-  page_up
-def_key "D"
-  page_down
-def_key "g"
-  move_home
-def_key "G"
-  move_end
-def_key "L"
-  volume_up
-def_key "H"
-  volume_down
-def_key "n"
-  next_found_item
-def_key "N"
-  previous_found_item
-def_key "K"
-  move_selected_items_up
-def_key "J"
-  move_selected_items_down
-def_key "l"
-  press_enter
-def_key "h"
-  jump_to_parent_directory
-def_key "d"
-  delete_playlist_items
-
 #def_key "mouse"
 #  mouse_event
 #
@@ -537,3 +506,34 @@ def_key "d"
 #def_key "q"
 #  quit
 #
+
+def_key "k"
+  scroll_up
+def_key "j"
+  scroll_down
+def_key "U"
+  page_up
+def_key "D"
+  page_down
+def_key "g"
+  move_home
+def_key "G"
+  move_end
+def_key "L"
+  volume_up
+def_key "H"
+  volume_down
+def_key "n"
+  next_found_item
+def_key "N"
+  previous_found_item
+def_key "K"
+  move_selected_items_up
+def_key "J"
+  move_selected_items_down
+def_key "l"
+  press_enter
+def_key "h"
+  jump_to_parent_directory
+def_key "d"
+  delete_playlist_items

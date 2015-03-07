@@ -65,8 +65,8 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     [ ((modm, xK_Return),           spawn $ XMonad.terminal conf)
 
     -- launch dmenu
-    -- , ((modm, xK_r),    spawn "dmenu_yeganesh")   
-    -- , ((modm, xK_r),    spawn "exe=`dmenu_run -b -nb black -nf grey -sf yellow` && eval \"exec $exe\"")   
+    -- , ((modm, xK_r),    spawn "dmenu_yeganesh")
+    -- , ((modm, xK_r),    spawn "exe=`dmenu_run -b -nb black -nf grey -sf yellow` && eval \"exec $exe\"")
     , ((modm, xK_r),    spawn "dmenu_run -b -nb black -nf grey -sf yellow")
 
     -- Lock the screen
@@ -74,8 +74,8 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     --, ((modm,           xK_z),      spawn "light-locker-command -l")
 
     -- Take a screenshot
-    --, ((0,              xK_Print),  spawn "scrot ~/Desktop/TEMP/%Y-%m-%d-%T-screenshot.png")
-    , ((modm,           xK_p),      spawn "scrot ~/Desktop/TEMP/%Y-%m-%d-%T-screenshot.png")
+    --, ((0,              xK_Print),  spawn "scrot ~/Desktop/temp/%Y-%m-%d-%T-screenshot.png")
+    , ((modm,           xK_p),      spawn "scrot ~/Desktop/temp/%Y-%m-%d-%T-screenshot.png")
 
     -- Show scratchpad
     , ((modm, xK_BackSpace),        scratchpadSpawnActionTerminal myTerminal)
@@ -217,7 +217,7 @@ myManageHook = composeAll
     -- className =? "Pidgin"         --> doShift "3"
     --, className =? "Skype"          --> doShift "3"
     --, className =? "Firefox"        --> doShift "1"
-    --, stringProperty "WM_NAME" =? "turses"                      --> doShift "3" 
+    --, stringProperty "WM_NAME" =? "turses"                      --> doShift "3"
     --, stringProperty "WM_NAME" =? "ncmpcpp ver. 0.5.10"         --> doShift "2"
     --, className                =? "ncmpcpp"                     --> doShift "2"
     --, title                    =? "ncmpcpp"                     --> doShift "2"
@@ -281,7 +281,7 @@ myStartupHook = setWMName "LG3D"
 myPP :: PP
 myPP = defaultPP { ppCurrent = xmobarColor "#ffffff" "#006C82" . wrap " " " "
                  , ppUrgent  = xmobarColor "#ffffff" "#FF0000" . wrap " " " "
-                 , ppLayout  = xmobarColor "#429942" "" 
+                 , ppLayout  = xmobarColor "#429942" ""
                  , ppHidden  = noScratchPad
                  , ppTitle   = xmobarColor "#7094FF" "" . shorten 80
                  --, ppTitle   = xmobarColor "#ee9a00" "" . shorten 80
