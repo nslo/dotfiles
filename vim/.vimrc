@@ -11,6 +11,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
+Plug 'yonchu/accelerated-smooth-scroll'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'Valloric/YouCompleteMe', { 'do': './install.sh --clang-completer && ln -s /usr/lib/libclang.so libclang.so' }
 " Syntax
@@ -117,6 +118,7 @@ let g:clang_format#style_options = {
     \ "AllowShortFunctionsOnASingleLine" : "None",
     \ "AlwaysBreakTemplateDeclarations" : "true",
     \ "PointerAlignment" : "Right",
+    \ "SpacesBeforeTrailingComments" : 1,
     \ "Standard" : "C++11"}
 
 " YouCompleteMe
