@@ -11,7 +11,6 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
-Plug 'yonchu/accelerated-smooth-scroll'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'Valloric/YouCompleteMe', { 'do': './install.sh --clang-completer && ln -s /usr/lib/libclang.so libclang.so' }
 " Syntax
@@ -34,13 +33,13 @@ colorscheme hybrid_trans
 hi CursorLine term=bold cterm=bold gui=bold ctermbg=black guibg=black
 set cursorline
 
-" 80 character indicator                                                        
-if exists('+colorcolumn')                                                       
-    set colorcolumn=81                                                          
-else                                                                            
-    au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)             
-endif                                                                           
-hi ColorColumn ctermbg=4                                                        
+" 80 character indicator
+if exists('+colorcolumn')
+    set colorcolumn=80
+else
+    au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+endif
+hi ColorColumn ctermbg=4
 
 " Trim trailing whitespace
 autocmd FileType c,cpp,haskell autocmd BufWritePre <buffer> :%s/\s\+$//e
@@ -117,6 +116,7 @@ let g:clang_format#style_options = {
     \ "AccessModifierOffset" : -4,
     \ "AllowShortFunctionsOnASingleLine" : "None",
     \ "AlwaysBreakTemplateDeclarations" : "true",
+    \ "BreakBeforeBraces" : "Linux",
     \ "PointerAlignment" : "Right",
     \ "SpacesBeforeTrailingComments" : 1,
     \ "Standard" : "C++11"}

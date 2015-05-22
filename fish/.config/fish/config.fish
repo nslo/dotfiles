@@ -1,4 +1,4 @@
-alias vim "nvim"
+#alias vim "nvim"
 set -x EDITOR vim
 set -x BROWSER firefox
 set -x PACMAN pacmatic
