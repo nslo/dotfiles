@@ -35,9 +35,9 @@ set cursorline
 
 " 80 character indicator
 if exists('+colorcolumn')
-    set colorcolumn=80
+    set colorcolumn=81
 else
-    au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+    au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>81v.\+', -1)
 endif
 hi ColorColumn ctermbg=4
 
@@ -114,9 +114,13 @@ let g:airline_theme = 'murmur'
 let g:clang_format#auto_format = 1
 let g:clang_format#style_options = {
     \ "AccessModifierOffset" : -4,
-    \ "AllowShortFunctionsOnASingleLine" : "None",
+    \ "AllowShortFunctionsOnASingleLine" : "Empty",
+    \ "AllowShortBlocksOnASingleLine" : "true", 
     \ "AlwaysBreakTemplateDeclarations" : "true",
+    \ "BinPackArguments" : "false",
     \ "BreakBeforeBraces" : "Linux",
+    \ "BreakConstructorInitializersBeforeComma" : "true",
+    \ "ConstructorInitializerAllOnOneLineOrOnePerLine" : "true",
     \ "PointerAlignment" : "Right",
     \ "SpacesBeforeTrailingComments" : 1,
     \ "Standard" : "C++11"}
