@@ -19,38 +19,9 @@ URxvt.scrollBar:false
 URxvt.cursorBlink: 1
 !URxvt.cursorUnderline: 1
 
-
-!!black
-!URxvt*color0 :            #222222
-!URxvt*color8 :            #454545
-!!red
-!URxvt*color1 :            #CC0014
-!URxvt*color9 :            #FA8072
-!!green
-!URxvt*color2 :            #556B2F
-!URxvt*color10:            #9ACD32
-!!yellow
-!URxvt*color3 :            #B8860B
-!URxvt*color11:            #DAA520
-!!blue
-!URxvt*color4 :            #355C9A
-!URxvt*color12:            #45A3E6
-!!magenta
-!URxvt*color5 :            #9932CC
-!URxvt*color13:            #DA70D6
-!!cyan
-!URxvt*color6 :            #258F8F
-!URxvt*color14:            #60C6C8
-!!white
-!URxvt*color7 :            #C0C0C0
-!URxvt*color15:            #FFFFFF
-
-
 URxvt.colorIT:      #87af5f
 URxvt.colorBD:      #d7d7d7
 URxvt.colorUL:      #87afd7
-
-
 
 !black
 URxvt.color0:  #000000
