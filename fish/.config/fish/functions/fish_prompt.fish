@@ -2,6 +2,7 @@ function fish_prompt --description 'Write out the prompt'
     #Save the return status of the previous command
     set stat $status
 
+# Don't need this anymore since fish 2.2.0 has it build in
 function fish_vi_prompt_cm --description "Displays the current mode"
   switch $fish_bind_mode
     case default
@@ -40,10 +41,11 @@ echo -n -s $USER '@' $__fish_prompt_hostname ' '
 set_color -o green
 echo -n -s (prompt_pwd) ' '
 set_color 888
-echo -n -s '(' $stat ') '
-echo -n -s $__fish_prompt_normal
+#echo -n -s '(' $stat ') '
+#echo -n -s $__fish_prompt_normal
 echo -n -s (__fish_git_prompt)
 printf '\f\r'
-echo -n -s (fish_vi_prompt_cm) ' '
+#echo -n -s (fish_vi_prompt_cm) ' '
+echo "-> "
 
 end

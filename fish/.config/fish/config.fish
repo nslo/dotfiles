@@ -6,7 +6,8 @@ set -x RUST_SRC_PATH ~/Desktop/temp/rust/src
 
 set -x PATH $PATH ~/.cabal/bin
 
-set -g fish_key_bindings fish_vi_key_bindings
+#set -g fish_key_bindings fish_vi_key_bindings
+fish_vi_mode
 
 set -g __fish_git_prompt_show_informative_status 1
 set -g __fish_git_prompt_hide_untrackedfiles 1
