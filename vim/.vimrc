@@ -76,7 +76,7 @@ set incsearch "highlight as search string is typed
 set showcmd
 set autoread " auto update when file changed from outside
 set t_Co=256
-set undofile
+"set undofile
 set hidden " allows modified buffers to be hidden
 "set completeopt-=preview
 

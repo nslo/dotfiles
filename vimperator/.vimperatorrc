@@ -1,6 +1,6 @@
 set hintchars=asdflkjghqwertpoiuyzxcvbmn
 
-ignorekeys add -except=J,K /mail\.google\.com/
+ignorekeys add -except=J,K,<C-PageDown>,<C-PageUp> /mail\.google\.com/
 ignorekeys add /docs\.google\.com/
 
 nmap J <C-PageDown>
