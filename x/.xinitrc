@@ -27,7 +27,7 @@ xcompmgr &
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
 # system tray
-trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --width 7 --height 18 --transparent true --alpha 0 --tint 0x000000 &
+trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --width 8 --height 18 --transparent true --alpha 0 --tint 0x000000 &
 
 # auto-mounting
 udiskie -2 --tray &
