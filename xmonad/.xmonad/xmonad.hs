@@ -279,12 +279,13 @@ myStartupHook = setWMName "LG3D"
 ------------------------------------------------------------------------
 
 myPP :: PP
-myPP = defaultPP { ppCurrent = xmobarColor "#ffffff" "#006C82" . wrap " " " "
-                 , ppUrgent  = xmobarColor "#ffffff" "#FF0000" . wrap " " " "
+--myPP = defaultPP { ppCurrent = xmobarColor "#ffffff" "#006C82" . wrap " " " "
+myPP = defaultPP { ppCurrent = xmobarColor "#006C82" "#000000"
+                 --, ppUrgent  = xmobarColor "#ffffff" "#FF0000" . wrap " " " "
+                 , ppUrgent  = xmobarColor "#FF0000" "#000000"
                  , ppLayout  = xmobarColor "#429942" ""
                  , ppHidden  = noScratchPad
                  , ppTitle   = xmobarColor "#7094FF" "" . shorten 80
-                 --, ppTitle   = xmobarColor "#ee9a00" "" . shorten 80
                  , ppSep     = xmobarColor "#429942" "" "   "
                  }
                  -- filter out scratchpad workspace
