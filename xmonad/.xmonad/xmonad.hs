@@ -67,7 +67,8 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     -- launch dmenu
     -- , ((modm, xK_r),    spawn "dmenu_yeganesh")
     -- , ((modm, xK_r),    spawn "exe=`dmenu_run -b -nb black -nf grey -sf yellow` && eval \"exec $exe\"")
-    , ((modm, xK_r),    spawn "dmenu_run -b -nb black -nf grey -sf yellow")
+    --, ((modm, xK_r),    spawn "dmenu_run -b -nb black -nf grey -sf yellow")
+    , ((modm, xK_r),    spawn "rofi -show run")
 
     -- Lock the screen
     , ((modm,           xK_z),      spawn "xautolock -locknow")
@@ -280,7 +281,7 @@ myStartupHook = setWMName "LG3D"
 
 myPP :: PP
 --myPP = defaultPP { ppCurrent = xmobarColor "#ffffff" "#006C82" . wrap " " " "
-myPP = defaultPP { ppCurrent = xmobarColor "#006C82" "#000000"
+myPP = defaultPP { ppCurrent = xmobarColor "#ff9900" "#000000"
                  --, ppUrgent  = xmobarColor "#ffffff" "#FF0000" . wrap " " " "
                  , ppUrgent  = xmobarColor "#FF0000" "#000000"
                  , ppLayout  = xmobarColor "#429942" ""
