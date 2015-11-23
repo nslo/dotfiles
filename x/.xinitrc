@@ -33,7 +33,7 @@ trayer --edge top --align right --SetDockType true --SetPartialStrut true --expa
 udiskie -2 --tray &
 
 # screen locking
-#light-locker --lock-on-suspend &
+#light-locker --lock-after-screensaver 10 &
 xautolock -time 15 -locker slimlock &
 
 # notification manager

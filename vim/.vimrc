@@ -72,7 +72,8 @@ set wildmode=longest,list,full
 set wildmenu " completion with menu
 set ignorecase " case insensitive searching
 set smartcase " but become sensitive if you type uppercase
-set incsearch "highlight as search string is typed
+set incsearch " highlight as search string is typed
+set nohlsearch " don't highlight searched terms after search completed
 set showcmd
 set autoread " auto update when file changed from outside
 set t_Co=256

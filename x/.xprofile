@@ -18,7 +18,7 @@ synclient TapButton1=1
 xsetroot -cursor_name left_ptr
 
 # numlock on
-numlockx &
+#numlockx &
 
 # compositor for transparency (urxvt)
 xcompmgr &
@@ -27,10 +27,15 @@ xcompmgr &
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
 # system tray
-trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --width 7 --height 18 --transparent true --alpha 0 --tint 0x000000 &
+trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --width 8 --height 18 --transparent true --alpha 26 --tint 0x000000 &
 
 # auto-mounting
 udiskie -2 --tray &
+
+# screen locking
+light-locker &
+#light-locker --lock-after-screensaver 10 &
+#xautolock -time 15 -locker slimlock &
 
 # notification manager
 dunst &
@@ -51,11 +56,5 @@ pasystray &
 # MPD daemon start
 mpd &
 
-# screen locking
-#light-locker --lock-after-screensaver=5 --late-locking --lock-on-suspend &
-light-locker &
-#xautolock -time 15 -locker slimlock &
-
 # launch window manager
 #exec xmonad
-

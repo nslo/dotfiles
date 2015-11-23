@@ -64,19 +64,17 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     -- launch a terminal
     [ ((modm, xK_Return),           spawn $ XMonad.terminal conf)
 
-    -- launch dmenu
-    -- , ((modm, xK_r),    spawn "dmenu_yeganesh")
-    -- , ((modm, xK_r),    spawn "exe=`dmenu_run -b -nb black -nf grey -sf yellow` && eval \"exec $exe\"")
+    -- launcher
     --, ((modm, xK_r),    spawn "dmenu_run -b -nb black -nf grey -sf yellow")
     , ((modm, xK_r),    spawn "rofi -show run")
 
     -- Lock the screen
-    , ((modm,           xK_z),      spawn "xautolock -locknow")
-    --, ((modm,           xK_z),      spawn "light-locker-command -l")
+    --, ((modm,           xK_z),      spawn "xautolock -locknow")
+    , ((modm,xK_z),     spawn "light-locker-command -l")
 
     -- Take a screenshot
-    --, ((0,              xK_Print),  spawn "scrot ~/Desktop/temp/%Y-%m-%d-%T-screenshot.png")
-    , ((modm,           xK_p),      spawn "scrot ~/Desktop/temp/%Y-%m-%d-%T-screenshot.png")
+    --, ((0, xK_Print),  spawn "scrot ~/Desktop/temp/%Y-%m-%d-%T-screenshot.png")
+    , ((modm, xK_p),    spawn "scrot ~/Desktop/temp/%Y-%m-%d-%T-screenshot.png")
 
     -- Show scratchpad
     , ((modm, xK_BackSpace),        scratchpadSpawnActionTerminal myTerminal)

@@ -1,8 +1,10 @@
-#alias vim "nvim"
+alias vim "nvim"
+alias pacaur "env PACMAN=pacman pacaur"
 set -x EDITOR vim
 set -x BROWSER firefox
 set -x PACMAN pacmatic
-set -x RUST_SRC_PATH ~/Desktop/temp/rust/src
+set -x XDG_CONFIG_HOME $HOME/.config
+#set -x RUST_SRC_PATH ~/Desktop/temp/rust/src
 
 set -x PATH $PATH ~/.cabal/bin
 
