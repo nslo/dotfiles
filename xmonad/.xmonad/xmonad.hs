@@ -154,7 +154,8 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     --
     [((m .|. modm, k), windows $ f i)
         | (i, k) <- zip (XMonad.workspaces conf) [xK_1, xK_2, xK_3, xK_4, xK_5, xK_6, xK_7, xK_8, xK_9, xK_0, xK_minus, xK_equal]
-        , (f, m) <- [(W.greedyView, 0), (W.shift, shiftMask)]]
+        --, (f, m) <- [(W.greedyView, 0), (W.shift, shiftMask)]]
+        , (f, m) <- [(W.view, 0), (W.shift, shiftMask)]]
 
 -- Key binding to toggle the status bar.
 toggleStrutsKey :: XConfig t -> (KeyMask, KeySym)

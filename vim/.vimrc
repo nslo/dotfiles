@@ -87,7 +87,6 @@ inoremap <F1> <nop>
 nnoremap <C-t> <nop>
 inoremap <C-t> <nop>
 nnoremap <Q> <nop>
-inoremap <Q> <nop>
 ca tn tabnew
 let mapleader=","
 " Get rest of line on Y
