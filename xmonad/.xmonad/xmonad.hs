@@ -185,7 +185,7 @@ myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList
 -- defaults, as xmonad preserves your old layout settings by default.
 
 -- signature missing
-myLayout = boringWindows $ smartBorders $ tall ||| grid ||| threecol ||| full ||| floating
+myLayout = boringWindows $ smartBorders $ tall ||| grid ||| threecol ||| noBorders full ||| floating
   where
      -- default tiling algorithm partitions the screen into two panes
      tall       = renamed [Replace "|="]    $ smartSpacing s $ minimize (ResizableTall nmaster delta ratio [])
