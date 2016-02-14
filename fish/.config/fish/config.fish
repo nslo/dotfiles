@@ -6,7 +6,7 @@ set -x PACMAN pacmatic
 set -x XDG_CONFIG_HOME $HOME/.config
 #set -x RUST_SRC_PATH ~/Desktop/temp/rust/src
 
-set -x PATH $PATH ~/.cabal/bin
+set -x PATH $PATH ~/.cabal/bin /usr/bin/core_perl
 
 #set -g fish_key_bindings fish_vi_key_bindings
 fish_vi_mode

@@ -27,25 +27,25 @@ xcompmgr &
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
 # system tray
-trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --width 8 --height 18 --transparent true --alpha 26 --tint 0x000000 &
+trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --widthtype pixel --width 154 --height 18 --transparent true --alpha 26 --tint 0x000000 &
 
 # auto-mounting
 udiskie -2 --tray &
 
 # screen locking
-#light-locker --lock-after-screensaver 10 &
-xautolock -time 15 -locker slimlock &
+#light-locker --late-locking &
+#xautolock -time 15 -locker slimlock &
 
 # notification manager
 dunst &
 
-# skyped starts skype (used for bitlbee)
-#skyped &
 skype &
 
 #dropboxd &
 
 checkgmail -no_cookies &
+
+caffeine &
 
 # pulse doesn't initiate correctly if X starts it automatically
 pulseaudio --start
