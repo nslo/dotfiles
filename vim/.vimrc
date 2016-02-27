@@ -14,6 +14,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'Valloric/YouCompleteMe', { 'do': './install.sh --clang-completer && ln -s /usr/lib/libclang.so libclang.so' }
+Plug 'vim-airline/vim-airline-themes'
 " Syntax
 Plug 'tikhomirov/vim-glsl'
 Plug 'wting/rust.vim'

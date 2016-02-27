@@ -69,8 +69,9 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm, xK_r),    spawn "rofi -show run")
 
     -- Lock the screen
-    --, ((modm,           xK_z),      spawn "xautolock -locknow")
-    , ((modm,xK_z),     spawn "light-locker-command -l")
+    , ((modm, xK_z),      spawn "xautolock -locknow")
+    --, ((modm, xK_z),      spawn "light-locker-command -l")
+    --, ((modm, xK_z),        spawn "~/Code/Scripts/i3lock_blur.sh")
 
     -- Take a screenshot
     --, ((0, xK_Print),  spawn "scrot ~/Desktop/temp/%Y-%m-%d-%T-screenshot.png")
@@ -185,13 +186,13 @@ myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList
 -- defaults, as xmonad preserves your old layout settings by default.
 
 -- signature missing
-myLayout = boringWindows $ smartBorders $ tall ||| grid ||| threecol ||| noBorders full ||| floating
+myLayout = boringWindows $ smartBorders $ threecol ||| grid ||| tall ||| noBorders full ||| floating
   where
      -- default tiling algorithm partitions the screen into two panes
      tall       = renamed [Replace "|="]    $ smartSpacing s $ minimize (ResizableTall nmaster delta ratio [])
      -- tall       = renamed [Replace "|="]    $ smartSpacing s $ minimize (Tall nmaster delta ratio)
      grid       = renamed [Replace "+"]     $ smartSpacing s $ minimize Grid
-     threecol   = renamed [Replace "|||"]   $ smartSpacing s $ minimize (ThreeCol 1 (3/100) (1/5))
+     threecol   = renamed [Replace "|||"]   $ smartSpacing s $ minimize (ThreeCol 1 (3/100) (1/3))
      full       = renamed [Replace "■"]     $ smartSpacing s $ minimize Full
      floating   = renamed [Replace ":"]     $ smartSpacing s $ minimize simplestFloat
      -- The default number of windows in the master pane

@@ -7,12 +7,12 @@ xbindkeys &
 feh --bg-fill /tmp/wallpaper.jpg
 
 # get rid of beeping
-xset b off
+#xset b off
 
 # touchpad stuff 
-synclient HorizEdgeScroll=1
-synclient VertEdgeScroll=1
-synclient TapButton1=1
+#synclient HorizEdgeScroll=1
+#synclient VertEdgeScroll=1
+#synclient TapButton1=1
 
 # cursor for xmonad
 xsetroot -cursor_name left_ptr
@@ -27,7 +27,7 @@ xcompmgr &
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
 # system tray
-trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --widthtype pixel --width 154 --height 18 --transparent true --alpha 26 --tint 0x000000 &
+trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --widthtype pixel --widthtype percent --width 8 --height 18 --transparent true --alpha 26 --tint 0x000000 &
 
 # auto-mounting
 udiskie -2 --tray &
@@ -35,6 +35,7 @@ udiskie -2 --tray &
 # screen locking
 #light-locker --late-locking &
 #xautolock -time 15 -locker slimlock &
+xautolock -time 15 -locker ~/Code/Scripts/i3lock_blur.sh &
 
 # notification manager
 dunst &

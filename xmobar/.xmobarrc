@@ -5,17 +5,19 @@ Config { font = "xft:DejaVu Sans Mono:pixelsize=12"
        , border = NoBorder
        , borderColor = "#000000"
        , position = TopW L 92
-       , commands = [ Run Wireless "wlo1" ["-t", "<fc=#3296b8><essid></fc> <quality>", "-m", "3"] 10
-                    , Run MultiCpu ["-t", "<fc=#3296b8>CPU</fc> <autototal>", "-L","25","-H","49","--normal","#e3df07","--high","#ff0000", "-m", "2"] 20
+       --, commands = [ Run Wireless "wlo1" ["-t", "<fc=#3296b8><essid></fc> <quality>", "-m", "3"] 10
+       --             , Run MultiCpu ["-t", "<fc=#3296b8>CPU</fc> <autototal>", "-L","25","-H","49","--normal","#e3df07","--high","#ff0000", "-m", "2"] 20
+       , commands = [ Run MultiCpu ["-t", "<fc=#3296b8>CPU</fc> <autototal>", "-L","25","-H","49","--normal","#e3df07","--high","#ff0000", "-m", "2"] 20
                     , Run CoreTemp ["-t", "<fc=#3296b8>Temp</fc> <core0> <core1> <core2> <core3>", "-M", "2", "-L","65","-H","80","--normal","#e3df07","--high","#ff0000"] 20
                     , Run Memory ["-t", "<fc=#3296b8>Mem</fc> <usedratio>", "-L","50","-H","75","--normal","#e3df07","--high","#ff0000"] 20
                     , Run Uptime ["-t", "<fc=#3296b8>Up</fc> <days>d <hours>h"] 20
-                    , Run BatteryP ["BAT0"] ["-t", "<fc=#3296b8>Batt</fc> <left> (<timeleft>)", "-L", "20", "-H", "80", "-p", "3", "-l", "red", "--normal", "#e3df07", "-h", "grey"] 20  
+                    --, Run BatteryP ["BAT0"] ["-t", "<fc=#3296b8>Batt</fc> <left> (<timeleft>)", "-L", "20", "-H", "80", "-p", "3", "-l", "red", "--normal", "#e3df07", "-h", "grey"] 20  
                     , Run Date "%a %b %_d %Y <fc=#ff9900>%l:%M</fc>" "date" 10
                     , Run Weather "KORD" ["-t","Chicago <tempF>F"] 36000 
                     , Run StdinReader
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = "%StdinReader% }{ %wlo1wi% <fc=#429942> </fc> %multicpu% <fc=#429942> </fc> %coretemp% <fc=#429942> </fc> %memory% <fc=#429942> </fc> %uptime% <fc=#429942> </fc> %battery% <fc=#429942>|</fc> %KORD%  %date%"
+       --, template = "%StdinReader% }{ %wlo1wi% <fc=#429942> </fc> %multicpu% <fc=#429942> </fc> %coretemp% <fc=#429942> </fc> %memory% <fc=#429942> </fc> %uptime% <fc=#429942> </fc> %battery% <fc=#429942>|</fc> %KORD%  %date%"
+       , template = "%StdinReader% }{ %multicpu% <fc=#429942> </fc> %coretemp% <fc=#429942> </fc> %memory% <fc=#429942> </fc> %uptime% <fc=#429942> </fc> <fc=#429942>|</fc> %KORD%  %date%"
        }
