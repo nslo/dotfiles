@@ -1,4 +1,5 @@
 set hintchars=asdflkjghqwertpoiuyzxcvbmn
+set ssli=3
 
 ignorekeys add -except=J,K,<C-PageDown>,<C-PageUp> /mail\.google\.com/
 ignorekeys add /docs\.google\.com/

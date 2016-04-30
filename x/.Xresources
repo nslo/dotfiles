@@ -48,21 +48,30 @@ URxvt.color14: #61D0F3
 URxvt.color7:  #AAAABB
 URxvt.color15: #DDDDFF
 
-rofi.background: #073642
-rofi.foreground: #eee8d5
-rofi.highlightbg: #b58900
-rofi.highlightfg: #ffffff
-rofi.bordercolor: #678698
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+! Use extended color scheme
+rofi.color-enabled:                  true
+! Color scheme for normal row
+rofi.color-normal:                   #073642,  #D8DEE9 , #073642 ,  #FAC863 ,  #1B2B34
+! Color scheme for urgent row
+rofi.color-urgent:                   argb:00000000,  #F99157 , argb:00000000,  #F99157 ,  #1B2B34
+! Color scheme for active row
+rofi.color-active:                   argb:00000000,  #6699CC , argb:00000000,  #6699CC ,  #1B2B34
+! Color scheme window
+rofi.color-window:                   #073642,  #073642 , #073642
+! Separator style (none, dash, solid)
+rofi.separator-style:                dash
+
 rofi.padding: 1
 rofi.lines: 10
-rofi.borderwidth: 1
-rofi.opacity: 60
+rofi.bw: 1
+rofi.opacity: 80
 rofi.font: DejaVu Sans Mono 11
 rofi.location: 7
 rofi.yoffset: 0
 rofi.xoffset: 0
 rofi.width: 100
-rofi.fixed_num_lines: 1
-rofi.hmode: false
+rofi.fixed-num-lines: true
 rofi.terminal: st
-rofi.ssh-set-title: false
