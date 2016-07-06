@@ -44,7 +44,7 @@ skype &
 
 #dropboxd &
 
-checkgmail -no_cookies &
+#checkgmail -no_cookies &
 
 caffeine &
 
