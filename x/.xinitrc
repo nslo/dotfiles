@@ -33,9 +33,10 @@ trayer --edge top --align right --SetDockType true --SetPartialStrut true --expa
 udiskie -2 --tray &
 
 # screen locking
+xscreensaver -no-splash &
 #light-locker --late-locking &
 #xautolock -time 15 -locker slimlock &
-xautolock -time 15 -locker ~/Code/Scripts/i3lock_blur.sh &
+#xautolock -time 15 -locker ~/Code/Scripts/i3lock_blur.sh &
 
 # notification manager
 dunst &

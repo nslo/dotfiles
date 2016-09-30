@@ -1,3 +1,10 @@
+# LANG doesn't get set properly if fish is default shell
+if status -l; and test -r /etc/locale.conf
+    while read -l kv
+        set -gx (string split "=" -- $kv)
+    end </etc/locale.conf
+end
+
 alias vim "nvim"
 alias pacaur "env PACMAN=pacman pacaur"
 set -x EDITOR vim
@@ -5,7 +12,8 @@ set -x BROWSER firefox
 set -x PACMAN pacmatic
 set -x XDG_CONFIG_HOME $HOME/.config
 
-set -x PATH $PATH ~/.cabal/bin /usr/bin/core_perl
+#set -x PATH $PATH ~/.cabal/bin /usr/bin/core_perl
+set -x PATH $PATH /usr/bin/core_perl
 
 #fish_vi_mode
 fish_vi_key_bindings

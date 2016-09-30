@@ -69,9 +69,10 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm, xK_r),    spawn "rofi -show run")
 
     -- Lock the screen
-    , ((modm, xK_z),      spawn "xautolock -locknow")
+    --, ((modm, xK_z),      spawn "xautolock -locknow")
     --, ((modm, xK_z),      spawn "light-locker-command -l")
     --, ((modm, xK_z),        spawn "~/Code/Scripts/i3lock_blur.sh")
+    , ((modm, xK_z),        spawn "xscreensaver-command --lock")
 
     -- Take a screenshot
     --, ((0, xK_Print),  spawn "scrot ~/Desktop/temp/%Y-%m-%d-%T-screenshot.png")
@@ -224,7 +225,7 @@ myManageHook = composeAll
     --, title                    =? "ncmpcpp"                     --> doShift "2"
     --, stringProperty "WM_NAME" =? "ranger:~/Desktop"       --> doShift "2"
     --, stringProperty "WM_ICON_NAME" =? "todo (~/Desktop) - VIM" --> doShift "1"
-    , className =? "Gimp"           --> doFloat
+    --, className =? "Gimp"           --> doFloat
     , resource  =? "desktop_window" --> doIgnore
     , resource  =? "kdesktop"       --> doIgnore
     , isFullscreen                  --> doFullFloat]

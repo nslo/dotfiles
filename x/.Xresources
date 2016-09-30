@@ -10,7 +10,9 @@ URxvt.depth: 32
 URxvt.background: [90]#000000
 URxvt.foreground: [100]#FFFFFF
 URxvt.font: xft:DejaVu Sans Mono:pixelsize=11:antialias=true:hinting=true
-URxvt.boldfont: xft:DejaVu Sans Mono:pixelsize=11:antialias=true:hinting=true
+URxvt.boldFont: xft:DejaVu Sans Mono:pixelsize=11:antialias=true:hinting=true
+URxvt.italicFont: xft:DejaVu Sans Mono:pixelsize=11:antialias=true:hinting=true
+URxvt.boldItalicFont: xft:DejaVu Sans Mono:pixelsize=11:antialias=true:hinting=true
 !URxvt.font: xft:Dina:pixelsize=11
 !URxvt.font: xft:Terminus:pixelsize=12
 !URxvt.font: xft:Inconsolata:pixelsize=12
