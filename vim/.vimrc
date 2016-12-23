@@ -2,7 +2,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'airblade/vim-gitgutter'
 Plug 'bling/vim-airline'
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'jeetsukumaran/vim-buffergator'
 Plug 'mbbill/undotree'
@@ -10,8 +10,9 @@ Plug 'rhysd/vim-clang-format'
 Plug 'rking/ag.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/syntastic'
-Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-obsession'
+Plug 'tpope/vim-surround'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'Valloric/YouCompleteMe', { 'do': './install.sh --clang-completer && ln -s /usr/lib/libclang.so libclang.so' }
 Plug 'vim-airline/vim-airline-themes'
@@ -116,14 +117,17 @@ let g:airline_theme = 'murmur'
 let g:clang_format#auto_format = 1
 let g:clang_format#style_options = {
     \ "AccessModifierOffset" : -4,
-    \ "AllowShortFunctionsOnASingleLine" : "Empty",
     \ "AllowShortBlocksOnASingleLine" : "true", 
+    \ "AllowShortFunctionsOnASingleLine" : "Empty",
+    \ "AllowShortIfStatementsOnASingleLine" : "true",
+    \ "AllowShortLoopsOnASingleLine" : "true",
     \ "AlwaysBreakTemplateDeclarations" : "true",
     \ "BinPackArguments" : "false",
     \ "BreakBeforeBraces" : "Linux",
     \ "BreakConstructorInitializersBeforeComma" : "true",
     \ "ConstructorInitializerAllOnOneLineOrOnePerLine" : "true",
     \ "PointerAlignment" : "Right",
+    \ "SortIncludes" : "false",
     \ "SpacesBeforeTrailingComments" : 1,
     \ "Standard" : "C++11"}
 
@@ -146,7 +150,7 @@ let g:syntastic_mode_map={'mode': 'active', 'passive_filetypes': ['haskell']}
 let g:syntastic_always_populate_loc_list = 1
 
 " CtrlP
-nmap <leader>c :CtrlP<cr>
+nmap <leader>bp :CtrlP<cr>
 nmap <leader>bb :CtrlPBuffer<cr>
 nmap <leader>bm :CtrlPMixed<cr>
 nmap <leader>bs :CtrlPMRU<cr>
@@ -191,3 +195,23 @@ let g:haskell_indent_let = 4
 let g:haskell_indent_where = 6
 let g:haskell_indent_do = 3
 let g:haskell_indent_in = 1
+
+" Compatibility
+" Stick with the UTF-8 encoding.
+if has('multi_byte')
+  " Encoding used for the terminal.
+  if empty(&termencoding)
+    let &termencoding = &encoding
+  endif
+
+  " Encoding used in buffers, registers, strings in expressions, "viminfo"
+  " file, etc.
+  set encoding=utf-8
+
+  " Encoding used for writing files.
+  setglobal fileencoding=utf-8
+endif
+
+" Use both Unix and DOS file formats, but favor the Unix one for new files.
+set fileformat=unix
+set fileformats=unix,dos
