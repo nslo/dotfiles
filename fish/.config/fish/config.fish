@@ -9,6 +9,7 @@ alias vim "nvim"
 alias pacaur "env PACMAN=pacman pacaur"
 alias vpn "/opt/cisco/anyconnect/bin/vpn"
 set -x EDITOR vim
+set -x TERMCMD urxvt
 set -x BROWSER firefox
 set -x PACMAN pacmatic
 set -x XDG_CONFIG_HOME $HOME/.config
