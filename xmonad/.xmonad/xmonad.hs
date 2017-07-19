@@ -6,6 +6,7 @@ import XMonad.Hooks.ManageHelpers (isFullscreen, doFullFloat)
 import XMonad.Hooks.Minimize
 import XMonad.Hooks.SetWMName
 import XMonad.Hooks.UrgencyHook
+import XMonad.Layout.BinarySpacePartition
 import XMonad.Layout.BoringWindows (boringWindows, focusUp, focusDown)
 import XMonad.Layout.Grid
 import XMonad.Layout.Minimize
@@ -187,7 +188,7 @@ myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList
 -- defaults, as xmonad preserves your old layout settings by default.
 
 -- signature missing
-myLayout = boringWindows $ smartBorders $ threecol ||| grid ||| tall ||| noBorders full ||| floating
+myLayout = boringWindows $ smartBorders $ threecol ||| emptyBSP ||| grid ||| tall ||| noBorders full ||| floating
   where
      -- default tiling algorithm partitions the screen into two panes
      tall       = renamed [Replace "|="]    $ smartSpacing s $ minimize (ResizableTall nmaster delta ratio [])
