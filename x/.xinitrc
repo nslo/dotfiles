@@ -27,7 +27,7 @@ xcompmgr &
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
 # system tray
-trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --widthtype pixel --widthtype percent --width 8 --height 18 --transparent true --alpha 26 --tint 0x000000 &
+trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --widthtype pixel --widthtype percent --width 8 --height 19 --transparent true --alpha 26 --tint 0x000000 &
 
 # auto-mounting
 udiskie -2 --tray &
@@ -42,6 +42,10 @@ xscreensaver -no-splash &
 dunst &
 
 skype &
+
+# remove this when aur package sorted out
+#/usr/local/crashplan/bin/CrashPlanEngine start
+~/Local/crashplan/bin/CrashPlanEngine start
 
 #dropboxd &
 
