@@ -39,9 +39,9 @@ set cursorline
 
 " 80 character indicator
 if exists('+colorcolumn')
-    set colorcolumn=81
+    set colorcolumn=101
 else
-    au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>81v.\+', -1)
+    au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>101v.\+', -1)
 endif
 hi ColorColumn ctermbg=4
 
@@ -119,15 +119,16 @@ let g:clang_format#auto_format = 1
 let g:clang_format#style_options = {
     \ "AccessModifierOffset" : -4,
     \ "AllowShortBlocksOnASingleLine" : "true", 
-    \ "AllowShortFunctionsOnASingleLine" : "Empty",
+    \ "AllowShortFunctionsOnASingleLine" : "All",
     \ "AllowShortIfStatementsOnASingleLine" : "true",
     \ "AllowShortLoopsOnASingleLine" : "true",
     \ "AlwaysBreakTemplateDeclarations" : "true",
     \ "BinPackArguments" : "false",
     \ "BreakBeforeBraces" : "Linux",
     \ "BreakConstructorInitializersBeforeComma" : "true",
+    \ "ColumnLimit" : 100,
     \ "ConstructorInitializerAllOnOneLineOrOnePerLine" : "true",
-    \ "PointerAlignment" : "Right",
+    \ "PointerAlignment" : "Left",
     \ "SortIncludes" : "false",
     \ "SpacesBeforeTrailingComments" : 1,
     \ "Standard" : "C++11"}

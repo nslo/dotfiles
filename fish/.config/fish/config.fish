@@ -14,8 +14,8 @@ set -x BROWSER firefox
 set -x PACMAN pacmatic
 set -x XDG_CONFIG_HOME $HOME/.config
 
-#set -x PATH $PATH ~/.cabal/bin /usr/bin/core_perl
-set -x PATH $PATH /usr/bin/core_perl
+set -x PATH $PATH ~/.local/bin /usr/bin/core_perl
+#set -x PATH $PATH /usr/bin/core_perl
 
 #fish_vi_mode
 fish_vi_key_bindings

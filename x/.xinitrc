@@ -62,4 +62,6 @@ pasystray &
 mpd &
 
 # launch window manager
-exec xmonad
+#exec xmonad [goodbye xmonad]
+(sleep 2 & urxvt -name scratchpad) &
+exec i3
