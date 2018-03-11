@@ -2,6 +2,12 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
+#aesthetics
+gaps inner 6
+gaps outer 0
+smart_gaps on
+new_window 1pixel
+
 set $mod Mod4
 #set $left_monitor "DP-4"
 #set $right_monitor "DP-5"
@@ -194,19 +200,22 @@ bindsym $mod+p exec scrot ~/Desktop/temp/%Y-%m-%d-%T-screenshot.png
 #    sleep 1
 #  done
 bar {
-        #status_command <home_dir>/bin/mybar
         status_command i3status
        	position top
        	strip_workspace_numbers yes
+        tray_output primary
 }
 
 # Set keyboard key repeat rate
 exec_always xset r rate 250 30
 
+# monitor setup
+exec xrandr --output HDMI-0 --primary
+
 # Set monitors so that the small one is on the right rotated ccw and the big one is on the left as normal
 #exec_always xrandr --output $left_monitor --mode 1920x1200 --pos 0x0 --rotate left --output $right_monitor --mode 3840x2160 --pos 1200x100
 
-exec_always gsettings set org.gnome.desktop.background show-desktop-icons false
+#exec_always gsettings set org.gnome.desktop.background show-desktop-icons false
 
 # Set background images.
-exec_always feh --bg-scale <left_monitor_image> <right_monitor_image>
+#exec_always feh --bg-scale <left_monitor_image> <right_monitor_image>

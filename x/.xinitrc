@@ -26,8 +26,8 @@ xcompmgr &
 # merge resources file (for things like terminal colors)
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
-# system tray
-trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --widthtype pixel --widthtype percent --width 8 --height 19 --transparent true --alpha 26 --tint 0x000000 &
+# system tray (not needed with i3bar)
+#trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --widthtype pixel --widthtype percent --width 8 --height 19 --transparent true --alpha 26 --tint 0x000000 &
 
 # auto-mounting
 udiskie -2 --tray &
