@@ -204,7 +204,13 @@ bar {
        	position top
        	strip_workspace_numbers yes
         tray_output primary
+
+        colors {
+            statusline #cce6ff  
+            separator #fefefe
+        }
 }
+
 
 # Set keyboard key repeat rate
 exec_always xset r rate 250 30
