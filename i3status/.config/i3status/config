@@ -42,8 +42,7 @@ cpu_temperature 3 {
         path = "/sys/devices/platform/coretemp.0/hwmon/hwmon1/temp4_input"
 }
 
-
-cpu_temperature 3 {
+cpu_usage {
     format = "%usage"
     max_threshold = 75
 }
