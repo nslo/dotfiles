@@ -27,9 +27,7 @@ session = /home/fibonacci/.session
 
 # Watch a directory for new torrents, and stop those that have been
 # deleted.
-schedule = watch_directory,0,5,load_start=/home/fibonacci/Desktop/temp/*.torrent
-schedule = untied_directory,5,5,stop_untied=
-schedule = tied_directory,5,5,start_tied=
+schedule2 = watch_directory,0,5,load.start=/home/fibonacci/Desktop/temp/*.torrent
 
 # Close torrents when diskspace is low. */
 schedule = low_diskspace,5,60,close_low_diskspace=100M
@@ -82,7 +80,7 @@ dht_port = 6881
 
 # Enable peer exchange (for torrents not marked private)
 #
-peer_exchange = yes
+protocol.pex.set = yes
 
 #
 # Do not modify the following parameters unless you know what you're doing.
@@ -103,7 +101,7 @@ peer_exchange = yes
 #hash_max_tries = 10
 
 # Send notification to dunst on finished torrent
-system.method.set_key = event.download.finished,notify_me,"execute=/home/fibonacci/Code/Scripts/dunst_rtorrent,$d.get_name="
+method.set_key = event.download.finished,notify_me,"execute=/home/fibonacci/Code/Scripts/dunst_rtorrent,$d.get_name="
 
-# Attemp to pre-allocate space for files
-system.file_allocate.set = yes
+# Attempt to pre-allocate space for files
+system.file.allocate.set = yes
