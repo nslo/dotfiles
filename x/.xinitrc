@@ -53,8 +53,7 @@ skype &
 
 caffeine &
 
-# pulse doesn't initiate correctly if X starts it automatically
-pulseaudio --start
+# this sleep call seems to prevent the tray from not appearing
 sleep 5
 pasystray &
 
