@@ -1,6 +1,6 @@
 function fish_prompt --description 'Write out the prompt'
     #Save the return status of the previous command
-    set stat $status
+#    set stat $status
 
 function fish_vi_prompt_cm --description "Displays the current mode"
   switch $fish_bind_mode

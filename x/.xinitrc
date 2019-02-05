@@ -3,6 +3,9 @@
 # keybindings
 xbindkeys &
 
+# keyboard refresh rate
+xset r rate 150 30
+
 # set background
 feh --bg-fill /tmp/wallpaper.jpg
 
