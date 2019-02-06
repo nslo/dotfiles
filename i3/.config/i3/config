@@ -211,10 +211,6 @@ bar {
         }
 }
 
-
-# Set keyboard key repeat rate
-exec_always xset r rate 250 30
-
 # monitor setup
 exec xrandr --output HDMI-0 --primary
 
