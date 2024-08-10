@@ -1776,4 +1776,4 @@ class empty(Command):
     """
 
     def execute(self):
-        self.fm.run("rm -rf /home/fibonacci/trash/{*,.[^.]*}")
+        self.fm.run("rm -rf ~/trash/{*,.[^.]*}")
